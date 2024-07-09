@@ -1,0 +1,288 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main-content %}
+
+<body id="home-version-1" class="home-version-4" data-style="default">
+
+	<a href="#main_content" data-type="section-switch" class="return-to-top">
+		<i class="fa fa-chevron-up"></i>
+	</a>
+
+
+<!--==========================-->
+		<!--=         Banner         =-->
+		<!--==========================-->
+		<section class="banner banner-nine newnineban">
+			<div class="container">
+				<div class="banner-content-wrap-five">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="banner-content">
+								<h1 class="banner-title wow pixFadeUp" data-wow-delay="0.3s">
+									Get In Touch With Us <br>
+								</h1>
+
+								<p class="description wow pixFadeUp" data-wow-delay="0.5s">
+									We are glad to have you on our site, and we are looking forward to connecting with you.
+								</p>
+							</div><!-- /.banner-content -->
+						</div>
+						<!-- /.col-lg-6 -->
+
+						<div class="col-lg-6">
+							<div class="promo-mockup-five text-center"> 
+								<ul class="animate-element-five">
+									<li><img src="{% static 'media/animated/contban.png' %}" class="wow fadeInDown" alt="mockup"></li>
+								
+								</ul>
+							</div><!-- /.promo-mockup -->
+						</div>
+						<!-- /.col-lg-7 -->
+					</div>
+					<!-- /.row -->
+				</div>
+
+				
+			</div><!-- /.container -->
+		</section><!-- /.banner banner-seven -->
+
+
+
+
+		<!--===========================-->
+		<!--=         Contact         =-->
+		<!--===========================-->
+		<section class="contactus">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="contact-infos">
+							<div class="contact-info">
+								<h3 class="title">Our Location</h3>
+								<p class="description">
+									Futurica Technologies Pvt. Ltd.,<br> Opp. Mauli Garden, Baner,<br>Pune, Maharashtra 411045
+								</p>
+
+								<div class="info phone">
+									<i class="ei ei-icon_phone"></i>
+									<span>+91 909-6373-998</span>
+								</div>
+								<div class="info">
+									<i class="ei ei-icon_mail_alt"></i>
+									<span>info@travocrm.com</span>
+								</div>
+								<div class="info">
+									<i class="ei ei-icon_mobile"></i>Support Timings <br>
+									<span>Monday to Friday (10:00AM to 07:00PM IST)</span>
+								</div>
+								<div class="widget ">
+								<h3 class="title">Social</h3>
+								<ul class="social-share-link">
+									<li><a href="https://www.facebook.com/travocrmbyfuturica" class="share_facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="https://www.linkedin.com/company/travocrm" class="share_linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+								</ul>
+								</div>
+								
+							</div>
+							<!-- /.contact-info -->
+
+						<!--	<div class="contact-info">
+								<h3 class="title">Say Hello</h3>
+								<p class="description">
+									Washington Fulton Street, Suite 640<br>
+									New York, NY 10010
+								</p>
+
+								
+							</div>
+							 /.contact-info -->
+						</div>
+						<!-- /.contact-infos -->
+					</div>
+					<!-- /.col-md-4 -->
+					<div class="col-md-8">
+						<div class="contact-froms">
+							<form action="#" id="formId" class="contact-form" data-pixsaas="contact-froms">
+								<div class="row">
+									<div class="col-md-6">
+										<input type="text" name="first_name" placeholder="First Name" required>
+									</div>
+									<div class="col-md-6">
+										<input type="text" name="last_name" placeholder="Last Name" required>
+									</div>
+									<div class="col-md-6">
+										<input type="text" name="agency_name" placeholder="Agency Name" required>
+									</div>
+									<div class="col-md-6">
+										<select name="reference" id="" class="pix-select" required>
+											<option value="" selected>Reference</option>
+                                            <option value="Google">Google</option>
+                                            <option value="Facebook">Facebook</option>
+                                            <option value="Referral">Referral</option>
+                                            <option value="Youtube">Youtube</option>
+                                            <option value="Trade Fair">Trade Fair</option>
+                                            <option value="LinkedIn">LinkedIn</option>
+                                            <option value="Email">Email</option>
+                                            <option value="Phone Call">Phone Call</option>
+                                            <option value="SMS">SMS</option>
+                                            <option value="Team TravoCRM">Team TravoCRM</option>
+										</select>
+									</div>
+									<div class="col-md-6">
+<!--										<select name="country_id" id="" class="pix-select">-->
+<!--											<option value="select">Select country</option>-->
+<!--											<option value="select">Select one</option>-->
+<!--											<option value="select">Select two</option>-->
+<!--											<option value="select">Select three</option>-->
+<!--										</select>-->
+                                        <input type="text" name="country" id="country" placeholder="Select country" autocomplete="off" required/>
+                                        <input type="hidden" name="country_name" id="country_name"/>
+                                        <input type="hidden" name="country_id" id="country_id"/>
+									</div>
+									<div class="col-md-6">
+<!--										<input type="text" name="" placeholder="Select city" required>-->
+                                        <input type="text" name="city" id="city" placeholder="Select city" autocomplete="off" required>
+                                        <input type="hidden" name="city_name" id="city_name" required>
+                                        <input type="hidden" name="city_id" id="city_id">
+									</div>
+									<div class="col-md-6">
+<!--										<select name="country_id" id="" class="pix-select">-->
+<!--											<option value="select">Select Phonecode +</option>-->
+<!--											<option value="select">Select one</option>-->
+<!--											<option value="select">Select two</option>-->
+<!--											<option value="select">Select three</option>-->
+<!--										</select>-->
+                                        <input type="text" name="phonecode" id="phonecode" placeholder="Phonecode" required>
+									</div>
+									<div class="col-md-6">
+										<input type="text" name="contact" placeholder="Mobile Number" required>
+									</div>
+									<div class="col-md-6">
+										<input type="email" name="email" placeholder="Email Id" required>
+									</div>
+									<div class="col-md-6">
+										<input type="url" name="website" placeholder="Website">
+									</div>
+								</div>
+
+								<!--<input type="text" name="subject" placeholder="Subject">
+
+								<textarea name="content" placeholder="Your Comment" required></textarea>-->
+
+								<button type="submit" class="pix-btn submit-btn">
+									<span class="btn-text">Send Your Message</span>
+									<i class="fas fa-spinner fa-spin"></i>
+								</button>
+								<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+
+
+								<div class="row">
+									<div class="form-result alert">
+										<div class="content"></div>
+									</div>
+								</div>
+							</form>
+							<!-- /.contact-froms -->
+						</div>
+						<!-- /.faq-froms -->
+					</div>
+					<!-- /.col-md-8 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.contactus -->
+
+		<!--========================-->
+		<!--=         Map         =-->
+		<!--========================-->
+		<!--<section id="google-maps">
+			<div class="google-map">
+				<div class="gmap3-area" data-lat="40.712776" data-lng="-74.005974" data-mrkr="assets/img/map-marker.png">
+
+				</div>
+			</div>
+		</section> /#google-maps -->
+		
+
+
+
+
+<script>
+    $(document).ready(function() {
+        // get city data from database with autocomplete event
+        $( "#city" ).autocomplete({
+            source: function( request, response ) {
+                $.ajax( {
+                    url: "https://travocrm.com/index/getcities",
+                    dataType:"JSON",
+                    data: {
+                        term: request.term,
+                        countryid: $("#country_id").val()
+                    },
+                    success: function( data ) {
+                        response( data );
+                    }
+                } );
+            },
+            minLength: 2,
+            select: function( event, ui ) {
+                $("#city_id").val(ui.item.id)
+                $("#city_name").val(ui.item.label)
+            }
+        });
+
+        // get country data from database with autocomplete	event
+        $( "#country" ).autocomplete({
+            source: function( request, response ) {
+                $.ajax( {
+                    url: "https://travocrm.com/index/getcountries",
+                    dataType:"JSON",
+                    data: {
+                        term: request.term
+                    },
+                    success: function( data ) {
+                        // console.log(data);
+                        response(data);
+                    }
+                } );
+            },
+            minLength: 2,
+            select: function( event, ui ) {
+                // log( "Selected: " + " aka " + ui.item.id );
+                $("#country_id").val(ui.item.id)
+                $("#country_name").val(ui.item.label)
+                $("#phonecode").val(ui.item.phonecode);
+                // $(this).next("value").val(ui.item.id);
+            }
+			
+        });
+        // to insert form data to database
+        $("#formId").on("submit",function(e){
+            e.preventDefault();
+            $.ajax({
+                'url':'https://travocrm.com/index/insertform',
+                'type' : 'POST',
+                'data' :  new FormData(this),
+                'dataType' : 'json',
+                'processData': false,
+                'contentType': false,
+                'success' : function(result){
+                    // console.log(result);
+                    // console.log(result.status);
+                    if(result.status == "success"){
+                        alert(result.message);
+                        $("#formId").trigger('reset');
+                    }else{
+                        alert(result.message);
+                    }
+
+                }
+            });
+
+        });
+    });
+</script>
+
+{% endblock main-content %}

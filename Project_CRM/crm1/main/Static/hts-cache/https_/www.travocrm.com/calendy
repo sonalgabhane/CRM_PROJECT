@@ -1,0 +1,258 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<script type="text/javascript">
+    window.GUMLET_CONFIG = {
+        hosts: [{
+            current: "https://travocrm.com",
+            gumlet: "demotravo.gumlet.io"
+        }],
+        lazy_load: true
+    };
+    (function(){d=document;s=d.createElement("script");s.src="https://cdn.gumlet.com/gumlet.js/2.1/gumlet.min.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>  
+
+	
+<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+<link href="travositefrontpage/css/style1.css" rel="stylesheet"/>
+<link href="travositefrontpage/css/style.css" rel="stylesheet"/>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+<link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<!--<a class="navbar-brand brand" href="#/index"> <img class="logo logo1" src="travositefrontpage/images/logo1.png"> </a>-->
+
+
+	<!-- Meta Data -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>TravoCRM About Us</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://www.travocrm.com/assets/img/fav/fav.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://www.travocrm.com/assets/img/fav/fav.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://www.travocrm.com/assets/img/fav/fav.png">
+	<link rel="mask-icon" href="https://www.travocrm.com/assets/img/fav/safari-pinned-tab.svg" color="#fa7070">
+
+	<meta name="msapplication-TileColor" content="#fa7070">
+	<meta name="theme-color" content="#fa7070">  
+
+	<!-- Dependency Styles -->
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/fontawesome/css/all.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/swiper/css/swiper.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/wow/css/animate.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/magnific-popup/css/magnific-popup.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/components-elegant-icons/css/elegant-icons.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/simple-line-icons/css/simple-line-icons.css" type="text/css">
+
+
+	<!-- Site Stylesheet -->
+	<link rel="stylesheet" href="https://www.travocrm.com/assets/css/app.css" type="text/css">
+
+	<!-- Google Web Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- jquery-->
+
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">   -->
+
+		
+<!--	<script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <style>
+  /*.ui-autocomplete-loading {*/
+  /*  background: white url("https://jqueryui.com/resources/demos/autocomplete/images/ui-anim_basic_16x16.gif") right center no-repeat;*/
+  /*}*/
+
+  .ui-autocomplete {
+      z-index: 100;
+      background: white url("https://jqueryui.com/resources/demos/autocomplete/images/ui-anim_basic_16x16.gif") right center no-repeat;
+      text-decoration: none;
+  }
+
+    </style>
+	
+
+</head>
+
+<body id="home-version-1" class="home-version-4" data-style="default">
+
+	<a href="#main_content" data-type="section-switch" class="return-to-top">
+		<i class="fa fa-chevron-up"></i>
+	</a>
+	<!--
+	<div class="page-loader">
+		<div class="loader">
+			
+			<div class="blobs">
+				<div class="blob-center"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+						<feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+						<feBlend in="SourceGraphic" in2="goo" />
+					</filter>
+				</defs>
+			</svg>
+
+		</div>
+	</div>-->
+	<!-- /.page-loader -->
+
+	<div id="main_content">
+
+
+		<!--=========================-->
+		<!--=        Navbar         =-->
+		<!--=========================-->
+		<header class="site-header header-six header_trans-fixed" data-top="992">
+			<div class="container">
+				<div class="header-inner">
+					<div class="toggle-menu">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+					<!-- /.toggle-menu -->
+
+					<div class="site-mobile-logo">
+						<a href="https://www.travocrm.com" class="logo">
+							<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="main-logo">
+							<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="sticky-logo" style="display:none;">
+						</a>
+					</div>
+
+					<nav class="site-nav">
+						<div class="close-menu">
+							<span>Close</span>
+							<i class="ei ei-icon_close"></i>
+						</div>
+
+						<div class="site-logo">
+							<a href="https://www.travocrm.com" class="logo">
+								<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="main-logo">
+								<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="sticky-logo">
+							</a>
+						</div>
+						<!-- /.site-logo -->
+
+						<div class="menu-wrapper" data-top="992">
+							<ul class="site-main-menu">
+								<!--<li class="menu-item-has-children">
+									<a href="index.html">Home</a>
+								</li>-->
+								<li><a href="https://www.travocrm.com/pricing">Pricing</a></li>
+								<li><a href="https://www.travocrm.com/solutions/travocrm">Features</a></li>
+								<!--<li class="menu-item-has-children">
+									<a href="blog.html">Solutions</a>
+									<ul class="sub-menu">
+										<li><a href="https://www.travocrm.com/solutions/travocrm">TravoCRM</a></li>
+										<li><a href="https://www.travocrm.com/solutions/travocrmwebsite">TravoCRM+Website</a></li>
+									</ul>
+								</li>-->
+								<li><a href="https://www.travocrm.com/clients">Clients</a></li>
+								<!--<li><a href="https://www.travocrm.com/">Support</a></li>
+								<li><a href="https://www.travocrm.com/">Resources</a></li>-->
+								<li><a href="https://www.travocrm.com/contactus">Contact</a></li>
+								
+							</ul>
+						</div>
+						<!-- /.menu-wrapper -->
+						<div class="nav-right">
+							<a href="https://app.travocrm.com/#/login" class="login-btn"><i class="ei ei-icon_lock_alt"></i>Login</a>
+							<a href="https://app.travocrm.com/#/signup" class="login-btn"><i class="ei ei-icon_lock_alt"></i>Signup</a>
+							<a href="https://www.travocrm.com/calendy" target="_blank" class="nav-btn">Schedule a Demo</a>
+						</div>
+
+					</nav><!-- /.site-nav -->
+				</div><!-- /.header-inner -->
+			</div><!-- /.container -->
+		</header><!-- /.site-header -->
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+
+   
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/travocrm/demo?hide_gdpr_banner=1&primary_color=ff0000" style="min-width:320px;height:630px;padding-top:80px"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<!-- Calendly inline widget end -->
+<!--		
+<a href="https://api.whatsapp.com/send?phone=+919096373998" target="_blank" class="whatsapp"><img src="../images/whatsapp.png" width="50px;" alt="whatsapp"/></a>-->
+
+
+<a href="https://api.whatsapp.com/send?phone=919096373998&text=Hello,%20I%20have%20visited%20your%20website%20and%20would%20like%20to%20take%20a%20demo%20of%20the%20software" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a> 
+<style>
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:30px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index:999;
+}
+
+.my-float{
+	margin-top:16px;
+}
+</style>
+<!--<style>
+.whatsapp {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9999;
+}
+/*.footer-copyright
+{
+  padding-top: 4px!important;
+    padding-bottom: 4px!important;
+}
+footer.home-footer {
+ 
+   padding: 14px 27px 20px 47px!important;
+}*/
+.heading-h1{display:none;}
+</style>-->
+<!-- <script type="text/javascript">
+   
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){     
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+    });
+</script>
+ 
+    </body>
+
+</html> -->

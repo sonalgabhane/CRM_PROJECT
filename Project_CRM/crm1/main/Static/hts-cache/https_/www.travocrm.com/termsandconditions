@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--
+<script type="text/javascript">
+window.GUMLET_CONFIG = {
+hosts: [{
+current: "www.travocrm.com",
+gumlet: "demotravo.gumlet.io"
+}],
+lazy_load: true
+};
+(function(){d=document;s=d.createElement("script");s.src="https://cdn.gumlet.com/gumlet.js/2.1/gumlet.min.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>
+-->
+
+
+<script type="text/javascript">
+    window.GUMLET_CONFIG = {
+        hosts: [{
+            current: "https://travocrm.com",
+            gumlet: "demotravo.gumlet.io"
+        }],
+        lazy_load: true
+    };
+    (function(){d=document;s=d.createElement("script");s.src="https://cdn.gumlet.com/gumlet.js/2.1/gumlet.min.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>  
+
+	<!-- Meta Data -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>TravoCRM - A SMART CRM for Travel companies </title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://www.travocrm.com/assets/img/fav/fav.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://www.travocrm.com/assets/img/fav/fav.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://www.travocrm.com/assets/img/fav/fav.png">
+	<link rel="mask-icon" href="https://www.travocrm.com/assets/img/fav/safari-pinned-tab.svg" color="#fa7070">
+
+	<meta name="msapplication-TileColor" content="#fa7070">
+	<meta name="theme-color" content="#fa7070">  
+
+	<!-- Dependency Styles -->
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/fontawesome/css/all.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/swiper/css/swiper.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/wow/css/animate.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/magnific-popup/css/magnific-popup.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/components-elegant-icons/css/elegant-icons.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/simple-line-icons/css/simple-line-icons.css" type="text/css">
+
+
+	<!-- Site Stylesheet -->
+	<link rel="stylesheet" href="https://www.travocrm.com/assets/css/app.css" type="text/css">
+
+	<!-- Google Web Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- jquery-->
+
+	<link rel="stylesheet" id="theme-style" href="https://www.travocrm.com/css/select2.min.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">   -->
+
+		
+<!--	<script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <style>
+  /*.ui-autocomplete-loading {*/
+  /*  background: white url("https://jqueryui.com/resources/demos/autocomplete/images/ui-anim_basic_16x16.gif") right center no-repeat;*/
+  /*}*/
+
+  .ui-autocomplete {
+      z-index: 100;
+      background: white url("https://jqueryui.com/resources/demos/autocomplete/images/ui-anim_basic_16x16.gif") right center no-repeat;
+      text-decoration: none;
+  }
+
+    </style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102273521-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-102273521-1');
+</script>
+
+
+</head>
+
+<body id="home-version-1" class="home-version-4" data-style="default">
+
+	<a href="#main_content" data-type="section-switch" class="return-to-top">
+		<i class="fa fa-chevron-up"></i>
+	</a>
+	<!--
+	<div class="page-loader">
+		<div class="loader">
+			
+			<div class="blobs">
+				<div class="blob-center"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+						<feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+						<feBlend in="SourceGraphic" in2="goo" />
+					</filter>
+				</defs>
+			</svg>
+
+		</div>
+	</div>-->
+	<!-- /.page-loader -->
+
+	<div id="main_content">
+
+
+		<!--=========================-->
+		<!--=        Navbar         =-->
+		<!--=========================-->
+		<header class="site-header header-six header_trans-fixed" data-top="992">
+			<div class="container">
+				<div class="header-inner">
+					<div class="toggle-menu">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+					<!-- /.toggle-menu -->
+
+					<div class="site-mobile-logo">
+						<a href="https://www.travocrm.com" class="logo">
+							<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="main-logo">
+							<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="sticky-logo">
+						</a>
+					</div>
+
+					<nav class="site-nav">
+						<div class="close-menu">
+							<span>Close</span>
+							<i class="ei ei-icon_close"></i>
+						</div>
+
+						<div class="site-logo">
+							<a href="https://www.travocrm.com" class="logo">
+								<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="main-logo">
+								<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="sticky-logo">
+							</a>
+						</div>
+						<!-- /.site-logo -->
+
+						<div class="menu-wrapper" data-top="992">
+							<ul class="site-main-menu">
+								<!--<li class="menu-item-has-children">
+									<a href="index.html">Home</a>
+								</li>-->
+								<li><a href="https://www.travocrm.com/pricing">Pricing</a></li>
+								<li><a href="https://www.travocrm.com/solutions/travocrm">Features</a></li>
+								<!--<li class="menu-item-has-children">
+									<a href="blog.html">Solutions</a>
+									<ul class="sub-menu">
+										<li><a href="https://www.travocrm.com/solutions/travocrm">TravoCRM</a></li>
+										<li><a href="https://www.travocrm.com/solutions/travocrmwebsite">TravoCRM+Website</a></li>
+									</ul>
+								</li>-->
+								<li><a href="https://www.travocrm.com/clients">Clients</a></li>
+								<!--<li><a href="https://www.travocrm.com/">Support</a></li>
+								<li><a href="https://www.travocrm.com/">Resources</a></li>-->
+								<li><a href="https://www.travocrm.com/contactus">Contact</a></li>
+								
+							</ul>
+						</div>
+						<!-- /.menu-wrapper -->
+						<div class="nav-right">
+							<a href="https://app.travocrm.com/#/login" class="login-btn"><i class="ei ei-icon_lock_alt"></i>Login</a>
+							<a href="https://app.travocrm.com/#/signup" class="login-btn"><i class="ei ei-icon_lock_alt"></i>Signup</a>
+							<a href="https://www.travocrm.com/calendy" target="_blank" class="nav-btn">Schedule a Demo</a>
+						</div>
+
+					</nav><!-- /.site-nav -->
+				</div><!-- /.header-inner -->
+			</div><!-- /.container -->
+		</header><!-- /.site-header -->
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=919096373998&text=Hello,%20I%20have%20visited%20your%20website%20and%20would%20like%20to%20take%20a%20demo%20of%20the%20software" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a> 
+<style>
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:30px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index:999;
+}
+
+.my-float{
+	margin-top:16px;
+}
+</style>
+<div class="terms">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="help font contact-font" style="text-align:center;">Terms and Conditions</h2>
+			</div>
+			<div class="col-md-12" style="padding-top:20px;">
+				<h4>1. Provision of Purchased Services:</h4>
+				<p>We will make the services available to you pursuant to this terms and conditions agreement and the applicable order forms, (b) use commercially reasonable efforts to make the online services available 24 hours a day, 7 days a week, except for: (i) planned downtime (of which we shall give advance electronic notice), and (ii) any unavailability caused by circumstances beyond our reasonable control, including, for example, an act of god, act of government, flood, fire, earthquake, civil unrest, act of terror, strike or other labour problem (other than one involving our employees), internet service provider failure or delay, third-party application, or denial of service attack. We will be responsible for the performance of our personnel (including our employees and contractors) and their compliance with our obligations under this agreement, except as otherwise specified herein.</p>
+			</div>
+			<div class="col-md-12" >
+				<h4>2. Acceptable Use:</h4>
+				<p>You and your users shall use the services for your internal business
+purposes. You shall not allow any unauthorized user to access or use the service. You shall
+not (a) license, sublicense, sell, resell, rent, lease, transfer, assign, distribute, timeshare or
+otherwise commercially exploit or make the service available to any third party, other than as
+expressly permitted by this agreement; (b) copy, modify or distribute any portion of the
+service; (c) use the service to process data on behalf of any third party; or (d) use the service
+in any unlawful manner or in any manner that interferes with or disrupts the integrity or
+performance of the service and its components.</p>
+			</div>
+			<div class="col-md-12" >
+				<h4>3. Technical Support:</h4>
+				<p>We will provide applicable standard technical support for the services
+to you at no additional charge. The support is provided through E-mail and phone. Please
+allow us 24- 48 working hours to respond back. Timings for support are 10:30 AM to 07:00
+PM IST Monday to Friday. Govt. holidays are applicable.</p>
+			</div>
+			<div class="col-md-12" >
+				<h4>4. Subscription Terms:</h4>
+				<p>Subscription fees are subject to change upon 30 days’ notice from us. Any change or increase in charges will not apply until the expiry of your then current
+subscription term.Number of user subscriptions cannot be increased other than
+specified users at the time purchasing TravoCRM, but may be increased through contacting
+us with an additional cost.</p>
+			</div>
+			<div class="col-md-12" >
+				<h4>5. Subscription Term Renewal:</h4>
+				<p>You have to pay in advance before the end of current term to renew the subscription for additional term. We will allow a 7-days grace period (after effective end date of your current term) prior to suspending your account for non-payment of renewal subscription fees. Your account will remain suspended for 30 days in which you will be able to pay renewal subscription fees in full and renew your subscription. If you have not paid the renewal subscription fees in 30 days after the effective end date of your current term, company reserves the right to terminate your subscription account. We will give you at least 7 days prior notice before such termination.The amount will not be refunded in any case.</p>
+			</div>
+			<div class="col-md-12" >
+				<h4>6. Reservation of Rights:</h4>
+				<p>Except for the subscription granted hereunder, nothing in this
+agreement gives you any right, title or interest to the TravoCRM platform or related support.
+You shall not: (i) modify, translate, or create derivative works based on the TravoCRM
+platform; (ii) create any link to the TravoCRM Platform or frame or mirror any content
+contained or accessible from the TravoCRM platform, (iii) reverse engineer, de-compile,
+disassemble or otherwise attempt to discover the source code or underlying ideas or
+algorithms of the TravoCRM platform; (iv) or access the TravoCRM platform in order to (a)
+build a competitive product or service, or (b) copy any ideas, features, functions or graphics of the TravoCRM platform.</p>
+			</div>
+			<div class="col-md-12" >
+				<h4>7. Ownership & Collection of Your Data:</h4>
+				<p>You are responsible for the accuracy, quality and legality of your data and the means by which you acquired your data. TravoCRM will not be
+responsible for any loss or disclosure of your data (or any damages related thereto) resulting
+from you or your users’ failure to adequately secure their user identification and passwords or
+otherwise.</p>
+			</div>
+			<div class="col-md-12" >
+				<h4>8. Your Data Portability and Deletion:</h4>
+				<p>Upon request by you made within 30 days after the effective date of termination or expiration of this agreement, we will make your data
+available to you for export or download as Excel (XLS) files. After such 30-day
+period, We will have no obligation to maintain or provide any your data, and will thereafter
+delete or destroy all copies of your data in our systems or otherwise in our possession or
+control, unless legally prohibited. In the case you wish your data to be completely and
+permanently deleted immediately after termination, please send an email to our support team
+at info@travocrm.com .</p>
+			</div>
+			<div class="col-md-12" style="padding-bottom:20px;">
+				<h4>9. TravoCRM License and Credit:</h4>
+				<p>Client hereby grants to company (Futurica Technologies Pvt Ltd a non-exclusive and limited license to use client’s trade names, logos and other trademarks in connection with company’s advertising, marketing and promotion of its products and services. Client agrees that any unsolicited positive feedback client provides to company may be used in any company marketing and/or advertising materials (i.e., customer testimonials).</p>
+			</div>
+		</div>
+	</div>
+</div>
+		<!--=========================-->
+		<!--=        Footer         =-->
+
+		<!--=========================-->
+		<!--
+<script>
+  function initFreshChat() {
+    window.fcWidget.init({
+      token: "68222613-8ad8-485c-b1e4-02d389799ffe",
+      host: "https://wchat.in.freshchat.com"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.in.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>  -->
+		<footer id="footer" class="footer-hosting">
+			<div class="container">
+				<div class="footer-inner">
+					<div class="row wow fadeInUp">
+						<div class="col-lg-4 col-md-6 col-sm-6"> 
+							<div class="widget footer-widget widget-about">
+								<a href="#" class="footer-logo"><img src="https://www.travocrm.com/assets/img/logo.png" width="200" alt="Travocrm"></a>
+								<p class="copyright">
+									© 2017-2021 TravoCRM,<br> A product by Futurica Technologies Pvt Ltd<br>All rights reserved.
+								</p>
+
+								<h4 class="footer-title">Social</h4>
+								<ul class="social-share-link">
+									<li><a href=" https://www.facebook.com/travocrmbyfuturica" class="share_facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+									<!--<li><a href="#" class="share_twitter"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#" class="share_pinterest"><i class="fab fa-pinterest-p"></i></a></li>-->
+									<li><a href="https://www.linkedin.com/company/travocrm" class="share_linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+								</ul>
+
+
+							</div>
+							<!-- /.widget footer-widget -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 col-sm-6 -->
+
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class="widget footer-widget">
+								<!--<h3 class="widget-title">About Us</h3>-->
+
+								<ul class="footer-menu">
+									<li><a href="https://app.travocrm.com/#/login" target="_blank">Login</a></li>
+									<li><a href="https://app.travocrm.com/#/signup" target="_blank">Sign Up</a></li>
+									<li><a href="https://www.travocrm.com/termsandconditions" target="_blank">Terms and Conditions</a></li>
+									<li><a href="https://www.travocrm.com/privacypolicy" target="_blank">Privacy Policy</a></li>
+								</ul>
+							</div>
+							<!-- /.widget footer-widget -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 -->
+
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class="widget footer-widget">
+								<!--<h3 class="widget-title">My Account</h3>-->
+
+								<ul class="footer-menu">
+									<li><a href="https://www.travocrm.com/pricing">Pricing</a></li>
+									<li><a href="https://www.travocrm.com/solutions/travocrm">TravoCRM</a></li>
+									<li><a href="https://www.travocrm.com/">Support</a></li>
+									<li><a href="https://www.travocrm.com/">Resources</a></li>
+								</ul>
+							</div>
+							<!-- /.widget footer-widget -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 -->
+
+						<div class="col-lg-2 col-md-6 col-6">
+							<div class="widget footer-widget">
+								<!--<h3 class="widget-title">Solutions</h3>-->
+
+								<ul class="footer-menu">
+									<li><a href="https://www.travocrm.com/about">About Us</a></li>
+									<li><a href="https://www.travocrm.com/clients">Clients</a></li>
+									<li><a href="https://www.travocrm.com/contactus">Contact</a></li>
+								</ul>
+							</div>
+							<!-- /.widget footer-widget -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 -->
+					</div>
+					<!-- /.row -->
+
+				</div><!-- /.footer-inner -->
+			</div><!-- /.container -->
+			<div class="footer-bottom-shape">
+				<img src="https://www.travocrm.com/media/footer/marketing_footer1.png" alt="saaspik">
+			</div>
+		</footer><!-- /#footer -->
+
+
+	</div><!-- /#site -->
+
+	<!-- Dependency Scripts -->
+
+	
+	<!--<script src="https://www.travocrm.com/dependencies/jquery/jquery.min.js"></script> -->
+	<script src="https://www.travocrm.com/dependencies/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/swiper/js/swiper.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/jquery.appear/jquery.appear.js"></script>
+	<script src="https://www.travocrm.com/dependencies/wow/js/wow.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/countUp.js/countUp.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/jquery.parallax-scroll/js/jquery.parallax-scroll.js"></script>
+	<script src="https://www.travocrm.com/dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/gmap3/js/gmap3.min.js"></script>
+	<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&#038;ver=2.1.6'></script>
+	
+	
+		
+
+
+	<!-- Site Scripts -->
+	<script src="https://www.travocrm.com/assets/js/header.js"></script>
+	<script src="https://www.travocrm.com/assets/js/app.js"></script>
+
+
+<script src="https://www.travocrm.com/js/select2.min.js"></script>
+<!-- this file is commented to avoid error PR04012022--> 
+<!--<script src="//code.jquery.com/jquery-1.12.4.js"></script>-->
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+<!-- cookie code -->
+<!--
+<div class="cookie">
+  <p class="cookie__message">We use cookies, just to track visits to our website, we store no personal details.</p>
+  <button class="cookie__accept">Accept cookies</button>
+  <button class="cookie__decline">Decline cookies</button>
+</div>
+-->
+<style>
+
+
+.cookie {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 1rem 10%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  bottom:0;
+  z-index:300;
+}
+@media (max-width: 32rem) {
+  .cookie {
+    text-align: center;
+  }
+}
+.cookie .cookie__message {
+  padding: 0.2rem 0;
+  margin: 0;
+  display: inline-block;
+}
+@media (max-width: 64rem) {
+  .cookie .cookie__message {
+    width: 100%;
+  }
+}
+.cookie .cookie__accept,
+.cookie .cookie__decline,
+.cookie .cookie__link {
+  padding: 0.2rem 0.8rem;
+  border: 0;
+  background: white;
+  margin: 0 0.5rem;
+  transition: background 150ms ease;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.cookie .cookie__accept:focus,
+.cookie .cookie__decline:focus,
+.cookie .cookie__link:focus {
+  outline: none;
+}
+@media (max-width: 64rem) {
+  .cookie .cookie__accept,
+.cookie .cookie__decline,
+.cookie .cookie__link {
+    margin: 0.5rem 1rem 0.5rem 0;
+  }
+}
+@media (max-width: 32rem) {
+  .cookie .cookie__accept,
+.cookie .cookie__decline,
+.cookie .cookie__link {
+    width: 100%;
+  }
+}
+.cookie .cookie__accept {
+  background: #3498db;
+  color: #ecf0f1;
+}
+.cookie .cookie__accept:hover, .cookie .cookie__accept:focus {
+  background: #57aae1;
+}
+.cookie .cookie__accept:active {
+  background: #68b2e4;
+}
+.cookie .cookie__decline {
+  background: #1e2a36;
+  color: #ecf0f1;
+}
+.cookie .cookie__decline:hover, .cookie .cookie__decline:focus {
+  background: #233140;
+}
+.cookie .cookie__decline:active {
+  background: #1e2a36;
+}
+.cookie .cookie__link {
+  color: #3498db;
+  background: none;
+  padding: 0.2rem 0;
+  margin: 0;
+}
+@media (max-width: 64rem) {
+  .cookie .cookie__link {
+    margin: 0.5rem 0;
+  }
+}
+.cookie .cookie__link:hover, .cookie .cookie__link:focus {
+  text-decoration: underline;
+}
+@media (max-width: 32rem) {
+  .cookie .cookie__link {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
+<script>
+function cookie() {
+
+  var cookieAcceptButton = $('.cookie__accept'),
+      cookieDeclineButton = $('.cookie__decline'),
+      cookieAlert = $('.cookie');
+
+  cookieAcceptButton.on('click', function() {
+    cookieAlert.fadeOut('slow');
+  });
+  
+  cookieDeclineButton.on('click', function() {
+    cookieAlert.fadeOut('slow');
+  });
+  
+}
+
+$(function() {
+  cookie();  
+});
+</script>
+
+
+
+</body>
+  
+</html>

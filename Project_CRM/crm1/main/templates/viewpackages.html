@@ -1,0 +1,340 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block main-content %}
+
+<div class="main-content">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="head d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                            <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z"/>
+                        </svg>
+                        <div style="margin-left:5%">
+                            <h4 style="line-height: 0.5;">View packages</h4>
+                            <a>Packages information to make it useful</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7"></div>
+        <div class="col-md-1">
+            <a href={% url 'packages' %}><i class="bi bi-arrow-return-left">Back</i></a>
+        </div>
+    </div>
+    <div class="line">
+
+    </div>
+    <div>
+        <h4 style="font-size: 15px;"><b>Package Information</b></h4>
+    </div>
+
+    <div class="line">
+
+    </div>
+
+    <form action="" method="GET">
+        {% csrf_token %}
+        
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Package Name</h5>
+                <p>{{p2.packagename}}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Country</h5>
+                <p>{{p2.country}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Destinations</h5>
+                {% for i in p2.destinations.all %}
+                    <p> {{ i.destination }}</p>
+                {% endfor %}
+            </div>
+            <div class="col-md-6">
+                <h5>Days</h5>
+                <p>{{p2.days}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Detailed Itenerary</h5>
+                <p> {{ p2.detailed_itenerary }}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Hotel Details</h5>
+                <p>{{p2.hotel_details}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Tag</h5>
+                <p>{{p2.tags}}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Meal Type</h5>
+                <p>{{p2.mealtype}}</p>
+            </div>
+        </div>
+            
+        <div class="div" style="margin-bottom:1%">
+            <h4>Other</h4>
+        </div>
+        <div class="line"> 
+
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Free WiFi</h5>
+                <p>{% if p2.free_wi_fi == True %}
+                    <h1><i class="bi bi-check"></i> </h1>
+                    {% else %}
+                    <i class="bi bi-x"></i>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Airport Transfers-Private</h5>
+                <p>{% if p2.airport_transfers_private == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Airport Transfers-SIC</h5>
+                <p>{% if p2.airport_transfers_sic == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Travel Insurance</h5>
+                <p>{% if p2.travel_insurance == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Visa</h5>
+                <p>{% if p2.visa == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Inter Hotel Transfer Private</h5>
+                <p>{% if p2.Inter_hotel_transfer_private == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Sightseeing Transfer Private</h5>
+                <p>{% if p2.sightseeing_transfer_private == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Sightseeing Transfer SIC</h5>
+                <p>{% if p2.sightseeing_transfer_sic == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Inter Hotel Transfer SIC</h5>
+                <p>{% if p2.Inter_hotel_transfer_sic == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Candle Light Dinner</h5>
+                <p>{% if p2.candlelight_dinner == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Bed Decorations</h5>
+                <p>{% if p2.bed_decorations == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Honeymoon Cake</h5>
+                <p>{% if p2.honeymoon_cake == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Private Ferry</h5>
+                <p>{% if p2.private_ferry == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Private Cruise</h5>
+                <p>{% if p2.private_cruise == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Scuba Diving</h5>
+                <p>{% if p2.scuba_diving == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Parasailing</h5>
+                <p>{% if p2.parasailing == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Sea Walk</h5>
+                <p>{% if p2.sea_walk == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Photoshoot for Couple</h5>
+                <p>{% if p2.photoshoot_for_couple == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Candle Light Dinner With Wine</h5>
+                <p>{% if p2.candle_light_dinner_with_wine == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Candle Light Dinner Without Wine</h5>
+                <p>{% if p2.candle_light_dinner_without_wine == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Jet Ski</h5>
+                <p>{% if p2.jet_ski == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Snorkeling</h5>
+                <p>{% if p2.snorkeling == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Airport Transfers-Speed Boat /Sea Plane</h5>
+                <p>{% if p2.airport_transfers_speed_boat_seaplane == True%}
+                    <h1><i class="bi bi-check"></i></h1>
+                    {% else %}
+                    <h1><i class="bi bi-x"></i><h1>
+                    {% endif %}
+                </p>
+            </div>
+            
+        </div>
+        <div class="line"></div>
+        <div class="row">
+            <h5>Image</h5>
+            <p>{{p2.image}}</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Inclusive</h5>
+                <p>{{p2.inclusive}}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Exclusive</h5>
+                <p>{{p2.exclusive}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Terms and Conditions</h5>
+                <p>{{p2.terms_and_conditions}}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Cancellation Policy</h5>
+                <p>{{p2.cancellation_policy}}</p>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+
+{% endblock main-content %}

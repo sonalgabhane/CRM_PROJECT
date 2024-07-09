@@ -1,0 +1,77 @@
+{% load static %}
+{%load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+
+    {% comment %} {% if not user.is_authenticated %} {% endcomment %}
+    <div class="container-fluid">
+        <div class="row my-5" style="display:flex; text-align:center; align-items:center;">
+            <div class="col-md-5 ">
+                <div class="row my-5" >
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-10">
+                        
+                        <div style="padding: 20px; background-color:gray; border:1px solid black; box-shadow:2px 2px 8px gray;">
+                            <form action="{% url 'login' %}" method="post">
+                                {% csrf_token %}
+                                <div class="site-mobile-logo" style="display: flex; justify-content:center">
+                                    <a href="index.html" class="logo">
+                                        <img src="{% static 'assets/img/tra.png' %}" width="100px" ,alt="Travocrm"
+                                            class="main-logo">
+                                    </a>
+                                </div>
+                                <h5 class="texzt-dark text-center p-2 m-1">Login to Your Account</h5>
+                                    <div class="form-outline mb-4 m-4">
+                      
+                                      {{ form|crispy  }}
+                                    </div> 
+                                <button type="submit" class="text-light w-100 h-100 "
+                                    style="border-radius:5px; background:#043a0c">Login</button>
+                                    <div class="d-flex justify-content-between">
+                                        <a href="/signup/"class="text-decaration-none text-light">New User? Create a New Account</a>
+                                    </div>
+                            </form>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 ">
+                <div class="promo-mockup-five text-center">
+                    <img src="{% static 'media/animated/pricebanner.png' %}" class="wow fadeInDown"
+                                alt="mockup">
+                </div>
+            </div>
+        </div>
+    </div>
+    {% comment %} {% else %}
+    <input type="hidden" id="Url" onload="dashboard()" myURL="{% url 'dashboard' %}" />
+    <br>
+    <div class='container col-5 alert alert-danger text-center'>
+      <a href="{% url 'dashboard' %}" class='text-center'> go to dashboard</a>
+    
+    </div> 
+    {% endif %} {% endcomment %}
+</div>
+
+
+
+
+</body>

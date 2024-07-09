@@ -1,0 +1,343 @@
+{% extends 'index.html' %}
+{% load static %}
+{%load crispy_forms_tags %}
+{% block main-content %}
+
+<div class="main-content">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="head d-flex">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                class="bi bi-airplane" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z" />
+                            </svg>
+                        </div>
+
+                        <div style="margin-left:5%">
+
+                            <h4 style="line-height: 0.5;">Create Package</h4>
+                            <a>Create your own customized packages for customer.</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7"></div>
+        <div class="col-md-1">
+            <a href={% url 'packages' %}><i class="bi bi-arrow-return-left">Back</i></a>
+        </div>
+    </div>
+    <div class="line">
+
+    </div>
+
+    <div class="row" style="color:black;">
+        <form action="" method="POST" enctype="multipart/form-data">
+
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-md-6">
+                    {{form.packagename|as_crispy_field}}
+                </div>
+                <div class="col-md-6">
+                    {{form.country|as_crispy_field}}
+                </div>
+            </div>
+            <div class="row">
+                <div class='col-6' id="form-container">
+                    {{bird_formset.management_form}}
+                    {% for forms in bird_formset %}
+                    <div class="bird-form">
+                        {{forms.destination|as_crispy_field}}
+                    </div>
+                    {% endfor %}
+                    <button id="add-form" type="button">Add Another</button>
+                </div>
+                <div class="col-md-6">
+                    <div id="div_id_days" class="mb-3">
+                        <label for="id_days" class="form-label requiredField">
+                            Days<span class="asteriskField">*</span>
+                        </label>
+                        <select name="days" class="select form-select" id="id_days" style="height:43px">
+                            <option value="1" selected="">1</option>
+
+                            <option value="2">2</option>
+
+                            <option value="3">3</option>
+
+                            <option value="4">4</option>
+
+                            <option value="5">5</option>
+
+                            <option value="6">6</option>
+
+                            <option value="7">7</option>
+
+                            <option value="8">8</option>
+
+                            <option value="9">9</option>
+
+                            <option value="10">10</option>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="div_id_detailed_itenerary" class="mb-3">
+                        <label for="id_detailed_itenerary" class="form-label">
+                            Detailed itenerary
+                        </label>
+                        <textarea name="detailed_itenerary" cols="40" rows="1" class="textarea form-control"
+                            id="id_detailed_itenerary"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="div_id_hotel_details" class="mb-3">
+                        <label for="id_hotel_details" class="form-label">
+                            Hotel details
+                        </label>
+                        <textarea name="hotel_details" cols="40" rows="1" maxlength="500" class="textarea form-control"
+                            id="id_hotel_details"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div id="div_id_tags" class="mb-3">
+                        <label for="id_tags" class="form-label requiredField">
+                            Tags<span class="asteriskField">*</span>
+                        </label>
+                        <select name="tags" class="select form-select" id="id_tags" style="height: 38px;">
+                            <option value="All" selected="">All</option>
+
+                            <option value="Family">Family</option>
+
+                            <option value="Honeymoon">Honeymoon</option>
+
+                            <option value="Individual">Individual</option>
+
+                            <option value="Adventure">Adventure</option>
+
+                            <option value="Group">Group</option>
+
+                            <option value="Women Only">Women Only</option>
+
+                            <option value="Domestic">Domestic</option>
+
+                            <option value="International">International</option>
+
+                            <option value="Beaches">Beaches</option>
+
+                            <option value="Weekend">Weekend</option>
+
+                            <option value="Heritage">Heritage</option>
+
+                            <option value="Wildlife">Wildlife</option>
+
+                            <option value="Jungle Safari">Jungle Safari</option>
+
+                            <option value="Student">Student</option>
+
+                            <option value="Pilgrimage">Pilgrimage</option>
+
+                            <option value="Popular">Popular</option>
+
+                            <option value="Trending">Trending</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="div_id_mealtype" class="mb-3">
+                        <label for="id_mealtype" class="form-label requiredField">
+                            Mealtype<span class="asteriskField">*</span>
+                        </label>
+                        <select name="mealtype" class="select form-select" id="id_mealtype" style="height:38px;">
+                            <option value="AP(Full Board)">AP(Full Board)</option>
+
+                            <option value="MAP(Half Board)">MAP(Half Board)</option>
+
+                            <option value="CP(Only Breakfast)">CP(Only Breakfast)</option>
+
+                            <option value="EP(No Meal)">EP(No Meal)</option>
+
+                            <option value="Any(Any type of meal)">Any(Any type of meal)</option>
+
+                            <option value="AI(All Inclusive)" selected="">AI(All Inclusive)</option>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <h3>Other </h3>
+            <div class="row">
+                <div class="col-md-3">
+                    {{form.free_wi_fi | as_crispy_field}}
+                </div>
+                <div class="col-md-3">
+                    {{form.airport_transfers_private | as_crispy_field}}
+                </div>
+                <div class="col-md-3">
+                    {{form.airport_transfers_sic | as_crispy_field}}
+                </div>
+                <div class="col-md-3">
+                    {{form.travel_insurance | as_crispy_field}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    {{form.visa | as_crispy_field}}
+                </div>
+                <div class="col-md-3">
+                    {{form.Inter_hotel_transfer_private | as_crispy_field}}
+                </div>
+                <div class="col-md-3">
+                    {{form.sightseeing_transfer_private | as_crispy_field}}
+                </div>
+                <div class="col-md-3">
+                    {{form.sightseeing_transfer_sic | as_crispy_field}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    {{form.Inter_hotel_transfer_sic | as_crispy_field}}
+                </div>
+                <div class="col-md-3">
+                    {{form.candlelight_dinner | as_crispy_field}}
+                </div>
+                <div class="col-md-3">
+                    {{form.bed_decorations | as_crispy_field}}
+                </div>
+                <div class="col-md-3">
+                    {{form.honeymoon_cake | as_crispy_field}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    {{form.private_ferry | as_crispy_field}}
+                </div>
+                <div class="col-md-3">
+                    {{form.private_cruise | as_crispy_field}}
+                </div>
+                <div class="col-md-3">
+                    {{form.scuba_diving | as_crispy_field}}
+                </div>
+                <div class="col-md-3">
+                    {{form.parasailing | as_crispy_field}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    {{form.sea_walk | as_crispy_field}}
+                </div>
+                <div class="col-md-3">
+                    {{form.photoshoot_for_couple | as_crispy_field}}
+                </div>
+                <div class="col-md-3">
+                    {{form.candle_light_dinner_with_wine | as_crispy_field}}
+                </div>
+                <div class="col-md-3">
+                    {{form.candle_light_dinner_without_wine | as_crispy_field}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    {{form.jet_ski | as_crispy_field}}
+                </div>
+                <div class="col-md-3">
+                    {{form.snorkeling | as_crispy_field}}
+                </div>
+                <div class="col-md-6">
+                    {{form.airport_transfers_speed_boat_seaplane | as_crispy_field}}
+                </div>
+            </div>
+            <div class="row">
+                {{form.image | as_crispy_field}}
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="div_id_inclusive" class="mb-3">
+                        <label for="id_inclusive" class="form-label">
+                            Inclusive
+                        </label>
+                        <textarea name="inclusive" cols="40" rows="1" maxlength="1000" class="textarea form-control"
+                            id="id_inclusive"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="div_id_exclusive" class="mb-3">
+                        <label for="id_exclusive" class="form-label">
+                            Exclusive
+                        </label>
+                        <textarea name="exclusive" cols="40" rows="1" maxlength="1000" class="textarea form-control"
+                            id="id_exclusive"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="div_id_terms_and_conditions" class="mb-3">
+                        <label for="id_terms_and_conditions" class="form-label">
+                            Terms and conditions
+                        </label>
+                        <textarea name="terms_and_conditions" cols="40" rows="1" maxlength="1000"
+                            class="textarea form-control" id="id_terms_and_conditions"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="div_id_cancellation_policy" class="mb-3">
+                        <label for="id_cancellation_policy" class="form-label">
+                            Cancellation policy
+                        </label>
+                        <textarea name="cancellation_policy" cols="40" rows="1" maxlength="1000"
+                            class="textarea form-control" id="id_cancellation_policy"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="line" style="margin-top: 15px;">
+
+            </div>
+            <div>
+                <button type="submit" class="btn-block"> Add </button>
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        let birdForm = document.querySelectorAll(".bird-form")
+        let container = document.querySelector("#form-container")
+        let addButton = document.querySelector("#add-form")
+        let totalForms = document.querySelector("#id_form-TOTAL_FORMS")
+
+        let formNum = birdForm.length - 1
+        addButton.addEventListener('click', addForm)
+
+        function addForm(e) {
+            e.preventDefault()
+
+            let newForm = birdForm[0].cloneNode(true)
+            let formRegex = RegExp(`form-(\\d){1}-`, 'g')
+
+            formNum++
+            newForm.innerHTML = newForm.innerHTML.replace(formRegex, `form-${formNum}-`)
+            container.insertBefore(newForm, addButton)
+
+            totalForms.setAttribute('value', `${formNum + 1}`)
+        }
+    </script>
+</div>
+
+<div class="line" style="margin-top: 15px;">
+</div>
+</div>
+{%endblock main-content%}

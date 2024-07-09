@@ -1,0 +1,227 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block main-content %}
+
+<div class="main-content">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="head d-flex">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                                <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z"/>
+                              </svg>
+                        </div>
+                        <div style="margin-left:5%">
+                            <h4 style="line-height: 0.5;">View leads</h4>
+                            <a>Leads information to make it useful</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7"></div>
+        <div class="col-md-1">
+            <a href={% url 'leads' %}><i class="bi bi-arrow-return-left">Back</i></a>
+        </div>
+    </div>
+    <div class="line">
+
+    </div>
+    <div>
+        <h4 style="font-size: 15px;"><b>Lead Information</b></h4>
+    </div>
+
+    <div class="line">
+
+    </div>
+
+    <form action="" method="GET">
+        {% csrf_token %}
+        
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Mobile Number</h5>
+                <p>{{data.number}}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Email Address</h5>
+                <p>{{data.email}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>First Name</h5>
+                <p>{{data.firstname}}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Last Name</h5>
+                <p>{{data.lastname}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Address</h5>
+                <p>{{data.address}}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>City</h5>
+                <p>{{data.city}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Alternate Mobile Number</h5>
+                <p>{{data.alternatenumber}}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Alternate Email Address</h5>
+                <p>{{data.alternateemail}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Customer Type</h5>
+                <p>{{data.customertype}}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Lead Source</h5>
+                <p>{{data.leadsource}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Lead Priority</h5>
+                <p>{{data.priority}}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Lead Status</h5>
+                <p>{{data.status}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Trip Type</h5>
+                <p>{{data.triptype}}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Tag</h5>
+                <p>{{data.tags}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>No. of Adults</h5>
+                        <p>{{data.adults}}</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>No. of Child</h5>
+                        <p>{{data.child}}</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>No. of Infants</h5>
+                        <p>{{data.infants}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h5>Assigned to</h5>
+                <p>{{data.assigned}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Assigned User</h5>
+                <p>{{data.assigned}}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Created Date</h5>
+                <p>{{data.created}}</p>
+            </div>
+        </div>
+        <div class="line" style="margin-top: 1px;"></div> 
+        <div class="div" style="margin-bottom:1%">
+            <h4>Enquiry Type</h4>
+        </div>
+        <!-- <div class="line" style="margin-top: 1px;"></div> -->
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Flight Booking</h5>
+                <p>{{data.enquiry_flight_booking}}</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Hotel Booking</h5>
+                <p>{{data.enquiry_hotel_booking}}</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Visa</h5>
+                <p>{{data.enquiry_visa}}</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Travel Insurance</h5>
+                <p>{{data.enquiry_travel_insurance}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Forex</h5>
+                <p>{{data.enquiry_forex}}</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Sightseeing</h5>
+                <p>{{data.enquiry_sightseeing}}</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Transport</h5>
+                <p>{{data.enquiry_transport}}</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Other</h5>
+                <p>{{data.enquiry_other}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Package</h5>
+                <p>{{data.enquiry_package}}</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Customize Package</h5>
+                <p>{{data.enquiry_customize_package}}</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Bus</h5>
+                <p>{{data.enquiry_bus}}</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Train</h5>
+                <p>{{data.enquiry_train}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Passport</h5>
+                <p>{{data.enquiry_passport}}</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Cruise</h5>
+                <p>{{data.enquiry_cruise}}</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Adventure</h5>
+                <p>{{data.enquiry_adventure}}</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Group</h5>
+                <p>{{data.enquiry_group}}</p>
+            </div>
+        </div>
+    </form>
+
+</div>
+
+{% endblock main-content %}

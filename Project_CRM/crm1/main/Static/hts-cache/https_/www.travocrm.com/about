@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--
+<script type="text/javascript">
+window.GUMLET_CONFIG = {
+hosts: [{
+current: "www.travocrm.com",
+gumlet: "demotravo.gumlet.io"
+}],
+lazy_load: true
+};
+(function(){d=document;s=d.createElement("script");s.src="https://cdn.gumlet.com/gumlet.js/2.1/gumlet.min.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>
+-->
+
+
+<script type="text/javascript">
+    window.GUMLET_CONFIG = {
+        hosts: [{
+            current: "https://travocrm.com",
+            gumlet: "demotravo.gumlet.io"
+        }],
+        lazy_load: true
+    };
+    (function(){d=document;s=d.createElement("script");s.src="https://cdn.gumlet.com/gumlet.js/2.1/gumlet.min.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>  
+
+	<!-- Meta Data -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>TravoCRM - A SMART CRM for Travel companies </title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://www.travocrm.com/assets/img/fav/fav.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://www.travocrm.com/assets/img/fav/fav.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://www.travocrm.com/assets/img/fav/fav.png">
+	<link rel="mask-icon" href="https://www.travocrm.com/assets/img/fav/safari-pinned-tab.svg" color="#fa7070">
+
+	<meta name="msapplication-TileColor" content="#fa7070">
+	<meta name="theme-color" content="#fa7070">  
+
+	<!-- Dependency Styles -->
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/fontawesome/css/all.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/swiper/css/swiper.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/wow/css/animate.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/magnific-popup/css/magnific-popup.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/components-elegant-icons/css/elegant-icons.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/simple-line-icons/css/simple-line-icons.css" type="text/css">
+
+
+	<!-- Site Stylesheet -->
+	<link rel="stylesheet" href="https://www.travocrm.com/assets/css/app.css" type="text/css">
+
+	<!-- Google Web Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- jquery-->
+
+	<link rel="stylesheet" id="theme-style" href="https://www.travocrm.com/css/select2.min.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">   -->
+
+		
+<!--	<script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <style>
+  /*.ui-autocomplete-loading {*/
+  /*  background: white url("https://jqueryui.com/resources/demos/autocomplete/images/ui-anim_basic_16x16.gif") right center no-repeat;*/
+  /*}*/
+
+  .ui-autocomplete {
+      z-index: 100;
+      background: white url("https://jqueryui.com/resources/demos/autocomplete/images/ui-anim_basic_16x16.gif") right center no-repeat;
+      text-decoration: none;
+  }
+
+    </style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102273521-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-102273521-1');
+</script>
+
+
+</head>
+
+<body id="home-version-1" class="home-version-4" data-style="default">
+
+	<a href="#main_content" data-type="section-switch" class="return-to-top">
+		<i class="fa fa-chevron-up"></i>
+	</a>
+	<!--
+	<div class="page-loader">
+		<div class="loader">
+			
+			<div class="blobs">
+				<div class="blob-center"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+						<feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+						<feBlend in="SourceGraphic" in2="goo" />
+					</filter>
+				</defs>
+			</svg>
+
+		</div>
+	</div>-->
+	<!-- /.page-loader -->
+
+	<div id="main_content">
+
+
+		<!--=========================-->
+		<!--=        Navbar         =-->
+		<!--=========================-->
+		<header class="site-header header-six header_trans-fixed" data-top="992">
+			<div class="container">
+				<div class="header-inner">
+					<div class="toggle-menu">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+					<!-- /.toggle-menu -->
+
+					<div class="site-mobile-logo">
+						<a href="https://www.travocrm.com" class="logo">
+							<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="main-logo">
+							<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="sticky-logo">
+						</a>
+					</div>
+
+					<nav class="site-nav">
+						<div class="close-menu">
+							<span>Close</span>
+							<i class="ei ei-icon_close"></i>
+						</div>
+
+						<div class="site-logo">
+							<a href="https://www.travocrm.com" class="logo">
+								<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="main-logo">
+								<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="sticky-logo">
+							</a>
+						</div>
+						<!-- /.site-logo -->
+
+						<div class="menu-wrapper" data-top="992">
+							<ul class="site-main-menu">
+								<!--<li class="menu-item-has-children">
+									<a href="index.html">Home</a>
+								</li>-->
+								<li><a href="https://www.travocrm.com/pricing">Pricing</a></li>
+								<li><a href="https://www.travocrm.com/solutions/travocrm">Features</a></li>
+								<!--<li class="menu-item-has-children">
+									<a href="blog.html">Solutions</a>
+									<ul class="sub-menu">
+										<li><a href="https://www.travocrm.com/solutions/travocrm">TravoCRM</a></li>
+										<li><a href="https://www.travocrm.com/solutions/travocrmwebsite">TravoCRM+Website</a></li>
+									</ul>
+								</li>-->
+								<li><a href="https://www.travocrm.com/clients">Clients</a></li>
+								<!--<li><a href="https://www.travocrm.com/">Support</a></li>
+								<li><a href="https://www.travocrm.com/">Resources</a></li>-->
+								<li><a href="https://www.travocrm.com/contactus">Contact</a></li>
+								
+							</ul>
+						</div>
+						<!-- /.menu-wrapper -->
+						<div class="nav-right">
+							<a href="https://app.travocrm.com/#/login" class="login-btn"><i class="ei ei-icon_lock_alt"></i>Login</a>
+							<a href="https://app.travocrm.com/#/signup" class="login-btn"><i class="ei ei-icon_lock_alt"></i>Signup</a>
+							<a href="https://www.travocrm.com/calendy" target="_blank" class="nav-btn">Schedule a Demo</a>
+						</div>
+
+					</nav><!-- /.site-nav -->
+				</div><!-- /.header-inner -->
+			</div><!-- /.container -->
+		</header><!-- /.site-header -->
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=919096373998&text=Hello,%20I%20have%20visited%20your%20website%20and%20would%20like%20to%20take%20a%20demo%20of%20the%20software" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a> 
+<style>
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:30px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index:999;
+}
+
+.my-float{
+	margin-top:16px;
+}
+</style>
+
+    
+		<div class="terms travo-careers text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+					<section class="travo-sec-1b">
+						<h2 class="about-heading">About Us</h2>
+					</section>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+				<div class="row pb-4">
+					<div class="col-md-1"></div>
+					<div class="col-md-10">
+					<section class="travo-sec-1b">
+						<p>TravoCRM is a CRM specifically for travel agents by Futurica Technologies Pvt. Ltd. based in Pune, India.  We are passionate about our work and services that transforms your business. We provide complete IT business solutions to the organizations who would like to have a web presence and tailor made software solutions. Our offshore services are highly preferred because we embrace excellence and our vision is undeviating.<br>
+						We see ourselves as your allies, ready to do whatever it takes to help you make informed decisions and wise investments in digital, in order to advance your cause.</p>
+					</section>
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+			</div>
+			<section class="travo-sec-2 pb-4 pt-4" style="background-color: #f4f4f4!important;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-10">
+							<div class="callout" style="padding: 0 15px;">
+								<h2 class="about-heading">Why Us?</h2>
+								<p style="color:black;">We care a lot about you, your goals, your deadlines and your business. We focus on your problems, your needs, your team, your goals and most importantly your targeted audience. With our digital transformation we help our partners actually bring their strategies to life. Eventually, we help our clients serve their customers and employees better. </p>
+							</div>
+						</div>
+						<div class="col-md-1"></div>
+					</div>
+				
+				<div class="row">
+						<div class="col-md-4">
+							<div class="travo-tile-inner">
+								<div class="title">
+									<img src="https://www.travocrm.com/media/about/g4.png" alt="">
+									  
+									  <p class="about-pera pt-3" style="color:black!important;">A one-stop-hub for all your CRM, websites, web applications and mobile apps.Real-time access to insightful.</p>
+								</div>
+							</div>
+						</div>  
+						<div class="col-md-4">
+							<div class="travo-tile-inner">
+								<div class="title">
+									<img src="https://www.travocrm.com/media/about/g1.png" alt="">
+									
+									<p class="about-pera pt-3" style="color:black!important;">Reduced integration time and IT expenditures with Futurica Technologies, business process improvement.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="travo-tile-inner">
+								<div class="title">
+									<img src="https://www.travocrm.com/media/about/g2.png" alt="">
+									<p class="about-pera pt-3" style="color:black!important;">We view ourselves as a vital part of each of our client’s teams and know our success hinges on them being successful.</p>
+								</div>
+							</div>
+						</div>
+					
+				</div>
+				</div>
+			</section>
+		
+			<section class="sec-3 pb-4 pt-5">
+				<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="img-container growth mb-3">
+							<img src="https://www.travocrm.com/media/about/growth.png" alt="" style="max-width: 200px;">
+						</div>
+					</div>
+					<div class="col-md-8 text-left">
+						<h2>HELPING SMALL TO LARGE BUSINESS GROW</h2>
+						<p style="color:black;text-align:justify;text-align-last:left;">Travel industry is very competitive, so you need some tool to track every footprint and can identify the Genuine Customer. TravoCRM is the right customer relationship management and sales tracking tool that help with measurement, scrutiny, help analyze loses and wins, and support business owners with strategic planning. We help our clients to align their organization around what truly matters.The result is a clear story for how their strategy should translate to customers, with tools that drive their organization in how to change.</p>
+					</div>
+				</div>
+				</div>
+			</section>
+		</div>
+
+		
+
+
+
+		<!--=========================-->
+		<!--=        Footer         =-->
+
+		<!--=========================-->
+		<!--
+<script>
+  function initFreshChat() {
+    window.fcWidget.init({
+      token: "68222613-8ad8-485c-b1e4-02d389799ffe",
+      host: "https://wchat.in.freshchat.com"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.in.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>  -->
+		<footer id="footer" class="footer-hosting">
+			<div class="container">
+				<div class="footer-inner">
+					<div class="row wow fadeInUp">
+						<div class="col-lg-4 col-md-6 col-sm-6"> 
+							<div class="widget footer-widget widget-about">
+								<a href="#" class="footer-logo"><img src="https://www.travocrm.com/assets/img/logo.png" width="200" alt="Travocrm"></a>
+								<p class="copyright">
+									© 2017-2021 TravoCRM,<br> A product by Futurica Technologies Pvt Ltd<br>All rights reserved.
+								</p>
+
+								<h4 class="footer-title">Social</h4>
+								<ul class="social-share-link">
+									<li><a href=" https://www.facebook.com/travocrmbyfuturica" class="share_facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+									<!--<li><a href="#" class="share_twitter"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#" class="share_pinterest"><i class="fab fa-pinterest-p"></i></a></li>-->
+									<li><a href="https://www.linkedin.com/company/travocrm" class="share_linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+								</ul>
+
+
+							</div>
+							<!-- /.widget footer-widget -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 col-sm-6 -->
+
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class="widget footer-widget">
+								<!--<h3 class="widget-title">About Us</h3>-->
+
+								<ul class="footer-menu">
+									<li><a href="https://app.travocrm.com/#/login" target="_blank">Login</a></li>
+									<li><a href="https://app.travocrm.com/#/signup" target="_blank">Sign Up</a></li>
+									<li><a href="https://www.travocrm.com/termsandconditions" target="_blank">Terms and Conditions</a></li>
+									<li><a href="https://www.travocrm.com/privacypolicy" target="_blank">Privacy Policy</a></li>
+								</ul>
+							</div>
+							<!-- /.widget footer-widget -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 -->
+
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class="widget footer-widget">
+								<!--<h3 class="widget-title">My Account</h3>-->
+
+								<ul class="footer-menu">
+									<li><a href="https://www.travocrm.com/pricing">Pricing</a></li>
+									<li><a href="https://www.travocrm.com/solutions/travocrm">TravoCRM</a></li>
+									<li><a href="https://www.travocrm.com/">Support</a></li>
+									<li><a href="https://www.travocrm.com/">Resources</a></li>
+								</ul>
+							</div>
+							<!-- /.widget footer-widget -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 -->
+
+						<div class="col-lg-2 col-md-6 col-6">
+							<div class="widget footer-widget">
+								<!--<h3 class="widget-title">Solutions</h3>-->
+
+								<ul class="footer-menu">
+									<li><a href="https://www.travocrm.com/about">About Us</a></li>
+									<li><a href="https://www.travocrm.com/clients">Clients</a></li>
+									<li><a href="https://www.travocrm.com/contactus">Contact</a></li>
+								</ul>
+							</div>
+							<!-- /.widget footer-widget -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 -->
+					</div>
+					<!-- /.row -->
+
+				</div><!-- /.footer-inner -->
+			</div><!-- /.container -->
+			<div class="footer-bottom-shape">
+				<img src="https://www.travocrm.com/media/footer/marketing_footer1.png" alt="saaspik">
+			</div>
+		</footer><!-- /#footer -->
+
+
+	</div><!-- /#site -->
+
+	<!-- Dependency Scripts -->
+
+	
+	<!--<script src="https://www.travocrm.com/dependencies/jquery/jquery.min.js"></script> -->
+	<script src="https://www.travocrm.com/dependencies/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/swiper/js/swiper.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/jquery.appear/jquery.appear.js"></script>
+	<script src="https://www.travocrm.com/dependencies/wow/js/wow.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/countUp.js/countUp.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/jquery.parallax-scroll/js/jquery.parallax-scroll.js"></script>
+	<script src="https://www.travocrm.com/dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/gmap3/js/gmap3.min.js"></script>
+	<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&#038;ver=2.1.6'></script>
+	
+	
+		
+
+
+	<!-- Site Scripts -->
+	<script src="https://www.travocrm.com/assets/js/header.js"></script>
+	<script src="https://www.travocrm.com/assets/js/app.js"></script>
+
+
+<script src="https://www.travocrm.com/js/select2.min.js"></script>
+<!-- this file is commented to avoid error PR04012022--> 
+<!--<script src="//code.jquery.com/jquery-1.12.4.js"></script>-->
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+<!-- cookie code -->
+<!--
+<div class="cookie">
+  <p class="cookie__message">We use cookies, just to track visits to our website, we store no personal details.</p>
+  <button class="cookie__accept">Accept cookies</button>
+  <button class="cookie__decline">Decline cookies</button>
+</div>
+-->
+<style>
+
+
+.cookie {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 1rem 10%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  bottom:0;
+  z-index:300;
+}
+@media (max-width: 32rem) {
+  .cookie {
+    text-align: center;
+  }
+}
+.cookie .cookie__message {
+  padding: 0.2rem 0;
+  margin: 0;
+  display: inline-block;
+}
+@media (max-width: 64rem) {
+  .cookie .cookie__message {
+    width: 100%;
+  }
+}
+.cookie .cookie__accept,
+.cookie .cookie__decline,
+.cookie .cookie__link {
+  padding: 0.2rem 0.8rem;
+  border: 0;
+  background: white;
+  margin: 0 0.5rem;
+  transition: background 150ms ease;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.cookie .cookie__accept:focus,
+.cookie .cookie__decline:focus,
+.cookie .cookie__link:focus {
+  outline: none;
+}
+@media (max-width: 64rem) {
+  .cookie .cookie__accept,
+.cookie .cookie__decline,
+.cookie .cookie__link {
+    margin: 0.5rem 1rem 0.5rem 0;
+  }
+}
+@media (max-width: 32rem) {
+  .cookie .cookie__accept,
+.cookie .cookie__decline,
+.cookie .cookie__link {
+    width: 100%;
+  }
+}
+.cookie .cookie__accept {
+  background: #3498db;
+  color: #ecf0f1;
+}
+.cookie .cookie__accept:hover, .cookie .cookie__accept:focus {
+  background: #57aae1;
+}
+.cookie .cookie__accept:active {
+  background: #68b2e4;
+}
+.cookie .cookie__decline {
+  background: #1e2a36;
+  color: #ecf0f1;
+}
+.cookie .cookie__decline:hover, .cookie .cookie__decline:focus {
+  background: #233140;
+}
+.cookie .cookie__decline:active {
+  background: #1e2a36;
+}
+.cookie .cookie__link {
+  color: #3498db;
+  background: none;
+  padding: 0.2rem 0;
+  margin: 0;
+}
+@media (max-width: 64rem) {
+  .cookie .cookie__link {
+    margin: 0.5rem 0;
+  }
+}
+.cookie .cookie__link:hover, .cookie .cookie__link:focus {
+  text-decoration: underline;
+}
+@media (max-width: 32rem) {
+  .cookie .cookie__link {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
+<script>
+function cookie() {
+
+  var cookieAcceptButton = $('.cookie__accept'),
+      cookieDeclineButton = $('.cookie__decline'),
+      cookieAlert = $('.cookie');
+
+  cookieAcceptButton.on('click', function() {
+    cookieAlert.fadeOut('slow');
+  });
+  
+  cookieDeclineButton.on('click', function() {
+    cookieAlert.fadeOut('slow');
+  });
+  
+}
+
+$(function() {
+  cookie();  
+});
+</script>
+
+
+
+</body>
+  
+</html>

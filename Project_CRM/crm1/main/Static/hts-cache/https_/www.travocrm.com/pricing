@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--
+<script type="text/javascript">
+window.GUMLET_CONFIG = {
+hosts: [{
+current: "www.travocrm.com",
+gumlet: "demotravo.gumlet.io"
+}],
+lazy_load: true
+};
+(function(){d=document;s=d.createElement("script");s.src="https://cdn.gumlet.com/gumlet.js/2.1/gumlet.min.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>
+-->
+
+
+<script type="text/javascript">
+    window.GUMLET_CONFIG = {
+        hosts: [{
+            current: "https://travocrm.com",
+            gumlet: "demotravo.gumlet.io"
+        }],
+        lazy_load: true
+    };
+    (function(){d=document;s=d.createElement("script");s.src="https://cdn.gumlet.com/gumlet.js/2.1/gumlet.min.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>  
+
+	<!-- Meta Data -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>TravoCRM - A SMART CRM for Travel companies </title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://www.travocrm.com/assets/img/fav/fav.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://www.travocrm.com/assets/img/fav/fav.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://www.travocrm.com/assets/img/fav/fav.png">
+	<link rel="mask-icon" href="https://www.travocrm.com/assets/img/fav/safari-pinned-tab.svg" color="#fa7070">
+
+	<meta name="msapplication-TileColor" content="#fa7070">
+	<meta name="theme-color" content="#fa7070">  
+
+	<!-- Dependency Styles -->
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/fontawesome/css/all.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/swiper/css/swiper.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/wow/css/animate.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/magnific-popup/css/magnific-popup.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/components-elegant-icons/css/elegant-icons.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/simple-line-icons/css/simple-line-icons.css" type="text/css">
+
+
+	<!-- Site Stylesheet -->
+	<link rel="stylesheet" href="https://www.travocrm.com/assets/css/app.css" type="text/css">
+
+	<!-- Google Web Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- jquery-->
+
+	<link rel="stylesheet" id="theme-style" href="https://www.travocrm.com/css/select2.min.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">   -->
+
+		
+<!--	<script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <style>
+  /*.ui-autocomplete-loading {*/
+  /*  background: white url("https://jqueryui.com/resources/demos/autocomplete/images/ui-anim_basic_16x16.gif") right center no-repeat;*/
+  /*}*/
+
+  .ui-autocomplete {
+      z-index: 100;
+      background: white url("https://jqueryui.com/resources/demos/autocomplete/images/ui-anim_basic_16x16.gif") right center no-repeat;
+      text-decoration: none;
+  }
+
+    </style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102273521-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-102273521-1');
+</script>
+
+
+</head>
+
+<body id="home-version-1" class="home-version-4" data-style="default">
+
+	<a href="#main_content" data-type="section-switch" class="return-to-top">
+		<i class="fa fa-chevron-up"></i>
+	</a>
+	<!--
+	<div class="page-loader">
+		<div class="loader">
+			
+			<div class="blobs">
+				<div class="blob-center"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+						<feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+						<feBlend in="SourceGraphic" in2="goo" />
+					</filter>
+				</defs>
+			</svg>
+
+		</div>
+	</div>-->
+	<!-- /.page-loader -->
+
+	<div id="main_content">
+
+
+		<!--=========================-->
+		<!--=        Navbar         =-->
+		<!--=========================-->
+		<header class="site-header header-six header_trans-fixed" data-top="992">
+			<div class="container">
+				<div class="header-inner">
+					<div class="toggle-menu">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+					<!-- /.toggle-menu -->
+
+					<div class="site-mobile-logo">
+						<a href="https://www.travocrm.com" class="logo">
+							<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="main-logo">
+							<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="sticky-logo">
+						</a>
+					</div>
+
+					<nav class="site-nav">
+						<div class="close-menu">
+							<span>Close</span>
+							<i class="ei ei-icon_close"></i>
+						</div>
+
+						<div class="site-logo">
+							<a href="https://www.travocrm.com" class="logo">
+								<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="main-logo">
+								<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="sticky-logo">
+							</a>
+						</div>
+						<!-- /.site-logo -->
+
+						<div class="menu-wrapper" data-top="992">
+							<ul class="site-main-menu">
+								<!--<li class="menu-item-has-children">
+									<a href="index.html">Home</a>
+								</li>-->
+								<li><a href="https://www.travocrm.com/pricing">Pricing</a></li>
+								<li><a href="https://www.travocrm.com/solutions/travocrm">Features</a></li>
+								<!--<li class="menu-item-has-children">
+									<a href="blog.html">Solutions</a>
+									<ul class="sub-menu">
+										<li><a href="https://www.travocrm.com/solutions/travocrm">TravoCRM</a></li>
+										<li><a href="https://www.travocrm.com/solutions/travocrmwebsite">TravoCRM+Website</a></li>
+									</ul>
+								</li>-->
+								<li><a href="https://www.travocrm.com/clients">Clients</a></li>
+								<!--<li><a href="https://www.travocrm.com/">Support</a></li>
+								<li><a href="https://www.travocrm.com/">Resources</a></li>-->
+								<li><a href="https://www.travocrm.com/contactus">Contact</a></li>
+								
+							</ul>
+						</div>
+						<!-- /.menu-wrapper -->
+						<div class="nav-right">
+							<a href="https://app.travocrm.com/#/login" class="login-btn"><i class="ei ei-icon_lock_alt"></i>Login</a>
+							<a href="https://app.travocrm.com/#/signup" class="login-btn"><i class="ei ei-icon_lock_alt"></i>Signup</a>
+							<a href="https://www.travocrm.com/calendy" target="_blank" class="nav-btn">Schedule a Demo</a>
+						</div>
+
+					</nav><!-- /.site-nav -->
+				</div><!-- /.header-inner -->
+			</div><!-- /.container -->
+		</header><!-- /.site-header -->
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=919096373998&text=Hello,%20I%20have%20visited%20your%20website%20and%20would%20like%20to%20take%20a%20demo%20of%20the%20software" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a> 
+<style>
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:30px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index:999;
+}
+
+.my-float{
+	margin-top:16px;
+}
+</style>
+	<!--==========================-->
+		<!--=         Banner         =-->
+		<!--==========================-->
+		<section class="banner banner-nine newnineban">
+			<div class="container">
+				<div class="banner-content-wrap-five">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="banner-content">
+								<h1 class="banner-title wow pixFadeUp" data-wow-delay="0.3s">
+									Pricing <br>
+								</h1>
+
+								<p class="description wow pixFadeUp" data-wow-delay="0.5s">
+									The subscription charges are highly affordable.
+								</p>
+							</div><!-- /.banner-content -->
+						</div>
+						<!-- /.col-lg-6 -->
+
+						<div class="col-lg-6">
+							<div class="promo-mockup-five text-center"> 
+								<ul class="animate-element-five">
+									<li><img src="https://www.travocrm.com/media/animated/pricebanner.png" class="wow fadeInDown" alt="mockup"></li>
+								<!--	<li><img src="media/banner/banner-five/2.png" class="wow zoomIn" data-wow-delay="0.43s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/3.png" class="wow zoomIn" data-wow-delay="0.4s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/4.png" class="wow fadeInRight" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/5.png" class="wow fadeInLeft" data-wow-delay="0.6s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/6.png" class="wow fadeInUp" data-wow-delay="0.7s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/7.png" class="wow fadeInDown" data-wow-delay="0.8s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/8.png" class="wow fadeInDown" data-wow-delay="1s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/9.png" class="wow fadeInRight" alt="mockup"></li>-->
+								</ul>
+							</div><!-- /.promo-mockup -->
+						</div>
+						<!-- /.col-lg-7 -->
+					</div>
+					<!-- /.row -->
+				</div>
+
+				
+			</div><!-- /.container -->
+		</section><!-- /.banner banner-seven -->
+
+
+
+		<!--==============================-->
+		<!--=         Pricin One         =-->
+		<!--==============================-->
+<!--		<section class="pricing-single-one">
+			<div class="container">
+				<div class="row advanced-pricing-table no-gutters wow pixFadeUp" data-wow-delay="0.5s">
+					<div class="col-md-12 col-sm-12">
+						<div class="price-card-block">
+						<div class="card-head-strip">
+						<p>Pricing</p>
+						</div>
+						<div class="card-head">
+						<div class="left">
+						<h3>Professional</h3>
+						<p>
+						Enterprise-grade software for teams of all sizes
+						</p>
+						<button class="btn red-btn open_modal_onclick" type="button" data-toggle="modal" data-target="#myModal">Get Pricing</button>
+						</div>
+						<div class="right">
+						 <div id="price_enter_svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289 275" width="289" height="275" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);"><defs><clipPath id="__lottie_element_2"><rect width="289" height="275" x="0" y="0"></rect></clipPath></defs><g clip-path="url(#__lottie_element_2)"><g class="ai" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><image width="289px" height="275px" preserveAspectRatio="xMidYMid slice" xlink:href="https://d3ml3b6vywsj0z.cloudfront.net/website/v2/animation_data/pricing_enterprise/images/img_2.png"></image></g><g class="ai" style="display: block;" transform="matrix(1,0,0,1,0,0)" opacity="1"><image width="289px" height="275px" preserveAspectRatio="xMidYMid slice" xlink:href="https://d3ml3b6vywsj0z.cloudfront.net/website/v2/animation_data/pricing_enterprise/images/img_1.png"></image></g><g class="ai" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><image width="289px" height="275px" preserveAspectRatio="xMidYMid slice" xlink:href="https://d3ml3b6vywsj0z.cloudfront.net/website/v2/animation_data/pricing_enterprise/images/img_0.png"></image></g></g></svg></div>
+						</div>
+						</div>
+						<div class="card-content">
+						<div class="card-content-container">
+						<div class="card-content-list-block">
+							<div class="card-content-list">
+							<h5 class="card-content-list-head">Usage</h5>
+							<ul class="list">
+								<li>
+									<span class="left">Android and iOS mobile apps</span>
+									<span class="right text-right">Custom </span>
+								</li>
+								<li>
+									<span class="left">Manage customer requirements effectively</span>
+									<span class="right text-right">Custom </span>
+								</li>
+								<li>
+									<span class="left">Create unique day-wise itinerary & quotations within minutes in PDF Format</span>
+									<span class="right text-right">Custom </span>
+								</li>
+								<li>
+									<span class="left">Generate GST invoices, receipts and credit notes</span>
+									<span class="right text-right">Custom </span>
+								</li>
+								<li>
+									<span class="left">Create hotel, transport/service, flight vouchers</span>
+									<span class="right text-right">Custom </span>
+								</li>
+								<li>
+									<span class="left">Create promotion flyers in seconds</span>
+									<span class="right text-right">Custom </span>
+								</li>
+								<li>
+									<span class="left">Digital planner to know your team schedule</span>
+									<span class="right text-right">Custom </span>
+								</li>
+								<li>
+									<span class="left">Send WhatsApp, SMS & Email to your customer directly from TravoCRM</span>
+									<span class="right text-right">Custom </span>
+								</li>
+								<li>
+									<span class="left">Manage your customer contacts easily</span>
+									<span class="right text-right">Custom </span>
+								</li>
+								<li>
+									<span class="left">Manage and mail your suppliers (supplier profile management)</span>
+									<span class="right text-right">Custom </span>
+								</li>
+								<li>
+									<span class="left">Visa & traveller profile management</span>
+									<span class="right text-right">Custom </span>
+								</li>
+							</ul>
+							</div>
+							<div class="card-content-list">
+							<h5 class="card-content-list-head">Features</h5>
+							<ul class="list">
+							<li>
+							<span class="left">Inbuilt bulk SMS & Email sender to send wishes & offers</span>
+							<span class="right">Unlimited</span>
+							</li>
+							<li>
+							<span class="left">Auto lead create from paid digital marketing & your website (Enquiry forms linkup)</span>
+							<span class="right">Unlimited</span>
+							</li>
+							<li>
+							<span class="left">Dynamic pricing, store your pre-rates & create proposals instantly</span>
+							<span class="right">Unlimited</span>
+							</li>
+							
+							</ul>
+							</div>
+						</div>
+						<div class="divider"></div>
+						<div class="card-content-list-block">
+							<div class="card-content-list">
+							<h5 class="card-content-list-head">Enrichment</h5>
+							<ul class="list">
+							<li>
+							 <span class="left">Load your previous data easily with excel upload feature</span>
+							<span class="right">Unlimited</span>
+							</li>
+							<li>
+							<span class="left">WhatsApp & SMS templates for faster messaging & service</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Leads management with travel industry-specific data</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Manage the visa checklist and progress</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">50+ reports for better analysis</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Hierarchy management (Admin, salesman and sales manager levels)</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							 </li>
+							<li>
+							<span class="left">Add and assign task as a to-do list</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Birthday/Anniversary auto-reminders</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Fast & easy to use for everyone</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Cloud-based software, keep yourself updated with technology</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Get a 360 Degree view of your business using TravoCRM</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">No hidden costs, we do not ask to pay anything extra apart from displayed costs</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Centralized customer & business data</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Increase the efficiency of your team members</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Focus on marketing</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">A trusted Pune, India based company growing since 7+ years</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							</ul>
+							</div>
+							
+							
+						</div>
+						<div class="divider"></div>
+						<div class="card-content-list-block">
+							<div class="card-content-list">
+							<h5 class="card-content-list-head">Admin Tools</h5>
+							<ul class="list">
+							<li>
+							<span class="left">Secured on servers like AWS & Google Cloud</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Team TravoCRM is there to assist you</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Download all your data & reports into excel files anytime</span>
+							<span class="right icon">
+							 <img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Web, Android & iOS apps to manage your business on the go</span>
+							<span class="right icon">
+							 <img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Access it from anywhere, anytime, any device</span>
+							<span class="right icon">
+							 <img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Unlimited data storage into CRM, really no limits</span>
+							<span class="right icon">
+							 <img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Create unlimited quotes, itineraries, vouchers, invoices, contacts, suppliers etc.</span>
+							<span class="right icon">
+							 <img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							</ul>
+							</div>
+							<div class="card-content-list">
+							<h5 class="card-content-list-head">Support</h5>
+							<ul class="list">
+							<li>
+							<span class="left">Faster customer service, never miss anything</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">TravoCRM understand your travel business & customer needs</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Unbeatable features with incomparable pricing</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Quick setup & start using within an hour</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Reliable, no downtime & excellent support</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Maximizes the business opportunities</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							<li>
+							<span class="left">Everything with your branding, we do not mention our details anywhere</span>
+							<span class="right icon">
+							<img src="https://d3ml3b6vywsj0z.cloudfront.net/website/icons/tick.svg" alt="">
+							</span>
+							</li>
+							</ul>
+							</div>
+						</div>
+						</div>
+						<br>
+						<div class="text-center">
+						<button class="btn red-btn open_modal_onclick" type="button" data-toggle="modal" data-target="#myModal">Get a Quote</button>
+						</div>
+						</div>
+						</div>
+						</div>
+					
+				</div>
+				
+				
+			</div>
+			
+
+		</section> -->
+		<section class="pricing-single-one">
+			<div class="container">
+				<div class="row advanced-pricing-table no-gutters wow pixFadeUp" data-wow-delay="0.5s">
+					<div class="col-md-12 col-sm-12">
+						<div class="price-card-block">
+						<div class="card-head-strip">
+						<p>Pricing</p>
+						</div>
+						<div class="card-head">
+						<div class="left">
+						<h3>Professional</h3>
+						<p>
+						Enterprise-grade software for teams of all sizes
+						</p>
+					<!--	<button class="btn red-btn open_modal_onclick" type="button" data-toggle="modal" data-target="#myModal">Get Pricing</button>-->
+						</div>
+						<div class="right">
+						 <div id="price_enter_svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289 275" width="289" height="275" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);"><defs><clipPath id="__lottie_element_2"><rect width="289" height="275" x="0" y="0"></rect></clipPath></defs><g clip-path="url(#__lottie_element_2)"><g class="ai" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><image width="289px" height="275px" preserveAspectRatio="xMidYMid slice" xlink:href="https://d3ml3b6vywsj0z.cloudfront.net/website/v2/animation_data/pricing_enterprise/images/img_2.png"></image></g><g class="ai" style="display: block;" transform="matrix(1,0,0,1,0,0)" opacity="1"><image width="289px" height="275px" preserveAspectRatio="xMidYMid slice" xlink:href="https://d3ml3b6vywsj0z.cloudfront.net/website/v2/animation_data/pricing_enterprise/images/img_1.png"></image></g><g class="ai" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><image width="289px" height="275px" preserveAspectRatio="xMidYMid slice" xlink:href="https://d3ml3b6vywsj0z.cloudfront.net/website/v2/animation_data/pricing_enterprise/images/img_0.png"></image></g></g></svg></div>
+						</div>
+						</div>
+						<div class="card-content">
+							<h5 class="card-content-list-head text-center majorhead">Major</h5>
+						
+						<div class="card-content-container mb-5">
+						<div class="card-content-list-block">
+							<div class="card-content-list">
+							<ul class="list">
+								<li>
+									<span class="left">Android and iOS mobile apps</span>
+								</li>
+								<li>
+									<span class="left">Generate invoices, receipts and credit notes</span>
+								</li>
+								<li>
+									<span class="left">Create hotel, transport/service, flight vouchers</span>
+								</li>
+								<li>
+									<span class="left">Create promotion flyers in seconds</span>
+								</li>
+							</ul>
+							</div>
+						</div>
+						<div class="divider"></div>
+						<div class="card-content-list-block">
+							<div class="card-content-list">
+							
+							<ul class="list">
+							<li>
+									<span class="left">Manage and mail your suppliers (supplier profile management)</span>
+								</li>
+								<li>
+									<span class="left">Visa & traveller profile management</span>
+								</li>
+								<li>
+									<span class="left">Auto lead create from paid digital marketing & your website (Enquiry forms linkup)</span>
+								</li>
+								<li>
+									<span class="left">Dynamic pricing, store your pre-rates & create proposals instantly</span>
+								</li>
+							</ul>
+							</div>
+						</div>
+						<div class="divider"></div>
+						<div class="card-content-list-block">
+							<div class="card-content-list">
+							
+							<ul class="list">
+								<li>
+									<span class="left">Unlimited data storage into CRM, really no limits</span>
+								</li>
+								<li>
+									<span class="left">Create unlimited quotes, itineraries, vouchers, invoices, contacts, suppliers etc.</span>
+								</li>
+								<li>
+									<span class="left">Quick setup & start using within an hour</span>
+								</li>
+								<li>
+									<span class="left">Cloud-based software, keep yourself updated with technology</span>
+								</li>
+							</ul>
+							</div>
+						</div>
+						</div>
+						<div class="card-content-container">
+						<div class="card-content-list-block">
+							<div class="card-content-list">
+							<h5 class="card-content-list-head">Sales & Operations</h5>
+							<ul class="list">
+								<li>
+									<span class="left">Manage customer requirements effectively</span>
+								</li>
+								<li>
+									<span class="left">Send WhatsApp & Email to your customer directly from TravoCRM</span>
+								</li>
+								<li>
+									<span class="left">Manage your customer contacts easily</span>
+								</li>
+								<li>
+									<span class="left">Faster customer service, never miss anything</span>
+								</li>
+								<li>
+									<span class="left">Create unique day-wise itinerary & quotations within minutes in PDF Format</span>
+								</li>
+								<li>
+									<span class="left">Manage the visa checklist and progress</span>
+								</li>
+								<li>
+									<span class="left">Add and assign task as a to-do list</span>
+								</li>
+							</ul>
+							</div>
+							<div class="card-content-list">
+								<h5 class="card-content-list-head">Misc</h5>
+								<ul class="list">
+								<li>
+								 <span class="left">Digital planner to know your team schedule</span>
+								</li>
+								<li>
+								<span class="left">Inbuilt bulk  Email sender to send wishes & offers</span>
+								</li>
+								<li>
+									<span class="left">Load your previous data easily with excel upload features</span>
+								</li>
+								<li>
+								<span class="left">WhatsApp & SMS templates for faster messaging & service</span>
+								</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="divider"></div>
+						<div class="card-content-list-block">
+							<div class="card-content-list">
+							<!--<h5 class="card-content-list-head">Misc</h5>-->
+							<ul class="list">
+							
+							<li>
+							<span class="left">Plenty of reports for better analysis</span>
+							</li>
+							<li>
+							<span class="left">Hierarchy management (Admin, salesman and sales manager levels)</span>
+							 </li>
+							<li>
+							<span class="left">Birthday/Anniversary auto-reminders</span>
+							</li>
+							<li>
+							<span class="left">Download all your data & reports into excel files anytime</span>
+							</li>
+							<li>
+							<span class="left">Access it from anywhere, anytime, any device</span>
+							</li>
+							</ul>
+							</div>
+							
+							<div class="card-content-list">
+							<h5 class="card-content-list-head">Benefits</h5>
+							<ul class="list">
+							<li>
+							<span class="left">Fast & easy to use for everyone</span>
+							</li>
+							<li>
+							<span class="left">Get a 360 Degree view of your business using TravoCRM</span>
+							</li>
+							<li>
+							<span class="left">No hidden costs, we do not ask to pay anything extra apart from said costs</span>
+							</li>
+							<li>
+							<span class="left">Centralized customer & business data</span>
+							</li>
+							<li>
+							<span class="left">Increase the efficiency of your team members</span>
+							</li>
+							
+							
+							
+							</ul>
+							</div>
+						</div>
+						<div class="divider"></div>
+						<div class="card-content-list-block">
+							<div class="card-content-list">
+							<!--<h5 class="card-content-list-head">Benefits</h5>-->
+							<ul class="list">
+							<li>
+							<span class="left">Focus on marketing</span>
+							</li>
+							<li>
+							<span class="left">A trusted Pune, India based company growing since 7+ years</span>
+							</li>
+							<li>
+							<span class="left">Secured on servers like AWS & Google Cloud</span>
+							</li>
+							<li>
+							<span class="left">Team TravoCRM is there to assist you</span>
+							</li>
+							<li>
+							<span class="left">Web, Android & iOS apps to manage your business on the go</span>
+							</li>
+							<li>
+							<span class="left">TravoCRM understand your travel business & customer needs</span>
+							</li>
+							<li>
+							<span class="left">Unbeatable features with incomparable pricing</span>
+							</li>
+							<li>
+							<span class="left">Reliable, no downtime & excellent support</span>
+							</li>
+							<li>
+							<span class="left">Maximizes the business opportunities</span>
+							</li>
+							<li>
+							<span class="left">Everything with your branding, we do not mention our details anywhere</span>
+							</li>
+							
+							</ul>
+							</div>
+						</div>
+						</div>
+						<br>
+					<!--	<div class="text-center">
+						<button class="btn red-btn open_modal_onclick" type="button" data-toggle="modal" data-target="#myModal">Get a Quote</button>
+						</div>-->
+						</div>
+						</div>
+						</div>
+					
+				</div>
+				<!-- /.advanced-pricing-table -->
+				
+			</div>
+			<!-- /.container -->
+
+		</section>
+
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content call-back-forms">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title title">We need a few details!</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+			<form class="contact-form" data-pixsaas="call-back-forms">
+				<input type="text" name="name" placeholder="First Name" required>
+				<input type="text" name="name" placeholder="Last Name" required>
+				<input type="text" name="name" placeholder="Agency Name" required>
+				<select name="reference" id="" class="pix-select">
+					<option value="select">Reference</option>
+					<option value="select">Select one</option>
+					<option value="select">Select two</option>
+					<option value="select">Select three</option>
+				</select>
+				<select name="country_id" id="" class="pix-select">
+					<option value="select">Select country</option>
+					<option value="select">Select one</option>
+					<option value="select">Select two</option>
+					<option value="select">Select three</option>
+				</select>
+				<input type="text" name="" placeholder="Select city" required>
+				<select name="country_id" id="" class="pix-select">
+					<option value="select">Select Phonecode +</option>
+					<option value="select">Select one</option>
+					<option value="select">Select two</option>
+					<option value="select">Select three</option>
+				</select>
+				<input type="text" name="contact" placeholder="Mobile Number" required>
+				<input type="email" name="email" placeholder="Email Id" required>
+				<input type="text" name="website" placeholder="Website" required>
+				<button type="submit" class="pix-btn submit-btn">Submit Now</button>
+
+				<div class="form-result alert">
+					<div class="content"></div>
+				</div>
+			</form>
+        </div>
+        
+        <!-- Modal footer 
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>-->
+        
+      </div>
+    </div>
+  </div>
+
+
+	<section class="pricing-two-single pricing-two-single2">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4"></div>
+					<div class="col-lg-4 price-card-block">
+						<div class="section-title section-title2 text-center">
+							<div class=" form-group">
+								<label class="sub-title pricesub-title wow pixFadeUp">Select Country:</label>
+								<select class="form-control" id="country">
+									 <option>Select Country</option>
+									<!--<option>India</option>
+									<option>India</option>
+									<option>India</option> -->
+								</select>
+								<!-- <input type="text" name="country" id="country" placeholder="Select country" autocomplete="off" required/>
+                                <input type="hidden" name="country_name" id="country_name"/>
+                                <input type="hidden" name="country_id" id="country_id"/> -->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row advanced-pricing-table">
+					<div class="col-lg-4"></div>
+					<div class="col-lg-4">
+						<div class="pricing-table style-two wow pixFadeLeft" data-wow-delay="0.5s">
+							<div class="pricing-header pricing-amount">
+								<!-- <div class="annual_price">
+									<h2 class="price">$0.00</h2>
+								</div>
+								
+
+								<div class="monthly_price">
+									<h2 class="price">$0.00</h2>
+								</div>
+								
+
+								<h3 class="price-title">Basic Account</h3>
+								<p>Only for first month</p> -->
+
+								<div class="monthly_price">
+								<h2 id="oneYear"></h2>								
+									<!-- <h2 class="price">$0.00</h2> -->
+								</div>						
+
+								<h3 class="price-title">One Year Price</h3>
+								
+
+								<div class="monthly_price">								
+								<h2 id="extraUser"></h2>
+									<!-- <h2 class="price">$0.00</h2> -->
+								</div>
+								<h3 class="price-title">Extra User Price</h3>
+								
+							</div>
+							
+
+							<ul class="price-feture">
+								<li class="have">Limited Acess Library</li>
+								<li class="have">Single User</li>
+								<li class="have">eCommerce Store</li>
+								<li class="not">Hotline Support 24/7</li>
+								<li class="not">No Updates</li>
+							</ul>
+
+							<div class="action text-left">
+								<a href="//travocrm.com/signin" class="pix-btn btn-outline">Get Started</a>
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</section>
+
+
+		<!-- /.pricing -->
+		<!--==============================-->
+		<!--=         Pricin One         =-->
+		<!--==============================-->
+		<!--
+		<section class="pricing-single-one">
+			<div class="container">
+				<div class="section-title text-center">
+					<h3 class="sub-title wow pixFadeUp">Pricing Plan</h3>
+					<h2 class="title wow pixFadeUp" data-wow-delay="0.3s">
+						No Hidden Charges! Choose <br>
+						your Plan.
+					</h2>
+				</div>
+				
+				<nav class="pricing-tab wow pixFadeUp" data-wow-delay="0.4s">
+					<span class="monthly_tab_title tab-btn">
+						Monthly
+					</span>
+					<span class="pricing-tab-switcher"></span>
+					<span class="annual_tab_title tab-btn">
+						Annual
+					</span>
+				</nav>
+
+				<div class="row advanced-pricing-table no-gutters wow pixFadeUp" data-wow-delay="0.5s">
+
+					<div class="col-lg-4">
+						<div class="pricing-table br-left">
+							<div class="pricing-header pricing-amount">
+								<div class="annual_price">
+									<h2 class="price">$0.00</h2>
+								</div>
+								
+
+								<div class="monthly_price">
+									<h2 class="price">$0.00</h2>
+								</div>
+								
+
+								<h3 class="price-title">Basic Account</h3>
+								<p>Only for first month</p>
+							</div>
+							
+
+							<ul class="price-feture">
+								<li class="have">Limited Acess Library</li>
+								<li class="have">Single User</li>
+								<li class="have">eCommerce Store</li>
+								<li class="not">Hotline Support 24/7</li>
+								<li class="not">No Updates</li>
+							</ul>
+
+							<div class="action text-center">
+								<a href="#" class="pix-btn btn-outline">Get Started</a>
+							</div>
+						</div>
+						
+					</div>
+					
+
+					<div class="col-lg-4">
+						<div class="pricing-table color-two">
+							<div class="pricing-header pricing-amount">
+								<div class="annual_price">
+									<h2 class="price">$80.50</h2>
+								</div>
+								
+
+								<div class="monthly_price">
+									<h2 class="price">$16.97</h2>
+								</div>
+								
+
+								<h3 class="price-title">Standard Account</h3>
+								<p>Only for first month</p>
+							</div>
+							
+
+							<ul class="price-feture">
+								<li class="have">Limited Acess Library</li>
+								<li class="have">Single User</li>
+								<li class="have">eCommerce Store</li>
+								<li class="have">Hotline Support 24/7</li>
+								<li class="not">No Updates</li>
+							</ul>
+
+							<div class="action text-center">
+								<a href="#" class="pix-btn btn-outline">Get Started</a>
+							</div>
+						</div>
+						
+					</div>
+					
+
+					<div class="col-lg-4">
+						<div class="pricing-table color-three">
+
+							<div class="pricing-header pricing-amount">
+								<div class="annual_price">
+									<h2 class="price">$180.70</h2>
+								</div>
+								
+
+								<div class="monthly_price">
+									<h2 class="price">$29.45</h2>
+								</div>
+								
+
+								<h3 class="price-title">Premium Account</h3>
+								<p>Only for first month</p>
+							</div>
+							
+
+							<ul class="price-feture">
+								<li class="have">Limited Acess Library</li>
+								<li class="have">Single User</li>
+								<li class="have">eCommerce Store</li>
+								<li class="have">Hotline Support 24/7</li>
+								<li class="have">No Updates</li>
+							</ul>
+
+							<div class="action text-center">
+								<a href="#" class="pix-btn btn-outline">Get Started</a>
+							</div>
+						</div>
+						
+					</div>
+					
+
+
+				</div>
+				
+			</div>
+			
+
+		</section>
+		
+
+		
+		<section class="call-to-action action-padding">
+			<div class="overlay-bg"><img src="media/background/ellipse.png" alt="bg"></div>
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-lg-7">
+						<div class="action-content style-two wow pixFadeUp">
+							<h2 class="title">
+								Getting connected with us<br>
+								& for the update.
+							</h2>
+						</div>
+						
+					</div>
+					
+					<div class="col-lg-5 text-right">
+						<a href="#newsletter" class="pix-btn btn-light btn-big scroll-btn wow pixFadeUp">Subscribe Now!</a>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</section>
+		
+		<section class="pricing-two-single">
+			<div class="container">
+				<div class="section-title text-center">
+					<h3 class="sub-title wow pixFadeUp">Pricing Plan</h3>
+					<h2 class="title wow pixFadeUp" data-wow-delay="0.3s">
+						What’s our monthly pricing<br>
+						subscription
+					</h2>
+				</div>
+				
+				<nav class="pricing-tab wow pixFadeUp" data-wow-delay="0.4s">
+					<span class="monthly_tab_title tab-btn">
+						Monthly
+					</span>
+					<span class="pricing-tab-switcher"></span>
+					<span class="annual_tab_title tab-btn">
+						Annual
+					</span>
+				</nav>
+
+				<div class="row advanced-pricing-table">
+					<div class="col-lg-4">
+						<div class="pricing-table style-two wow pixFadeLeft" data-wow-delay="0.5s">
+							<div class="pricing-header pricing-amount">
+								<div class="annual_price">
+									<h2 class="price">$0.00</h2>
+								</div>
+								
+
+								<div class="monthly_price">
+									<h2 class="price">$0.00</h2>
+								</div>
+								
+
+								<h3 class="price-title">Basic Account</h3>
+								<p>Only for first month</p>
+							</div>
+							
+
+							<ul class="price-feture">
+								<li class="have">Limited Acess Library</li>
+								<li class="have">Single User</li>
+								<li class="have">eCommerce Store</li>
+								<li class="not">Hotline Support 24/7</li>
+								<li class="not">No Updates</li>
+							</ul>
+
+							<div class="action text-left">
+								<a href="#" class="pix-btn btn-outline">Get Started</a>
+							</div>
+						</div>
+						
+					</div>
+					
+
+					<div class="col-lg-4">
+						<div class="pricing-table color-two style-two featured wow pixFadeLeft" data-wow-delay="0.7s">
+							<div class="trend">
+								<p>Popular</p>
+							</div>
+
+							<div class="pricing-header pricing-amount">
+								<div class="annual_price">
+									<h2 class="price">$80.50</h2>
+								</div>
+								
+
+								<div class="monthly_price">
+									<h2 class="price">$16.97</h2>
+								</div>
+								
+
+								<h3 class="price-title">Standard Account</h3>
+								<p>Only for first month</p>
+							</div>
+							
+
+							<ul class="price-feture">
+								<li class="have">Limited Acess Library</li>
+								<li class="have">Single User</li>
+								<li class="have">eCommerce Store</li>
+								<li class="have">Hotline Support 24/7</li>
+								<li class="not">No Updates</li>
+							</ul>
+
+							<div class="action text-left">
+								<a href="#" class="pix-btn btn-outline">Get Started</a>
+							</div>
+						</div>
+						
+					</div>
+					
+
+					<div class="col-lg-4">
+						<div class="pricing-table color-three style-two wow pixFadeLeft" data-wow-delay="0.9s">
+
+							<div class="pricing-header pricing-amount">
+								<div class="annual_price">
+									<h2 class="price">$180.70</h2>
+								</div>
+								
+
+								<div class="monthly_price">
+									<h2 class="price">$29.45</h2>
+								</div>
+								
+
+								<h3 class="price-title">Premium Account</h3>
+								<p>Only for first month</p>
+							</div>
+							
+
+							<ul class="price-feture">
+								<li class="have">Limited Acess Library</li>
+								<li class="have">Single User</li>
+								<li class="have">eCommerce Store</li>
+								<li class="have">Hotline Support 24/7</li>
+								<li class="have">No Updates</li>
+							</ul>
+
+							<div class="action text-left"></div>
+							<a href="#" class="pix-btn btn-outline">Get Started</a>
+						</div>
+
+
+						
+					</div>
+					
+
+				</div>
+				
+			</div>
+			
+		</section>
+		-->
+		
+		<script>
+			// var sortname;
+			function recordData (data) {
+					 sortname = data.country;
+					//  console.log(data.ip, data.country);
+				}
+			 $(document).ready(function() {
+				
+			 // get country data from database with autocomplete	event
+		// 	 $( "#country" ).autocomplete({
+        //     source: function( request, response ) {
+        //         $.ajax( {
+        //             url: "https://travocrm.com/index/getcountries",
+        //             dataType:"JSON",
+        //             data: {
+        //                 term: request.term
+        //             },
+        //             success: function( data ) {
+        //                 response(data);
+        //             }
+        //         } );
+        //     },
+        //     minLength: 2,
+        //     select: function( event, ui ) {
+        //         $("#country_id").val(ui.item.id)
+        //         $("#country_name").val(ui.item.label)              
+        //     }
+			
+        // });
+		// $( "#country" ).change({
+			getcountries();
+		function getcountries(){
+			var selectedid;
+			$.ajax( {
+                    url: "https://travocrm.com/pricing/getcountries",
+                    dataType:"JSON",                    
+                    success: function( data ) {
+						var toAppend = '';
+						$.each(data,function(i,o){
+						toAppend += '<option value='+o.id+'>'+o.country_name+'</option>';						
+						if(o.sortname == sortname)
+							 selectedid = o.id;
+						});
+
+						$('#country').append(toAppend);
+						$('#country').val(selectedid).trigger("change");;
+						
+                    }
+                } );
+		// });
+			}
+			$('#country').on('change', function() {			
+				$.ajax( {
+						url: "https://travocrm.com/pricing/getpricing",
+						type: "POST",
+						dataType:"JSON",    
+						data: {id :$('#country').val()},                
+						success: function( data ) {
+							console.log(data);
+							if(data){
+							$("#oneYear").html(data.currency_name+' '+data.one_year_price);
+							$("#extraUser").html(data.currency_name+' '+data.extra_user_price);
+							}else{
+								alert("Pricing Not Available");
+							}
+							
+						}
+					} );
+			});
+			
+		
+	});
+			</script>
+		<script src="https://ipinfo.io/json?callback=recordData"></script>
+		<!--=========================-->
+		<!--=        Footer         =-->
+
+		<!--=========================-->
+		<!--
+<script>
+  function initFreshChat() {
+    window.fcWidget.init({
+      token: "68222613-8ad8-485c-b1e4-02d389799ffe",
+      host: "https://wchat.in.freshchat.com"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.in.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>  -->
+		<footer id="footer" class="footer-hosting">
+			<div class="container">
+				<div class="footer-inner">
+					<div class="row wow fadeInUp">
+						<div class="col-lg-4 col-md-6 col-sm-6"> 
+							<div class="widget footer-widget widget-about">
+								<a href="#" class="footer-logo"><img src="https://www.travocrm.com/assets/img/logo.png" width="200" alt="Travocrm"></a>
+								<p class="copyright">
+									© 2017-2021 TravoCRM,<br> A product by Futurica Technologies Pvt Ltd<br>All rights reserved.
+								</p>
+
+								<h4 class="footer-title">Social</h4>
+								<ul class="social-share-link">
+									<li><a href=" https://www.facebook.com/travocrmbyfuturica" class="share_facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+									<!--<li><a href="#" class="share_twitter"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#" class="share_pinterest"><i class="fab fa-pinterest-p"></i></a></li>-->
+									<li><a href="https://www.linkedin.com/company/travocrm" class="share_linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+								</ul>
+
+
+							</div>
+							<!-- /.widget footer-widget -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 col-sm-6 -->
+
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class="widget footer-widget">
+								<!--<h3 class="widget-title">About Us</h3>-->
+
+								<ul class="footer-menu">
+									<li><a href="https://app.travocrm.com/#/login" target="_blank">Login</a></li>
+									<li><a href="https://app.travocrm.com/#/signup" target="_blank">Sign Up</a></li>
+									<li><a href="https://www.travocrm.com/termsandconditions" target="_blank">Terms and Conditions</a></li>
+									<li><a href="https://www.travocrm.com/privacypolicy" target="_blank">Privacy Policy</a></li>
+								</ul>
+							</div>
+							<!-- /.widget footer-widget -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 -->
+
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class="widget footer-widget">
+								<!--<h3 class="widget-title">My Account</h3>-->
+
+								<ul class="footer-menu">
+									<li><a href="https://www.travocrm.com/pricing">Pricing</a></li>
+									<li><a href="https://www.travocrm.com/solutions/travocrm">TravoCRM</a></li>
+									<li><a href="https://www.travocrm.com/">Support</a></li>
+									<li><a href="https://www.travocrm.com/">Resources</a></li>
+								</ul>
+							</div>
+							<!-- /.widget footer-widget -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 -->
+
+						<div class="col-lg-2 col-md-6 col-6">
+							<div class="widget footer-widget">
+								<!--<h3 class="widget-title">Solutions</h3>-->
+
+								<ul class="footer-menu">
+									<li><a href="https://www.travocrm.com/about">About Us</a></li>
+									<li><a href="https://www.travocrm.com/clients">Clients</a></li>
+									<li><a href="https://www.travocrm.com/contactus">Contact</a></li>
+								</ul>
+							</div>
+							<!-- /.widget footer-widget -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 -->
+					</div>
+					<!-- /.row -->
+
+				</div><!-- /.footer-inner -->
+			</div><!-- /.container -->
+			<div class="footer-bottom-shape">
+				<img src="https://www.travocrm.com/media/footer/marketing_footer1.png" alt="saaspik">
+			</div>
+		</footer><!-- /#footer -->
+
+
+	</div><!-- /#site -->
+
+	<!-- Dependency Scripts -->
+
+	
+	<!--<script src="https://www.travocrm.com/dependencies/jquery/jquery.min.js"></script> -->
+	<script src="https://www.travocrm.com/dependencies/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/swiper/js/swiper.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/jquery.appear/jquery.appear.js"></script>
+	<script src="https://www.travocrm.com/dependencies/wow/js/wow.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/countUp.js/countUp.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/jquery.parallax-scroll/js/jquery.parallax-scroll.js"></script>
+	<script src="https://www.travocrm.com/dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/gmap3/js/gmap3.min.js"></script>
+	<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&#038;ver=2.1.6'></script>
+	
+	
+		
+
+
+	<!-- Site Scripts -->
+	<script src="https://www.travocrm.com/assets/js/header.js"></script>
+	<script src="https://www.travocrm.com/assets/js/app.js"></script>
+
+
+<script src="https://www.travocrm.com/js/select2.min.js"></script>
+<!-- this file is commented to avoid error PR04012022--> 
+<!--<script src="//code.jquery.com/jquery-1.12.4.js"></script>-->
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+<!-- cookie code -->
+<!--
+<div class="cookie">
+  <p class="cookie__message">We use cookies, just to track visits to our website, we store no personal details.</p>
+  <button class="cookie__accept">Accept cookies</button>
+  <button class="cookie__decline">Decline cookies</button>
+</div>
+-->
+<style>
+
+
+.cookie {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 1rem 10%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  bottom:0;
+  z-index:300;
+}
+@media (max-width: 32rem) {
+  .cookie {
+    text-align: center;
+  }
+}
+.cookie .cookie__message {
+  padding: 0.2rem 0;
+  margin: 0;
+  display: inline-block;
+}
+@media (max-width: 64rem) {
+  .cookie .cookie__message {
+    width: 100%;
+  }
+}
+.cookie .cookie__accept,
+.cookie .cookie__decline,
+.cookie .cookie__link {
+  padding: 0.2rem 0.8rem;
+  border: 0;
+  background: white;
+  margin: 0 0.5rem;
+  transition: background 150ms ease;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.cookie .cookie__accept:focus,
+.cookie .cookie__decline:focus,
+.cookie .cookie__link:focus {
+  outline: none;
+}
+@media (max-width: 64rem) {
+  .cookie .cookie__accept,
+.cookie .cookie__decline,
+.cookie .cookie__link {
+    margin: 0.5rem 1rem 0.5rem 0;
+  }
+}
+@media (max-width: 32rem) {
+  .cookie .cookie__accept,
+.cookie .cookie__decline,
+.cookie .cookie__link {
+    width: 100%;
+  }
+}
+.cookie .cookie__accept {
+  background: #3498db;
+  color: #ecf0f1;
+}
+.cookie .cookie__accept:hover, .cookie .cookie__accept:focus {
+  background: #57aae1;
+}
+.cookie .cookie__accept:active {
+  background: #68b2e4;
+}
+.cookie .cookie__decline {
+  background: #1e2a36;
+  color: #ecf0f1;
+}
+.cookie .cookie__decline:hover, .cookie .cookie__decline:focus {
+  background: #233140;
+}
+.cookie .cookie__decline:active {
+  background: #1e2a36;
+}
+.cookie .cookie__link {
+  color: #3498db;
+  background: none;
+  padding: 0.2rem 0;
+  margin: 0;
+}
+@media (max-width: 64rem) {
+  .cookie .cookie__link {
+    margin: 0.5rem 0;
+  }
+}
+.cookie .cookie__link:hover, .cookie .cookie__link:focus {
+  text-decoration: underline;
+}
+@media (max-width: 32rem) {
+  .cookie .cookie__link {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
+<script>
+function cookie() {
+
+  var cookieAcceptButton = $('.cookie__accept'),
+      cookieDeclineButton = $('.cookie__decline'),
+      cookieAlert = $('.cookie');
+
+  cookieAcceptButton.on('click', function() {
+    cookieAlert.fadeOut('slow');
+  });
+  
+  cookieDeclineButton.on('click', function() {
+    cookieAlert.fadeOut('slow');
+  });
+  
+}
+
+$(function() {
+  cookie();  
+});
+</script>
+
+
+
+</body>
+  
+</html>

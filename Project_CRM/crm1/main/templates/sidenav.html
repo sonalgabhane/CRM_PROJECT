@@ -1,0 +1,79 @@
+
+<div class="side-nav expand-lg">
+    <div class="side-nav-inner">
+        <ul class="side-nav-menu scrollable">
+            <li class="side-nav-header">
+                <span>Travvolt</span>
+            </li>
+            <li class="nav-item ">
+                <a href={% url 'dashboard' %}>
+                    <span class="icon-holder">
+                        <i class="mdi mdi mdi-gauge font-size-30 icon-gradient-success"></i>
+                    </span>
+                    <span class="title"style="font-size:100%;">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a href={% url 'leads' %}>
+                    <span class="icon-holder">
+                        <i class="mdi mdi-folder-outline font-size-30 icon-gradient-success"></i>
+                    </span>
+                    <span class="title"style="font-size:100%;">Leads</span>
+                </a>
+            </li>
+            
+            <li class="nav-item ">
+                <a href={% url 'user' %}>
+                    <span class="icon-holder">
+                        <i class="mdi mdi-email-outline font-size-30 icon-gradient-success"></i>
+                    </span>
+                    <span class="title"style="font-size:100%;">Users</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
+                        <i class="mdi mdi-play-circle-outline font-size-30 icon-gradient-success"></i>
+                    </span>
+                    <span class="title"style="font-size:100%;">Contact</span>
+                    <span class="arrow">
+                        <i class="mdi mdi-chevron-right"></i>
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href={% url 'customer' %}>Customer</a>
+                    </li>
+                    <li>
+                        <a href={% url 'supplier' %}>Supplier</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
+                        <i class="mdi mdi-image-filter-drama font-size-30 icon-gradient-success"></i>
+                    </span>
+                    <span class="title" style="font-size:100%;">Manage</span>
+                    <span class="arrow">
+                        <i class="mdi mdi-chevron-right"></i>
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href= {% url 'packages' %}>Package</a>
+                    </li>
+                    <li>
+                        <a href={% url 'sightseeing' %}>Sightseeing</a>
+                    </li>
+                    <li>
+                        <a href={% url 'hotels' %}>Hotel</a>
+                    </li>
+                    <li>
+                        <a href={% url 'transport' %}>Transport</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

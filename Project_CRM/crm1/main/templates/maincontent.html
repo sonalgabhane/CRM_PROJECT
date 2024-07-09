@@ -1,0 +1,1058 @@
+		{% extends 'base.html' %}
+        {% load static %}
+        {% block main-content %}
+        
+        <!--==========================-->
+		<!--=         Banner         =-->
+		<!--==========================-->
+		<section class="banner banner-five">
+			<div class="banner-right-shape">
+				<img data-src="https://www.travocrm.com/media/banner/banner-five/shape-bg.png" alt="">
+			</div>
+			<div class="container">
+				<div class="banner-content-wrap-five">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="banner-content">
+								<h5 class="sub-title">Welcome to Travocrm</h5>
+								<h1 class="banner-title wow pixFadeUp" data-wow-delay="0.3s">
+									A SMART CRM<br>
+									FOR TRAVEL COMPANIES
+								</h1>
+
+								<p class="description wow pixFadeUp" data-wow-delay="0.5s">
+									Hassle-free lead management, user friendly, excellent features, quotes and itineraries.<br>
+									One product and endless possibilities!
+								</p>
+
+								<a href={% url 'calendy' %} class="pix-btn submit-btn wow fadeInUp" data-wow-delay="0.7s">Schedule a Demo</a>
+							</div><!-- /.banner-content -->
+						</div>
+						<!-- /.col-lg-6 -->
+
+						<div class="col-lg-6">
+							<div class="promo-mockup-five text-center">
+								<ul class="animate-element-five">
+									<li><img data-src="https://www.travocrm.com/media/banner/banner-five/11.png" class="wow fadeInDown" alt="mockup"></li>
+								<!--	<li><img src="media/banner/banner-five/2.png" class="wow zoomIn" data-wow-delay="0.43s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/3.png" class="wow zoomIn" data-wow-delay="0.4s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/4.png" class="wow fadeInRight" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/5.png" class="wow fadeInLeft" data-wow-delay="0.6s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/6.png" class="wow fadeInUp" data-wow-delay="0.7s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/7.png" class="wow fadeInDown" data-wow-delay="0.8s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/8.png" class="wow fadeInDown" data-wow-delay="1s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/9.png" class="wow fadeInRight" alt="mockup"></li>-->
+								</ul>
+							</div><!-- /.promo-mockup -->
+						</div>
+						<!-- /.col-lg-7 -->
+					</div>
+					<!-- /.row -->
+				</div><!-- /.banner-content-wrap -->
+			</div><!-- /.container -->
+
+			<ul class="animate-particle">
+				<li><img data-src="https://www.travocrm.com/media/banner/banner-five/ta1.png" alt="Travocrm tryangle"></li>
+				<li><img data-src="https://www.travocrm.com/media/banner/banner-five/ta4.png" alt="Travocrm tryangle"></li>
+				<li><img data-src="https://www.travocrm.com/media/banner/banner-five/ta2.png" alt="Travocrm tryangle"></li>
+				<li><img data-src="https://www.travocrm.com/media/banner/banner-five/ta3.png" alt="Travocrm tryangle"></li>
+				<li><img data-src="https://www.travocrm.com/media/banner/banner-five/cm1.png" alt="Travocrm tryangle"></li>
+				<li><img data-src="https://www.travocrm.com/media/banner/banner-five/circle.png" data-parallax='{"y": -150, "x": 100}' alt="Travocrm tryangle"></li>
+				<li class="bubble"></li>
+			</ul>
+
+			<div class="left-circle-shape">
+				<span class="circle-fill"></span>
+				<span class="circle-border"></span>
+			</div>
+		</section><!-- /.banner banner-four -->
+
+		
+		<!--===========================-->
+		<!--=         Feature         =-->
+		<!--===========================-->
+		<section id="brand-logo">
+			<div class="section-small text-center wow pixFadeUp">
+				<h2 class="title">Our Clients</h2>
+			</div>  
+			<div class="container">
+				<div class="swiper-container logo-carousel wow pixFadeUp" data-wow-delay="0.3s" id="logo-carousel" data-perpage="6" data-breakpoints='{"1024": {"slidesPerView": 4}, "768": {"slidesPerView": 4}, "640": {"slidesPerView": 3}}'>
+					<div class="swiper-wrapper">
+                        						<div class="swiper-slide">
+							<div class="brand-logo"><img data-src="{%static 'app.travocrm.com/profile/company_details_logo/1585987845.png' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo"><img data-src="{%static 'app.travocrm.com/profile/company_details_logo/1566298169.jpeg' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo"><img data-src="{%static 'app.travocrm.com/profile/company_details_logo/1603721527.jpeg' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo"><img data-src="{%static 'app.travocrm.com/profile/company_details_logo/16443940630.png' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo"><img data-src="{%static 'app.travocrm.com/profile/company_details_logo/16440638230.jpg' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo"><img data-src="{%static 'app.travocrm.com/profile/company_details_logo/1571661142.png' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo"><img data-src="{%static 'app.travocrm.com/profile/company_details_logo/16317256390.jpg' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo"><img data-src="{%static 'app.travocrm.com/profile/company_details_logo/16710971780.png' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo"><img data-src="{%static 'app.travocrm.com/profile/company_details_logo/1606462918.png' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo"><img data-src="{%static 'app.travocrm.com/profile/company_details_logo/16540954620.jpg' %}" alt="brand"></div>
+						</div>
+						<!-- /.swiper-slide -->
+					</div>
+					<!-- /.swiper-wrapper -->
+				</div>
+				<!-- /#logo-carousel.swiper-container logo-carousel -->
+			</div>
+			<!-- /.container -->
+
+		</section>
+		<!-- /.brand-logo -->
+		
+		<!--========================-->
+		<!--=         Support      =-->
+		<!--========================-->
+		<section class="support-section">
+			<div class="container">
+				<div class="row align-items-center">
+
+					<div class="col-md-7">
+						<div class="support-content pr-90">
+							<div class="section-title style-seven">
+								<h2 class="title wow fadeInUp" data-wow-delay="0.3s">Why is TravoCRM the best choice?</h2>
+								<h2 class="title wow fadeInUp nurture" data-wow-delay="0.3s">Nurture business. Generate Quotes. Develop Relationships.</h2>
+
+								<p class="wow fadeInUp" data-wow-delay="0.5s">
+									TravoCRM is one of the most reliable and efficient travel CRM geared towards holistic growth. With Travo CRM, you are assured that you have access to one of the finest CRM services that are designed keeping in mind the aspect of travel and customer satisfaction.Conveniently monitor every lead until its closure and generate the finest itineraries backed by strong follow-ups and customer profiling. 
+								</p>
+
+								<p class="wow fadeInUp" data-wow-delay="0.8s">
+									It allows you to serve your customers better with an easy user interface and hassle-free management. Maintain coordination among your team and avoid repetition of work. It allows you to have a better lead management system. It is designed so that all your leads land into CRM from your website or social media ads.
+								</p>
+
+								<a href="calendy.html" class="pix-btn submit-btn wow fadeInUp" data-wow-delay="0.9s">Schedule a Demo</a>
+							</div>
+						</div>
+						<!-- /.support-content -->
+					</div>
+					<!-- /.col-md-7 -->
+
+					<div class="col-md-5">
+						<div class="support-image">
+							<img data-src="{% static 'media/about/support2.png' %}" class="wow fadeInRight" alt="Support">
+						</div>
+						<!-- /.support-image -->
+					</div>
+					<!-- /.col-md-5 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.support-section -->
+		
+		
+		<!--===========================-->
+		<!--=         Feature         =-->
+		<!--===========================-->
+		<section class="featured-seven featurehome">
+			<div class="container">
+				<div class="section-title style-two text-center">
+					<h2 class="title wow pixFadeUp">Features</h2>
+					<p class="wow fadeInUp" data-wow-delay="0.3s">
+						Digitise your travel business with TravoCRM.
+					</p>
+				</div><!-- /.section-title -->
+
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<div class="saaspik-icon-box-wrapper style-seven wow pixFadeUp" data-wow-delay="0.3s">
+							<div class="saaspik-icon-box-icon">
+								<img data-src="https://www.travocrm.com/media/feature/30.png" alt="">
+							</div>
+							<div class="saaspik-icon-box-content">
+								<h3 class="saaspik-icon-box-title"><a href="#">Schedule Tracker</a></h3>
+								<p>
+									TravoCRM helps you schedule your tasks and brings a system. Now never let a deal be a victim of mismanagement.
+								</p>
+							</div>
+						</div><!-- /.saaspik-box style-seven wow pixFadeUp -->
+					</div><!-- /.col-lg-4 col-md-6 -->
+
+					<div class="col-lg-4 col-md-6">
+						<div class="saaspik-icon-box-wrapper style-seven wow pixFadeUp" data-wow-delay="0.5s">
+							<div class="saaspik-icon-box-icon">
+								<img src="media/feature/31.png" alt="">
+							</div>
+							<div class="saaspik-icon-box-content">
+								<h3 class="saaspik-icon-box-title"><a href="#">Lead Management</a></h3>
+
+								<p>
+									With TravoCRM, you can manage leads like never before with the help of timely follow-ups, so never miss out on any client.
+								</p>
+							</div>
+						</div><!-- /.saaspik-box style-seven wow pixFadeUp -->
+					</div><!-- /.col-lg-4 col-md-6 -->
+
+					<div class="col-lg-4 col-md-6">
+						<div class="saaspik-icon-box-wrapper style-seven wow pixFadeUp" data-wow-delay="0.7s">
+							<div class="saaspik-icon-box-icon">
+								<img data-src="https://www.travocrm.com/media/feature/32.png" alt="">
+							</div>
+							<div class="saaspik-icon-box-content">
+								<h3 class="saaspik-icon-box-title"><a href="#">Contacts</a></h3>
+								<p>
+									With TravoCRM, you have access to all your contacts anytime. Get access anytime you need with advanced searches.
+								</p>
+							</div>
+						</div><!-- /.saaspik-box style-seven wow pixFadeUp -->
+					</div><!-- /.col-lg-4 col-md-6 -->
+
+					<div class="col-lg-4 col-md-6">
+						<div class="saaspik-icon-box-wrapper style-seven wow pixFadeUp" data-wow-delay="0.9s">
+							<div class="saaspik-icon-box-icon">
+								<img data-src="https://www.travocrm.com/media/feature/33.png" alt="">
+							</div>
+							<div class="saaspik-icon-box-content">
+								<h3 class="saaspik-icon-box-title"><a href="#">Reminders</a></h3>
+								<p>
+									TravoCRM is all about making your work convenient and hassle-free. You can easily keep track of the follow ups. 
+								</p>
+							</div>
+						</div><!-- /.saaspik-box style-seven wow pixFadeUp -->
+					</div><!-- /.col-lg-4 col-md-6 -->
+
+					<div class="col-lg-4 col-md-6">
+						<div class="saaspik-icon-box-wrapper style-seven wow pixFadeUp" data-wow-delay="1s">
+							<div class="saaspik-icon-box-icon">
+								<img data-src="https://www.travocrm.com/media/feature/34.png" alt="">
+							</div>
+							<div class="saaspik-icon-box-content">
+								<h3 class="saaspik-icon-box-title"><a href="#">Highly affordable </a></h3>
+								<p>
+									TravoCRM offers a host of services within an affordable budget. The subscription charge is highly affordable. 
+								</p>
+							</div>
+						</div><!-- /.saaspik-box style-seven wow pixFadeUp -->
+					</div><!-- /.col-lg-4 col-md-6 -->
+
+					<div class="col-lg-4 col-md-6">
+						<div class="saaspik-icon-box-wrapper style-seven wow pixFadeUp" data-wow-delay="1.2s">
+							<div class="saaspik-icon-box-icon">
+								<img src="media/feature/35.png" alt="">
+							</div>
+							<div class="saaspik-icon-box-content">
+								<h3 class="saaspik-icon-box-title"><a href="#">Mobile Apps</a></h3>
+								<p>
+									Organise, manage and monitor your leads anywhere, anytime. The app is compatible with both mobiles and tablets.
+								</p>
+							</div>
+						</div><!-- /.saaspik-box style-seven wow pixFadeUp -->
+					</div><!-- /.col-lg-4 col-md-6 -->
+					<div class="col-lg-4 col-md-6">
+						<div class="saaspik-icon-box-wrapper style-seven wow pixFadeUp" data-wow-delay="1.2s">
+							<div class="saaspik-icon-box-icon">
+								<img src="media/feature/36.png" alt="">
+							</div>
+							<div class="saaspik-icon-box-content">
+								<h3 class="saaspik-icon-box-title"><a href="#">No installation</a></h3>
+								<p>
+									TravoCRM is a purely cloud-based solution. You don't require any additional hardware or software installation. 
+								</p>
+							</div>
+						</div><!-- /.saaspik-box style-seven wow pixFadeUp -->
+					</div><!-- /.col-lg-4 col-md-6 -->
+					<div class="col-lg-4 col-md-6">
+						<div class="saaspik-icon-box-wrapper style-seven wow pixFadeUp" data-wow-delay="1.2s">
+							<div class="saaspik-icon-box-icon">
+								<img src="media/feature/37.png" alt="">
+							</div>
+							<div class="saaspik-icon-box-content">
+								<h3 class="saaspik-icon-box-title"><a href="#">Campaign</a></h3>
+								<p>
+									TravoCRM meets your campaigning needs beyond expectations, with its convenient feature to reach the right customers.
+								</p>
+							</div>
+						</div><!-- /.saaspik-box style-seven wow pixFadeUp -->
+					</div><!-- /.col-lg-4 col-md-6 -->
+					<div class="col-lg-4 col-md-6">
+						<div class="saaspik-icon-box-wrapper style-seven wow pixFadeUp" data-wow-delay="1.2s">
+							<div class="saaspik-icon-box-icon">
+								<img src="media/feature/38.png" alt="">
+							</div>
+							<div class="saaspik-icon-box-content">
+								<h3 class="saaspik-icon-box-title"><a href="#">Reports</a></h3>
+								<p>
+									TravoCRM provides filtered reports for work and data. Enhance your sales team’s processes, productivity and pipeline visibility.
+								</p>
+							</div>
+						</div><!-- /.saaspik-box style-seven wow pixFadeUp -->
+					</div><!-- /.col-lg-4 col-md-6 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</section><!-- /.featured -->
+		
+		
+		<!--=========================-->
+		<!--=         About         =-->
+		<!--=========================-->
+		<section class="about-tax">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5">
+						<div class="about-video-wrapper">
+							<div class="popup-videos wow pixFadeRight">
+								<div class="video-thumbnail">
+									<img src="media/about/3.jpg" alt="thumbnail">
+
+									<span class="dot-shape"><img src="{% static 'media/about/dot.png' %}" alt="Travocrm"></span>
+								</div>
+								<!-- /.video-thumbnail -->
+
+								<a href="https://www.youtube.com/watch?v=xtyfm_XFgMo" class="play-btn popup-video large"><i class="ei ei-arrow_triangle-right"></i></a>
+							</div>
+							<!-- /.popup-video -->
+						</div>
+						<!-- /.about-video-wrapper -->
+					</div>
+					<!-- /.col-lg-5 -->
+
+					<div class="col-lg-7">
+						<div class="about-tax-content">
+							<div class="section-title">
+
+								<h2 class="title wow pixFadeUp">
+									Who should use  TravoCRM?
+								</h2>
+							</div>
+							<!-- /.section-title -->
+
+							<p class="wow pixFadeUp" data-wow-delay="0.3s">
+								Before knowing who should use a travel CRM, it is essential to understand what a travel CRM is. CRM stands for Customer Relationship Management. It generally benefits:-
+							</p>
+
+							<ul class="list-items wow pixFadeUp" data-wow-delay="0.5s">
+								<li>Companies exclusive to Travels </li>
+								<li>Travel agents </li>
+								<li>Tour Operators </li>
+								<li>Destination management companies (DMC)</li>
+								<li>Activity Operators </li>
+								<li>Companies that offer tourism services </li>
+							</ul>
+
+							<a href="calendy.html" class="pix-btn submit-btn wow fadeInUp" data-wow-delay="0.7s">Schedule a Demo</a>
+						</div>
+						<!-- /.service-content -->
+					</div>
+					<!-- /.col-lg-7 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.service -->
+		
+		<!--==========================-->
+		<!--=         Inspect        =-->
+		<!--==========================-->
+		<div class="section inspect">
+			<div class="container">
+				<div class="section-title color-two text-center">
+					<h2 class="title wow pixFadeUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: pixFadeUp;">
+						You have got everything preloaded
+					</h2>
+
+					<p class="wow pixFadeUp" data-wow-delay="0.5s">
+						Ready data saves a lot of your time!
+					</p>
+				</div>
+
+				<div class="gp-tabs wow fadeInUp everyimg">
+					<div class="row align-items-center">
+						<div class="col-lg-5">
+							<nav class="pix-tab-navs">
+								<ul class="gp-tabs-navigation">
+									<li data-content="inbox" class="active-tab active tab-nav-item">
+										<a href="#0" class="acc-btn">Preloaded Data</a>
+
+										<div class="content">
+											<p>
+												400+ Itineraries & More than 5000+ sightseeing ready data to save time.
+											</p>
+										</div>
+									</li>
+									<li class="tab-nav-item" data-content="new">
+										<a href="#0" class="acc-btn">Itinerary Templates</a>
+
+										<div class="content">
+											<p>
+												Choose from 10+ of itinerary templates anytime for strong branding.
+											</p>
+										</div>
+									</li>
+									<li class="tab-nav-item" data-content="gallery" class="">
+										<a href="#0" class="acc-btn">Inbuilt Promotional Flyers</a>
+
+										<div class="content">
+											<p>
+												Travel specific promotional flyers/images, edit in seconds and download.
+											</p>
+										</div>
+									</li>
+								</ul> <!-- gp-tabs-navigation -->
+							</nav>
+						</div><!-- /.col-lg-5 -->
+						<div class="col-lg-7">
+							<div class="tab-content-inner">
+								<div class="gp-tabs-content">
+									<div data-content="inbox" class="active-tab pix-tab-item">
+										<div class="inspect-tab-image">
+											<div class="image-top">
+												<img src="{% static 'media/tabs/1.png' %}" alt="Travocrm">
+											</div>
+
+											<div class="image-bottom">
+												<img src="{% static 'media/tabs/2.png' %}" alt="Travocrm">
+											</div>
+											<div class="image-left">
+												<img src="{% static 'media/tabs/3.png' %}" alt="Travocrm">
+											</div>
+										</div>
+									</div>
+
+									<div data-content="new" class="pix-tab-item">
+										<div class="inspect-tab-image">
+											<div class="image-top">
+												<img src="{% static 'media/tabs/1.png' %}" alt="Travocrm">
+											</div>
+
+											<div class="image-bottom">
+												<img src="{% static 'media/tabs/2.png' %}" alt="Travocrm">
+											</div>
+											<div class="image-left">
+												<img src="{% static 'media/tabs/3.png' %}" alt="Travocrm">
+											</div>
+										</div>
+									</div>
+
+									<div data-content="gallery" class="pix-tab-item">
+										<div class="inspect-tab-image">
+											<div class="image-top">
+												<img src="{% static 'media/tabs/1.png' %}" alt="Travocrm">
+											</div>
+
+											<div class="image-bottom">
+												<img src="{% static 'media/tabs/2.png' %}" alt="Travocrm">
+											</div>
+											<div class="image-left">
+												<img src="{% static 'media/tabs/3.png' %}" alt="Travocrm">
+											</div>
+										</div>
+									</div>
+
+								</div> <!-- gp-tabs-content -->
+							</div><!-- /.tab-content-inner -->
+
+						</div><!-- /.col-lg-7 -->
+					</div><!-- /.row -->
+				</div>
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.section inspect -->
+		
+		
+		<!--==========================-->
+		<!--=         Feature        =-->
+		<!--==========================-->
+		<section class="featured-three">
+			<div class="container">
+				<div class="section-title text-center">
+					<h3 class="sub-title wow pixFadeUp">Benefits</h3>
+					<h2 class="title wow pixFadeUp" data-wow-delay="0.3s">A lot of companies have benefited from this, hope you too!</h2>
+				</div><!-- /.section-title -->
+
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="saaspik-icon-box-wrapper style-three wow pixFadeUp" data-wow-delay="0.5s">
+							<div class="saaspik-icon-box-icon">
+								<img src="{% static 'media/feature/14.png' %}" alt="">
+							</div>
+							<div class="pixsass-icon-box-content">
+
+								<p>
+									Cloud-based software, convenient for everyone to use.
+								</p>
+							</div>
+						</div><!-- /.pixsass-box style-three wow pixFadeUp -->
+					</div><!-- /.col-lg-6 -->
+
+					<div class="col-lg-6">
+						<div class="saaspik-icon-box-wrapper style-three wow pixFadeUp" data-wow-delay="0.5s">
+							<div class="saaspik-icon-box-icon">
+								<img src="{% static 'media/feature/15.png' %}" alt="">
+							</div>
+							<div class="pixsass-icon-box-content">
+								<p>
+									Access it anytime and anywhere; it has high compatibility.
+								</p>
+							</div>
+						</div><!-- /.pixsass-box style-three wow pixFadeUp -->
+					</div><!-- /.col-lg-6 -->
+
+					<div class="col-lg-6">
+						<div class="saaspik-icon-box-wrapper style-three wow pixFadeUp" data-wow-delay="0.7s">
+							<div class="saaspik-icon-box-icon">
+								<img src="{% static 'media/feature/16.png' %}" alt="">
+							</div>
+							<div class="pixsass-icon-box-content">
+								<p>
+									Unlimited storage and efficient lead management in the CRM.
+								</p>
+							</div>
+						</div><!-- /.pixsass-box style-three wow pixFadeUp -->
+					</div><!-- /.col-lg-6 -->
+
+					<div class="col-lg-6">
+						<div class="saaspik-icon-box-wrapper style-three wow pixFadeUp" data-wow-delay="0.7s">
+							<div class="saaspik-icon-box-icon">
+								<img src="{% static 'media/feature/17.png' %}" alt="">
+							</div>
+							<div class="pixsass-icon-box-content">
+								<p>
+									We have a devoted team for efficient customer service.
+								</p>
+							</div>
+						</div><!-- /.pixsass-box style-three wow pixFadeUp -->
+					</div><!-- /.col-lg-6 -->
+					<div class="col-lg-6">
+						<div class="saaspik-icon-box-wrapper style-three wow pixFadeUp" data-wow-delay="0.7s">
+							<div class="saaspik-icon-box-icon">
+								<img src="{% static 'media/feature/18.png' %}" alt="">
+							</div>
+							<div class="pixsass-icon-box-content">
+								<p>
+									Create unlimited quotes, itineraries, vouchers, invoices, contacts, suppliers etc
+								</p>
+							</div>
+						</div><!-- /.pixsass-box style-three wow pixFadeUp -->
+					</div><!-- /.col-lg-6 -->
+					<div class="col-lg-6">
+						<div class="saaspik-icon-box-wrapper style-three wow pixFadeUp" data-wow-delay="0.7s">
+							<div class="saaspik-icon-box-icon">
+								<img src="{% static 'media/feature/19.png' %}" alt="">
+							</div>
+							<div class="pixsass-icon-box-content">
+								<p>
+									Safe and secured on servers like Google Cloud and AWS.
+								</p>
+							</div>
+						</div><!-- /.pixsass-box style-three wow pixFadeUp -->
+					</div><!-- /.col-lg-6 -->
+				</div><!-- /.row -->
+
+			</div><!-- /.container -->
+			<div class="scroll-circle" data-parallax='{"y" : -130}'>
+				<img src="{% static 'media/background/circle11.png' %}" alt="circle" class="wow pixFadeUp">
+			</div>
+		</section><!-- /.featured -->
+		
+			<!--==================================-->
+		<!--=         Call To Action         =-->
+		<!--==================================-->
+		<section class="call-to-action-four">
+
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-md-7">
+						<div class="action-content style-four wow pixFadeUp">
+							<h2 class="title">
+								Looks Interesting ?
+							</h2>
+
+							<p>
+								Schedule a demo with us  to know more 
+							</p>
+						</div>
+						<!-- /.action-content -->
+					</div>
+					<!-- /.col-md-7 -->
+
+					<div class="col-md-5 text-right">
+						<a href="calendy.html" class="pix-btn submit-btn wow pixFadeUp">Schedule a Demo</a>
+					</div>
+					<!-- /.col-md-5 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.call-to-action --> 
+		
+		
+		<!--============================-->
+		<!--=         Feature         =-->
+		<!--============================-->
+		<section class="featured-ten operatehome">
+			<div class="container">
+				<div class="section-title style-six text-center">
+
+					<h2 class="title wow fadeInUp" data-wow-delay="0.2s">
+						How do you operate?
+					</h2>
+					<p class="wow fadeInUp" data-wow-delay="0.5">
+						Just login and start using it. Simple!
+					</p>
+				</div><!-- /.section-title -->
+
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<div class="saaspik-icon-box-wrapper style-eleven wow fadeInRight" data-wow-delay="0.3s">
+							<div class="saaspik-icon-box-icon">
+								<img src="media/feature/31.png" alt="">
+							</div>
+							<div class="pixsass-icon-box-content">
+								<h3 class="pixsass-icon-box-title"><a href="#">Lead management</a></h3>
+								<p>
+									Never miss another client, keep track of the progress of your leads.
+								</p>
+							</div>
+						</div><!-- /.saaspik-box style-eleven wow fadeInRight -->
+					</div><!-- /.col-lg-3 col-md-6 -->
+
+					<div class="col-lg-4 col-md-6">
+						<div class="saaspik-icon-box-wrapper style-eleven wow fadeInRight" data-wow-delay="0.5s">
+							<div class="saaspik-icon-box-icon">
+								<img src="media/feature/marketing2.png" alt="">
+							</div>
+							<div class="pixsass-icon-box-content">
+								<h3 class="pixsass-icon-box-title"><a href="#">Customise your travel packages</a></h3>
+
+								<p>
+									Create several travel packages according to your enquiry type.
+								</p>
+
+							</div>
+						</div><!-- /.saaspik-box style-eleven wow fadeInRight -->
+					</div><!-- /.col-lg-3 col-md-6 -->
+
+					<div class="col-lg-4 col-md-6">
+						<div class="saaspik-icon-box-wrapper style-eleven wow fadeInRight" data-wow-delay="0.7s">
+							<div class="saaspik-icon-box-icon">
+								<img src="media/feature/18.png" alt="">
+							</div>
+							<div class="pixsass-icon-box-content">
+								<h3 class="pixsass-icon-box-title"><a href="#">Create invoices and vouchers</a></h3>
+								<p>
+									Easily create all the invoices and vouchers in the CRM.
+								</p>
+							</div>
+						</div><!-- /.saaspik-box style-eleven wow fadeInRight -->
+					</div><!-- /.col-lg-3 col-md-6 -->
+
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</section><!-- /.featured -->
+
+
+	
+		<!--============================================-->
+		<!--=         Popup Video Logo Carousel        =-->
+		<!--============================================-->
+		<div class="marketing-logo-carousel clogo" data-bg-image="{% static 'media/background/marketing_bg.html' %}">
+			<div class="container">
+			<!--	<div class="popup-videos-two wow fadeInUp">
+					<div class="video-thumbnail">
+						<img src="media/feature/mark_popup.jpg" alt="thumbnail">
+					</div>
+					
+					<a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="play-btn popup-video large"><i class="ei ei-arrow_triangle-right"></i></a>
+				</div>-->
+
+				<div class="section-title style-six text-center">
+					<h2 class="title wow pixFadeUp" data-wow-delay="0.3s">
+						<span> We create a family of happy customers worldwide </span>
+						Number speaks themselves
+					</h2>
+
+					<p class="wow pixFadeUp" data-wow-delay="0.5s">
+						It's tried and tested, you can rely us on!<br>
+					</p>
+				</div>
+
+				<div class="swiper-container logo-carousel-marketing wow pixFadeUp" data-wow-delay="0.3s" id="logo-carousel-marketing" data-perpage="10" data-space="20" data-breakpoints='{"1200": {"slidesPerView": 7},"991": {"slidesPerView": 5}, "768": {"slidesPerView": 4}, "640": {"slidesPerView": 3}, "440": {"slidesPerView": 2}}'>
+					<div class="swiper-wrapper">
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/16304732510.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/16493374230.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/16687587540.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/16168248570.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/1573818247.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/16492490450.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/16608156140.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/16406778450.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/16689672030.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/16468993270.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/1546610382.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/1583415344.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/16347176220.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/1563517122.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="http://travocrm.com/profile/company_details_logo/16395926340.30" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/16286103670.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/16458767200.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/16540682190.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/1547883826.html' %}" alt="brand"></div>
+						</div>
+                        						<div class="swiper-slide">
+							<div class="brand-logo-two"><img src="{% static 'travocrm.com/profile/company_details_logo/1550237807.html' %}" alt="brand"></div>
+						</div>
+                        
+						<!-- /.swiper-slide -->
+					</div>
+					<!-- /.swiper-wrapper -->
+				</div>
+				<!-- /#logo-carousel.swiper-container logo-carousel -->
+
+				<div class="countup-wrapper">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<div class="fun-fact style-two wow pixFadeUp" data-wow-delay="0.3s">
+								<div class="counter">
+									<h4 class="count" data-counter="300">300 </h4>
+									<span>+</span>
+								</div>
+								<!-- /.counter -->
+
+								<p>Companies</p>
+							</div>
+							<!-- /.fun-fact style-two -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 col-sm-6 -->
+
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<div class="fun-fact style-two wow pixFadeUp" data-wow-delay="0.5s">
+								<div class="counter">
+									<h4 class="count" data-counter="1500">1500 </h4>
+									<span>+</span>
+								</div>
+								<!-- /.counter -->
+								<p>Users</p>
+							</div>
+							<!-- /.fun-fact style-two -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 col-sm-6 -->
+
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<div class="fun-fact style-two wow pixFadeUp" data-wow-delay="0.7s">
+								<div class="counter">
+									<h4 class="count" data-counter="15">15 </h4>
+									<span>+</span>
+								</div>
+								<!-- /.counter -->
+								<p>Countries</p>
+							</div>
+							<!-- /.fun-fact style-two -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 col-sm-6 -->
+
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<div class="fun-fact style-two wow pixFadeUp" data-wow-delay="0.9s">
+								<div class="counter">
+									<h4 class="count" data-counter="150000">150000 </h4>
+									<span>+</span>
+								</div>
+								<!-- /.counter -->
+								<p>Quotes</p>
+							</div>
+							<!-- /.fun-fact style-two -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 col-sm-6 -->
+					</div>
+					<!-- /.row -->
+				</div>
+				<!-- /.countup-wrapper -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.marketing-logo-carousel -->
+		
+		
+		<!--===================================-->
+		<!--=         Genera Informes         =-->
+		<!--===================================-->
+		<section class="download">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 pix-order-one">
+						<div class="download-wrapper">
+							<h2 class="title wow pixFadeUp">Download The App</h2>
+
+							<p class="wow pixFadeUp" data-wow-delay="0.3s">
+								Get access to your business anytime, anywhere with the TravoCRM app.<br>
+								Download the app in both IOS and Android.
+							</p>
+
+							<div class="app-btn-wrapper">
+								<a href="https://play.google.com/store/apps/details?id=com.travocrm.app" class="app-btn btn-active  wow flipInX" data-wow-delay="0.5s" target="_blank">
+									<i class="fi flaticon-google-play"></i>
+									<span>Google play</span>
+								</a>
+
+								<a href="https://apps.apple.com/us/app/travocrm/id1257527705" class="app-btn wow flipInX" data-wow-delay="0.5s" target="_blank">
+									<i class="fi flaticon-apple-logo"></i>
+									<span>App Store</span>
+								</a>
+							</div>
+							<!-- /.app-btn-wrapper -->
+						</div>
+						<!-- /.download-wrapper -->
+					</div>
+					<!-- /.col-lg-5 -->
+
+					<div class="col-lg-7">
+						<div class="download-feature-image">
+							<img src="{% static 'media/download/1.png' %}" alt="" class="image-one wow pixFadeRight">
+							<img src="{% static 'media/download/2.png' %}" alt="" class="image-two wow pixFadeLeft">
+
+							<svg xmlns="http://www.w3.org/2000/svg" class="circle-svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500px" height="500px">
+								<path fill-rule="evenodd" opacity="0.102" fill="rgb(251, 138, 82)" d="M250.000,-0.000 C388.071,-0.000 500.000,111.929 500.000,250.000 C500.000,388.071 388.071,500.000 250.000,500.000 C111.929,500.000 -0.000,388.071 -0.000,250.000 C-0.000,111.929 111.929,-0.000 250.000,-0.000 Z" />
+							</svg>
+						</div>
+						<!-- /.download-feature-image -->
+					</div>
+					<!-- /.col-lg-7 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.download -->
+		
+	
+		
+		<!--==================================-->
+		<!--=         Call Back Form         =-->
+		<!--==================================-->
+		<section class="callback">
+			<ul class="particale-element">
+				<li><img src="{% static 'media/background/dot.png' %}" alt="Travocrm"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li><img src="{% static 'media/about/dot.png' %}" alt="Travocrm"></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="call-back-content">
+							<div class="section-title">
+								<h2 class="title wow fadeInUp">Request A Call Back</h2>
+
+								<p class="wow fadeInUp" data-wow-delay="0.3s">
+									We are glad to have you on our site, and we are looking forward to connecting with you. Is it a business enquiry or a concern that we could address? Regardless of your situation, we have a devoted team primarily catered to the needs of our customers.
+								</p>
+
+								<a href="calendy.html" class="pix-btn submit-btn wow fadeInUp" data-wow-delay="0.3s">Schedule a Demo</a>
+							</div>
+						</div>
+						<!-- /.contact-c -->
+					</div>
+					<!-- /.col-md-5 -->
+					<div class="col-md-7">
+						<div class="call-back-forms wow fadeIn" data-wow-delay="0.3s">
+							<h2 class="title">We need a few details!</h2>
+							<form class="contact-form" id="formId" data-pixsaas="call-back-forms">
+								<div class="row">
+									<div class="col-lg-6">
+										<input type="text" name="first_name" placeholder="First Name" required>
+									</div>
+									<div class="col-lg-6">
+										<input type="text" name="last_name" placeholder="Last Name" required>
+									</div>
+									<div class="col-lg-6">
+										<input type="text" name="agency_name" placeholder="Agency Name" required>
+									</div>
+									<div class="col-lg-6">
+										<select name="reference" id="" class="pix-select" required>
+											<option value="" selected>Reference</option>
+											<option value="Google">Google</option>
+											<option value="Facebook">Facebook</option>
+											<option value="Referral">Referral</option>
+											<option value="Youtube">Youtube</option>
+											<option value="Trade Fair">Trade Fair</option>
+											<option value="LinkedIn">LinkedIn</option>
+											<option value="Email">Email</option>
+											<option value="Phone Call">Phone Call</option>
+											<option value="SMS">SMS</option>
+											<option value="Team TravoCRM">Team TravoCRM</option>
+										</select>
+									</div>
+									<div class="col-lg-6">
+										<input type="text" name="country" id="country" placeholder="Select country" autocomplete="off" required/>
+										<input type="hidden" name="country_id" id="country_id"/>
+									</div>
+									
+									<div class="col-lg-6">
+										<input type="text" name="city" id="city" placeholder="Select city" autocomplete="off" required>
+										<input type="hidden" name="city_id" id="city_id">
+									</div>
+									
+									<div class="col-lg-6">
+										 <input type="text" name="phonecode" id="phonecode" placeholder="Phonecode" required>
+									</div>
+									<div class="col-lg-6">
+										<input type="text" name="contact" placeholder="Mobile Number" required>
+									</div>
+									<div class="col-lg-6">
+										<input type="email" name="email" placeholder="Email Id" required>
+									</div>
+									<div class="col-lg-6">
+										<input type="url" name="website" placeholder="Website">
+									</div>
+									
+								</div>
+
+								<button type="submit" class="pix-btn submit-btn">Submit Now</button>
+
+								<div class="form-result alert">
+									<div class="content"></div>
+								</div>
+							</form>
+							<!-- /.call-back-forms -->
+						</div>
+						<!-- /.faq-froms -->
+					</div>
+					<!-- /.col-md-7 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.contactus -->
+
+        <script>
+            $(document).ready(function() {
+                // get city data from database with autocomplete event
+                $( "#city" ).autocomplete({
+                    source: function( request, response ) {
+                        $.ajax( {
+                            url: "https://demoweb.travocrm.com/index/getcities",
+                            dataType:"JSON",
+                            data: {
+                                term: request.term,
+                                countryid: $("#country_id").val()
+                            },
+                            success: function( data ) {
+                                response( data );
+                            }
+                        } );
+                    },
+                    minLength: 2,
+                    select: function( event, ui ) {
+                        $("#city_id").val(ui.item.id)
+                        $("#city_name").val(ui.item.label)
+                    }
+                });
+
+                // get country data from database with autocomplete	event
+                $( "#country" ).autocomplete({
+                    source: function( request, response ) {
+                        $.ajax( {
+                            url: "https://demoweb.travocrm.com/index/getcountries",
+                            dataType:"JSON",
+                            data: {
+                                term: request.term
+                            },
+                            success: function( data ) {
+                                // console.log(data);
+                                response(data);
+                            }
+                        } );
+                    },
+                    minLength: 2,
+                    select: function( event, ui ) {
+                        // log( "Selected: " + " aka " + ui.item.id );
+                        $("#country_id").val(ui.item.id)
+                        $("#country_name").val(ui.item.label)
+                        $("#phonecode").val(ui.item.phonecode);
+                        // $(this).next("value").val(ui.item.id);
+                    }
+                });
+                // to insert form data to database
+                $("#formId").on("submit",function(e){
+                    e.preventDefault();
+                    $.ajax({
+                        'url':'https://demoweb.travocrm.com/index/insertform',
+                        'type' : 'POST',
+                        // 'data' : json_str,
+                        'data' :  new FormData(this),
+                        'dataType' : 'json',
+                        processData: false,
+                        contentType: false,
+                        'success' : function(result){
+                            // console.log(result);
+                            // console.log(result.status);
+                            if(result.status == "success"){
+                                alert(result.message);
+                                $("#formId").trigger('reset');
+                            }else{
+                                alert(result.message);
+                            }
+
+                        }
+                    });
+
+                });
+            });
+        </script>
+
+        {% endblock main-content %}

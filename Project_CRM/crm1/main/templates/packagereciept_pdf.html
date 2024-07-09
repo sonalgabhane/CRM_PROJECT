@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+{% load static %}
+
+<head>
+  <title>Package Details</title>
+  <style>
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    body {
+      position: relative;
+      margin: 0 auto;
+      color: #001028;
+      background: #FFFFFF;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-family: Arial;
+    }
+
+    header {
+      padding: 10px 0;
+      margin-bottom: 30px;
+    }
+
+    #logo {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    #logo img {
+      width: 90px;
+    }
+
+    h1 {
+
+      color: #5D6975;
+      font-size: 2.4em;
+      line-height: 1.4em;
+      font-weight: normal;
+      text-align: center;
+      margin: 0 0 20px 0;
+    }
+
+    #project {
+      float: left;
+    }
+
+    #project span {
+      color: #5D6975;
+      text-align: right;
+      width: 52px;
+      margin-right: 10px;
+      display: inline-block;
+      font-size: 14px;
+    }
+
+    #company {
+      float: right;
+      text-align: right;
+    }
+
+    #project div,
+    #company div {
+      white-space: nowrap;
+    }
+
+    #notices .notice {
+      color: #5D6975;
+      font-size: 1.2em;
+    }
+
+    footer {
+      color: #5D6975;
+      width: 100%;
+      height: 30px;
+      position: absolute;
+      bottom: 0;
+      border-top: 1px solid #C1CED9;
+      padding: 8px 0;
+      text-align: center;
+    }
+
+    p {
+      border: none;
+      border-radius: 20px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      background-color: brown;
+      gap: 10px; 
+    }
+    
+    .grid-item {
+      background-color: #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="clearfix">
+    <div id="logo" style="display:flex; justify-content:center; align-items:center;">
+      <img src="C:\Users\radhi\Desktop\crm1\main\Static\assets\img\logo.png" class="brand-logo" width=60 height=60>
+      <h1 class="brand-name">Travollt CRM</h1>
+    </div>
+    <h1><b><u>PACKAGE DETAILS</u></b></h1>
+    <div id="company" class="clearfix">
+      <div>Travollt CRM</div>
+      <div><a href="mailto:company@example.com">Travollt@example.com</a></div>
+      <div><a href="www.wondershop.in:8000">www.travvolt.com:8000</a></div>
+    </div>
+    <br>
+    <br>
+  </header>
+
+
+  <form action="" method="GET">
+    {% csrf_token %}
+
+    <h4><b>Package Name:</b> &nbsp{{Package_name}}</h4>
+    <h4><b>Country:</b> &nbsp{{Country}}</h4>
+
+    <h4><b>Destinations:</b> &nbsp
+      {% for i in Destinations %}
+      &nbsp {{ i.destination }} &nbsp </h4>
+    {% endfor %}
+
+    <h4><b>Days:</b> &nbsp{{Days}}</h4>
+
+
+
+    <h4><b>Detailed Itenerary:</b></h4>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{Detailed_Itenerary}}</p>
+
+    <h4><b>Hotel Details:</b></h4>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{Hotel_Details}}</p>
+
+
+    <h4><b>Tag:</b> &nbsp{{Tags}}</h4>
+
+    <h4><b>Meal Type:</b> &nbsp{{Meal_Type}}</h4>
+
+      <h4><u>Other</u></h4>
+<div class="grid-container">
+  <div class="grid-item">
+    {% if Free_WiFi %}
+    <h5>Free Wi-Fi: Yes</h5>
+    {% else %}
+    <h5>Free Wi-Fi: No</h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Airport_Transfers_Private %}
+    <h5>Airport Transfers-Private: Yes</h5>
+    {% else %}
+    <h5>Airport Transfers-Private: No </h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Airport_Transfers_SIC %}
+    <h5>Airport Transfers-SIC: Yes</h5>
+    {% else %}
+    <h5>Airport Transfers-SIC: No</h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Travel_Insurance %}
+    <h5>Travel Insurance: Yes</h5>
+    {% else %}
+    <h5>Travel Insurance: No</h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Visa %}
+    <h5>Visa: Yes</h5>
+    {% else %}
+    <h5>Visa: No</h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Inter_Hotel_Transfer_Private %}
+    <h5>Inter Hotel Transfer Private: Yes</h5>
+    {% else %}
+    <h5>Inter Hotel Transfer Private: No</h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Sightseeing_Transfer_Private %}
+    <h5>Sightseeing Transfer Private: Yes</h5>
+    {% else %}
+    <h5>Sightseeing Transfer Private: No</h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Sightseeing_Transfer_SIC %}
+    <h5>Sightseeing Transfer SIC: Yes</h5>
+    {% else %}
+    <h5>Sightseeing Transfer SIC: No</h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Inter_Hotel_Transfer_SIC %}
+    <h5>Inter Hotel Transfer SIC: Yes</h5>
+    {% else %}
+    <h5>Inter Hotel Transfer SIC: No</h5>
+    {% endif %}
+
+  </div>
+  <div class="grid-item">
+    {% if Candle_Light_Dinner %}
+    <h5>Candle Light Dinner: Yes</h5>
+    {% else %}
+    <h5>Candle Light Dinner: No</h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Bed_Decorations %}
+    <h5>Bed Decorations: Yes</h5>
+    {% else %}
+    <h5>Bed Decorations: No</h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Honeymoon_Cake %}
+    <h5>Honeymoon Cake: Yes</h5>
+    {% else %}
+    <h5>Honeymoon Cake: No</h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Private_Ferry %}
+      <h5>Private Ferry: Yes</h5>
+      {% else %}
+      <h5>Private Ferry: No</h5>
+      {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Private_Cruise %}
+    <h5>Private Cruise: Yes</h5>
+    {% else %}
+    <h5>Private Cruise: No</h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Scuba_Diving %}
+    <h5>Scuba Diving: Yes</h5>
+    {% else %}
+    <h5>Scuba Diving: No</h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Parasailing %}
+    <h5>Parasailing: Yes</h5>
+    {% else %}
+    <h5>Parasailing: No</h5>
+    {% endif %}
+
+  </div>
+  <div class="grid-item">
+    {% if Sea_Walk %}
+    <h5>Sea Walk: Yes</h5>
+    {% else %}
+    <h5>Sea Walk: No</h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Photoshoot_for_Couple %}
+    <h5>Photoshoot for Couple: Yes</h5>
+    {% else %}
+    <h5>Photoshoot for Couple: No</h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Candle_Light_Dinner_With_Wine %}
+    <h5>Candle Light Dinner With Wine: Yes</h5>
+    {% else %}
+    <h5>Candle Light Dinner With Wine: No</h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Candle_Light_Dinner_Without_Wine %}
+    <h5>Candle Light Dinner Without Wine: Yes</h5>
+    {% else %}
+    <h5>Candle Light Dinner Without Wine: No</h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Jet_Ski %}
+    <h5>Jet Ski: Yes</h5>
+    {% else %}
+    <h5>Jet Ski: No</h5>
+    {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Snorkeling %}
+      <h5>Snorkeling: Yes</h5>
+      {% else %}
+      <h5>Snorkeling: No</h5>
+      {% endif %}
+  </div>
+  <div class="grid-item">
+    {% if Airport_Transfers_Speed_Boat_Sea_Plane %}
+      <h5>Airport Transfers-Speed Boat/Sea Plane: Yes </h5>
+      {% else %}
+      <h5>Airport Transfers-Speed Boat/Sea Plane: No</h5>
+      {% endif %}
+  </div>
+</div>
+  
+      <h4><b>Inclusive:</b></h4>
+      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{Inclusive}}</p>
+
+      <h4><b>Exclusive:</b></h4>
+      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{Exclusive}}</p>
+
+
+      <h4><b>Terms and Conditions:</b></h4>
+      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{Terms_and_Conditions}}</p>
+      <h4></h4>
+
+      <h4><b>Cancellation Policy:</b></h4>
+      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{Cancellation_Policy}}</p>
+      <h4></h4>
+
+
+      <h4><b>Image:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{Image}}</h4>
+    </div>
+  </form>
+  <h5 style="text-align:right; font-size:12px;">*All values are in INR<h5>
+</body>
+
+</html>

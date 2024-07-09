@@ -1,0 +1,244 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block main-content %}
+
+<div class="main-content">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="head d-flex">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                                <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z"/>
+                              </svg>
+                        </div>
+                        <div style="margin-left:5%">
+                            <h4 style="line-height: 0.5;">All leads</h4>
+                            <a>View all leads any apply various filters</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6"></div>
+        <div class="col-md-2" style="color:black;">
+            <button type="submit"><a href="{% url 'addleads' %}" ><i class="bi bi-person-plus"></i>Add Leads</a></button>
+        </div>
+    </div>
+    <div class="line">
+                            
+    </div>
+    <form role="search" action="" method="POST" novalidate>
+        {% comment %} {{ Lead_filter.form }} {% endcomment %}
+        {% csrf_token %}
+        <div class="row" style="color:black;">
+        {% comment %} <div class="col-md-2">
+                <label for="from">From</label>
+                <input type="date" class="form-control" id="from" name="from" style="width:100%; height:60%; margin-bottom:2px;">
+            </div>
+            <div class="col-md-2">
+                <label for="from">To</label>
+                <input type="date" class="form-control" id="to" name="to" style="width:100%; height:60%; margin-bottom:2px;">
+            </div> {% endcomment %}
+            <div class="col-md-2">
+                <label for="from">Lead Priority</label>
+                <select id="priority" name="priority" style="height: 29px; width:100%">
+                    <option value="Choose">Choose</option>
+                    <option value="All">All</option>
+                    <option value="Cold">Cold</option>
+                    <option value="Warm">Warm</option>
+                    <option value="Hot">Hot</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="from">Lead Status</label>
+                <select id="status" name="status" style="height: 29px; width:100%">
+                    <option value="Choose">Choose</option>
+                    <option value="All">All</option>
+                    <option value="Unquilified">Unquilified</option>
+                    <option value="New">New</option>
+                    <option value="Working">Working</option>
+                    <option value="Proposal Sent">Proposal Sent</option>
+                    <option value="Negotiating">Negotiating</option>
+                    <option value="Booked">Booked</option>
+                    <option value="Lost">Lost</option>
+                </select>
+            </div>
+           <div class="col-md-2">
+            <label for="from">Trip Type</label>
+            <select id="triptype" name="triptype" style="height: 29px; width:100%">
+                <option value="Choose">Choose</option>
+                <option value="Other">Other</option>
+                <option value="Family">Family</option>
+                <option value="Honeymoon">Honeymoon</option>
+                <option value="Friends">Friends</option>
+                <option value="Official">Official</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Corporate">Corporate</option>
+                <option value="Educational">Educational</option>
+                <option value="Group">Group</option>
+                <option value="Individual">Individual</option>
+                <option value="Religious">Religious</option>
+                <option value="Couple">Couple</option>
+                <option value="Student Group">Student Group</option>
+            </select>
+            </div>
+            <div class="col-md-2">
+                <label for="from">Assigned To</label>
+                <select name="assigned" required="False" style="height: 29px; width:100%">
+                    <option selected disabled ,"true">Assigned</option>
+                        {% comment %} {% for i in d1 %} {% endcomment %}
+                        <option value={{d1.first_name}}>{{d1.first_name}} {{d1.last_name}}</option>
+                        {% comment %} {% endfor %} {% endcomment %}
+                </select>
+            </div>
+        </div>
+        <div class="row"style="color:black;">
+            {% comment %} <div class="col-md-2">
+                <label for="from">Enquiry Type</label>
+                <select id="enquiry" name="enquiry" style="height: 29px; width:100%">
+                    <option value="flight">Flight Booking</option>
+                    <option value="hotel">Hotel Booking</option>
+                    <option value="visa">Visa</option>
+                    <option value="travel">Travel Insurance</option>
+                    <option value="forex">Forex</option>
+                    <option value="sightseeing">Sightseeing</option>
+                    <option value="transport">Transport</option>
+                    <option value="other">Other</option>
+                    <option value="customisepackage">Customise Package</option>
+                    <option value="bus">Bus</option>
+                    <option value="train">Train</option>
+                    <option value="cruise">Cruise</option>
+                    <option value="passport">Passport</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="grouppackage">Group Package</option>
+                </select>
+            </div> {% endcomment %}
+            <div class="col-md-2">
+                <label for="from">Lead Number</label>
+                <input type="text" class="form-control" id="leadnumber" name="leadnumber" style="line-height: 1px;">
+            </div>
+            <div class="col-md-2">
+                <label for="from">First Name</label>
+                <input type="text" class="form-control" id="firstname" name="firstname" style="line-height: 1px;">
+            </div>
+            <div class="col-md-2">
+                <label for="from">Last Name</label>
+                <input type="text" class="form-control" id="lastname" name="lastname" style="line-height: 1px;">
+            </div>
+            <div class="col-md-2">
+                <label for="from">Mobile Number</label>
+                <input type="text" class="form-control" id="mobile" name="mobilenumber" style="line-height: 1px;">
+            </div>
+            <div class="col-md-2">
+                <label for="from">Email Id</label>
+                <input type="email" class="form-control" id="email" name="email" style="line-height: 1px;">
+            </div>
+        </div>
+        <div class="row" style="color:black;">
+            <div class="col-md-2">
+                <label for="from">Tags</label>
+                <select id="tags" name="tags" style="height: 29px; width:100%">
+                    <option value="Choose">Choose</option>
+                    <option value="All">All</option>
+                    <option value="Family">Family</option>
+                    <option value="Honeymoon">Honeymoon</option>
+                    <option value="Individual">Individual</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Group">Group</option>
+                    <option value="Women">Women Only</option>
+                    <option value="Domestic">Domestic</option>
+                    <option value="International">International</option>
+                    <option value="Beaches">Beaches</option>
+                    <option value="Weekend">Weekend</option>
+                    <option value="Heritage">Heritage</option>
+                    <option value="Wildlife">Wildlife</option>
+                    <option value="Jungle Safari">Jungle Safari</option>
+                    <option value="Student">Student</option>
+                    <option value="Pilgrimage">Pilgrimage</option>
+                    <option value="Popular">Popular</option>
+                    <option value="Trending">Trending</option>
+                </select>
+            </div>
+            <div class="col-md-2" style="height:30px; margin-block-start:auto;">
+                <button type="submit" name="search" >Search</button>
+            </div>
+        </div>
+
+    </form>
+    <hr/>
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <form method="POST">
+                        {% csrf_token %}
+                    <table id="dt-opt" class="table table-hover table-xl">
+                        <thead>
+                            <tr>
+                                <th>Lead No</th>
+                                <th>Contact Name</th>
+                                <th>Phone</th>
+                                <th>Lead Source</th>
+                                <th>Lead Status</th>
+                                <th>Assigned</th>
+                                <th>Current</th>
+                                <th>Destination</th>
+                                <th>Trip Type</th>
+                                <th>Enquiry Type</th>
+                                <th>Tags</th>
+                                <th>Tour Start</th>
+                                <th>Created</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in data %}
+                            <tr>
+                                <td>{{i.leadno}}</td>
+                                <td>{{i.firstname}} {{i.lastname}}</td>
+                                <td>{{i.number}}</td>
+                                <td>{{i.leadsource}}</td>
+                                <td>{{i.status}}</td>
+                                <td>{{i.assigned.first_name}} {{i.assigned.last_name}}</td>
+                                <td>{{i.assigned.first_name}} {{i.assigned.last_name}}</td>
+                                <td>{{i.destination}}</td>
+                                <td>{{i.triptype}}</td>
+                                <td>-</td>
+                                <td>{{i.tags}}</td>
+                                <td>-</td>
+                                <td>{{i.created}}</td>
+                                <td class="text-center font-size-18">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a href="/editleads/{{i.id}}" class="text-gray m-r-15"><i class="ti-pencil"></i></a>
+                                        </div>
+                                        
+                                        {% if request.user.type  == 'Admin' %}
+                                          
+                                          <div class="col-md-4">
+                                            <a href="/delete/{{i.id}}" class="text-gray m-r-15"><i class="ti-trash"></i></a>
+                                           </div> 
+                                    
+                                                                                
+                                       {% endif %}
+
+                                        <div class="col-md-4">
+                                            <a href="/viewlead/{{i.id}}" class="text-gray m-r-15"><i class="ti-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </form>
+                </div> 
+            </div>       
+        </div>   
+    </div>
+</div>
+
+{% endblock main-content %}

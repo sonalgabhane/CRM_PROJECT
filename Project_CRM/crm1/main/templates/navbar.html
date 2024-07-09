@@ -1,0 +1,95 @@
+		{% load static %}
+        
+        <!--=========================-->
+		<!--=        Navbar         =-->
+		<!--=========================-->
+		<header class="site-header header-six header_trans-fixed" data-top="992">
+			<div class="container">
+				<div class="header-inner">
+					<div class="toggle-menu">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+					<!-- /.toggle-menu -->
+
+					<div class="site-mobile-logo">
+						<a href="index.html" class="logo">
+							<img src="{% static 'assets/img/logo.png' %}" alt="Travocrm" class="main-logo">
+							<img src="{% static 'assets/img/logo.png' %}" alt="Travocrm" class="sticky-logo">
+						</a>
+					</div>
+
+					<nav class="site-nav">
+						<div class="close-menu">
+							<span>Close</span>
+							<i class="ei ei-icon_close"></i>
+						</div>
+
+						<div class="site-logo">
+							<a href={% url 'dashboard' %} class="logo">
+								<img src="{% static 'assets/img/logo.png' %}" alt="Travocrm" class="main-logo">
+								<img src="{% static 'assets/img/logo.png' %}" alt="Travocrm" class="sticky-logo">
+							</a>
+						</div>
+						<!-- /.site-logo -->
+
+						<div class="menu-wrapper" data-top="992">
+							<ul class="site-main-menu">
+								<!--<li class="menu-item-has-children">
+									<a href="index.html">Home</a>
+								</li>-->
+								<li><a href={% url 'pricing' %}>Pricing</a></li>
+								<li><a href={% url 'features' %}>Features</a></li>
+								<!--<li class="menu-item-has-children">
+									<a href="blog.html">Solutions</a>
+									<ul class="sub-menu">
+										<li><a href="https://www.travocrm.com/solutions/travocrm">TravoCRM</a></li>
+										<li><a href="https://www.travocrm.com/solutions/travocrmwebsite">TravoCRM+Website</a></li>
+									</ul>
+								</li>-->
+								<li><a href={% url 'clients' %}>Clients</a></li>
+								<!--<li><a href="https://www.travocrm.com/">Support</a></li>
+								<li><a href="https://www.travocrm.com/">Resources</a></li>-->
+								<li><a href={% url 'contactus' %}>Contact</a></li>
+								
+							</ul>
+						</div>
+						<!-- /.menu-wrapper -->
+						<div class="nav-right">
+							<a href={% url 'login' %} class="login-btn"><i class="ei ei-icon_lock_alt"></i>Login</a>
+							<a href={% url 'signup' %} class="login-btn"><i class="ei ei-icon_lock_alt"></i>Signup</a>
+							<a href={% url 'calendy' %} target="_blank" class="nav-btn">Schedule a Demo</a>
+						</div>
+
+					</nav><!-- /.site-nav -->
+				</div><!-- /.header-inner -->
+			</div><!-- /.container -->
+		</header><!-- /.site-header -->
+
+
+
+<link rel="stylesheet" href="{% static 'maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' %}">
+<a href="https://api.whatsapp.com/send?phone=919096373998&amp;text=Hello,%20I%20have%20visited%20your%20website%20and%20would%20like%20to%20take%20a%20demo%20of%20the%20software" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a> 
+<style>
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:30px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index:999;
+}
+
+.my-float{
+	margin-top:16px;
+}
+</style>

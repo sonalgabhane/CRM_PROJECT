@@ -1,0 +1,329 @@
+            <!-- <h2>Flight</h2>
+            <p>
+            <label for="id_flight_from">Flight from:</label>
+            <input type="text" name="flight_from" maxlength="100" id="id_flight_from">
+
+
+            </p>
+            <p>
+                <label for="id_flight_to">Flight to:</label>
+                <input type="text" name="flight_to" maxlength="100" id="id_flight_to">
+                
+                
+              </p>
+            
+              
+              <p>
+                <label for="id_flight_departure">Flight departure:</label>
+                <input type="text" name="flight_departure" id="id_flight_departure">
+                
+                
+              </p>
+            
+              
+              <p>
+                <label for="id_flight_return">Flight return:</label>
+                <input type="text" name="flight_return" id="id_flight_return">
+                
+                
+              </p>
+            
+              
+              <p>
+                <label for="id_flight_class">Flight class:</label>
+                <select name="flight_class" id="id_flight_class">
+              <option value="">---------</option>
+            
+              <option value="-" selected>-</option>
+            
+              <option value="All">All</option>
+            
+              <option value="Economy">Economy</option>
+            
+              <option value="Premium Economy">Premium Economy</option>
+            
+              <option value="Business">Business</option>
+            
+              <option value="First Class">First Class</option>
+            
+            </select>
+                
+                
+              </p>
+            
+              
+              <p>
+                <label for="id_category_domestic_flight">Category domestic flight:</label>
+                <input type="checkbox" name="category_domestic_flight" id="id_category_domestic_flight">
+                
+                
+              </p>
+            
+              
+              <p>
+                <label for="id_category_international_flight">Category international flight:</label>
+                <input type="checkbox" name="category_international_flight" id="id_category_international_flight">
+                
+                
+              </p>
+            
+              
+              <p>
+                <label for="id_flight_flexibity">Flight flexibity:</label>
+                <select name="flight_flexibity" id="id_flight_flexibity">
+              <option value="">---------</option>
+            
+              <option value="-" selected>-</option>
+            
+              <option value="+/- 0 Day">+/- 0 Day</option>
+            
+              <option value="+/- 3 Day">+/- 3 Day</option>
+            
+              <option value="+/- 6 Day">+/- 6 Day</option>
+            
+              <option value="+/- 1 Week">+/- 1 Week</option>
+            
+              <option value="+/- 3 Week">+/- 3 Week</option>
+            
+            </select>
+                
+                
+              </p>
+            
+              
+              <p>
+                <label for="id_flight_preference">Flight preference:</label>
+                <select name="flight_preference" id="id_flight_preference">
+              <option value="">---------</option>
+            
+              <option value="-" selected>-</option>
+            
+              <option value="All">All</option>
+            
+              <option value="One Stop">One Stop</option>
+            
+              <option value="Cheapest">Cheapest</option>
+            
+              <option value="Direct">Direct</option>
+            
+            </select></p>
+
+            <div id="textone">
+                <p style="background-color: gray; color:black; margin:6px; padding:2px;"><i
+                        class="bi bi-chevron-down"></i>
+                    Flight Booking</p>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="id_flight_from">From</label>
+                                <input type="text" name="flight_from" maxlength="100" id="id_flight_from" class="form-control" style="line-height: 1px;">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="id_flight_to">To</label>
+                                <input type="text" name="flight_to" maxlength="100" id="id_flight_to" class="form-control" style="line-height: 1px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="id_flight_departure">Departure</label>
+                                <input type="date" name="flight_departure" id="id_flight_departure" style="width:100%; height:60%; margin-bottom:2px;">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="id_flight_return">Return</label>
+                                <input type="date" name="flight_return" id="id_flight_return" style="width:100%; height:60%; margin-bottom:2px;">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="id_flight_class">Class</label>
+                                <select name="flight_class" id="id_flight_class" style="height: 29px; width:100%">
+                                    <option value="economy">Economy</option>
+                                    <option value="premiumeconomy">Premium Economy</option>
+                                    <option value="business">Business</option>
+                                    <option value="firstclass">First Class</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="category">Category</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="checkbox" name="category_domestic_flight" id="id_category_domestic_flight">
+                                        <label for="id_category_domestic_flight">Domestic Flight</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="checkbox" name="category_international_flight" id="id_category_international_flight">
+                                        <label for="id_category_international_flight">International Flight</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="id_flight_flexibity">Flexibity</label>
+                                <select name="flight_flexibity" id="id_flight_flexibity" style="height: 29px; width:100%">
+                                    <option value="+/- 0 Day">+/- 0 Day</option>
+                                    <option value="+/- 3 Day">+/- 3 Day</option>
+                                    <option value="+/- 6 Day">+/- 6 Day</option>
+                                    <option value="+/- 1 Week">+/- 1 Week</option>
+                                    <option value="+/- 3 Week">+/- 3 Week</option>
+
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="id_flight_preference">Preference</label>
+                                <select name="flight_preference" id="id_flight_preference" style="height: 29px; width:100%">
+                                    <option value="onestop">One Stop</option>
+                                    <option value="cheapest">Cheapest</option>
+                                    <option value="direct">Direct</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div id="div_id_flight_from" class="mb-3"> 
+                    <label for="id_flight_from" class="form-label">Flight from</label> 
+                    <input type="text" name="flight_from" maxlength="100" class="textinput form-control" id="id_flight_from"> 
+                </div>
+                <div id="div_id_flight_to" class="mb-3"> 
+                    <label for="id_flight_to" class="form-label">Flight to</label> 
+                    <input type="text" name="flight_to" maxlength="100" class="textinput form-control" id="id_flight_to"> 
+                </div>  
+            </div>
+            
+            
+            <div id="div_id_flight_departure" class="mb-3"> 
+                <label for="id_flight_departure" class="form-label">Flight departure</label> 
+                <input type="text" name="flight_departure" class="dateinput form-control" id="id_flight_departure"> 
+            </div> 
+            <div id="div_id_flight_return" class="mb-3"> 
+                <label for="id_flight_return" class="form-label">Flight return</label> 
+                <input type="text" name="flight_return" class="dateinput form-control" id="id_flight_return"> 
+            </div> 
+            <div id="div_id_flight_class" class="mb-3"> 
+                <label for="id_flight_class" class="form-label">Flight class</label> 
+                <select name="flight_class" class="select form-select" id="id_flight_class"> 
+                    <option value="">---------</option> <option value="-" selected>-</option> 
+                    <option value="All">All</option> <option value="Economy">Economy</option> 
+                    <option value="Premium Economy">Premium Economy</option> 
+                    <option value="Business">Business</option> 
+                    <option value="First Class">First Class</option>
+                </select> 
+            </div> 
+            <div class="mb-3"> 
+                <div id="div_id_category_domestic_flight" class="mb-3 form-check"> 
+                    <input type="checkbox" name="category_domestic_flight" class="checkboxinput form-check-input" id="id_category_domestic_flight"> 
+                    <label for="id_category_domestic_flight" class="form-check-label">Category domestic flight</label> 
+                </div>
+            </div> 
+            <div class="mb-3"> 
+                <div id="div_id_category_international_flight" class="mb-3 form-check"> 
+                    <input type="checkbox" name="category_international_flight" class="checkboxinput form-check-input" id="id_category_international_flight"> 
+                    <label for="id_category_international_flight" class="form-check-label">Category international flight</label> 
+                </div> 
+            </div> 
+            <div id="div_id_flight_flexibity" class="mb-3"> <label for="id_flight_flexibity" class="form-label">Flight flexibity</label> 
+                <select name="flight_flexibity" class="select form-select" id="id_flight_flexibity"> 
+                    <option value="">---------</option> 
+                    <option value="-" selected>-</option> 
+                    <option value="+/- 0 Day">+/- 0 Day</option> 
+                    <option value="+/- 3 Day">+/- 3 Day</option> 
+                    <option value="+/- 6 Day">+/- 6 Day</option> 
+                    <option value="+/- 1 Week">+/- 1 Week</option> 
+                    <option value="+/- 3 Week">+/- 3 Week</option>
+                </select> 
+            </div> 
+            <div id="div_id_flight_preference" class="mb-3"> 
+                <label for="id_flight_preference" class="form-label">Flight preference</label> 
+                <select name="flight_preference" class="select form-select" id="id_flight_preference"> 
+                    <option value="">---------</option> 
+                    <option value="-" selected>-</option> 
+                    <option value="All">All</option> 
+                    <option value="One Stop">One Stop</option> 
+                    <option value="Cheapest">Cheapest</option> 
+                    <option value="Direct">Direct</option>
+                </select> 
+            </div>
+
+
+
+            <h2>Hotel</h2>
+            
+
+<div id="div_id_hotel_country" class="mb-3"> 
+    <label for="id_hotel_country" class="form-label">Hotel country</label> 
+    <select name="hotel_country" class="lazyselect form-select" id="id_hotel_country"> 
+        
+</select> </div> <div id="div_id_hotel_city" class="mb-3"> 
+    <label for="id_hotel_city" class="form-label">Hotel city</label> 
+    <input type="text" name="hotel_city" maxlength="100" class="textinput form-control" id="id_hotel_city"> 
+</div> 
+<div id="div_id_hotel_roomtype" class="mb-3"> 
+    <label for="id_hotel_roomtype" class="form-label">Hotel roomtype</label> 
+    <select name="hotel_roomtype" class="select form-select" id="id_hotel_roomtype"> 
+        <option value="">---------</option> <option value="-" selected>-</option> 
+        <option value="All">All</option> <option value="Standard">Standard</option> <option value="Deluxe">Deluxe</option> <option value="Any">Any</option>
+
+</select> </div> <div id="div_id_hotel_starrate" class="mb-3"> <label for="id_hotel_starrate" class="form-label">
+                Hotel starrate
+            </label> <select name="hotel_starrate" class="select form-select" id="id_hotel_starrate"> <option value="">---------</option> <option value="-" selected>-</option> <option value="All">All</option> <option value="One Star">One Star</option> <option value="Two Star">Two Star</option> <option value="Three Star">Three Star</option> <option value="Four Star">Four Star</option> <option value="Five Star">Five Star</option>
+
+</select> </div> 
+<div id="div_id_hotel_checkin" class="mb-3"> 
+    <label for="id_hotel_checkin" class="form-label">
+                Hotel checkin
+            </label> 
+    <input type="text" name="hotel_checkin" class="dateinput form-control" id="id_hotel_checkin"> 
+</div> 
+<div id="div_id_hotel_checkout" class="mb-3"> 
+    <label for="id_hotel_checkout" class="form-label">
+                Hotel checkout
+            </label> 
+    <input type="text" name="hotel_checkout" class="dateinput form-control" id="id_hotel_checkout">
+</div>
+<div id="div_id_hotel_nofnight" class="mb-3"> 
+    <label for="id_hotel_nofnight" class="form-label">
+                Hotel nofnight
+        </label> 
+    <input type="number" name="hotel_nofnight" class="numberinput form-control" id="id_hotel_nofnight"> 
+</div> 
+<div id="div_id_hotel_bugdet" class="mb-3"> 
+    <label for="id_hotel_bugdet" class="form-label">
+                Hotel bugdet
+    </label> 
+    <input type="text" name="hotel_bugdet" maxlength="100" class="textinput form-control" id="id_hotel_bugdet"> 
+</div> 
+<div id="div_id_hotel_hotelname" class="mb-3"> 
+    <label for="id_hotel_hotelname" class="form-label">
+                Hotel hotelname
+        </label> 
+    <input type="text" name="hotel_hotelname" maxlength="100" class="textinput form-control" id="id_hotel_hotelname"> 
+</div> 
+<div id="div_id_hotel_nofroom" class="mb-3"> 
+    <label for="id_hotel_nofroom" class="form-label">
+                Hotel nofroom
+            </label> 
+    <input type="number" name="hotel_nofroom" class="numberinput form-control" id="id_hotel_nofroom"> 
+</div> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Flight Book</title>
+</head>
+<body>
+    <h1>Add Flight Book</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+

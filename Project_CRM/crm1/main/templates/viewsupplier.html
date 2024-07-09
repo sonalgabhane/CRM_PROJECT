@@ -1,0 +1,218 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block main-content %}
+
+<div class="main-content">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="head d-flex">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-plugin" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 1 2.898 5.673c-.167-.121-.216-.406-.002-.62l1.8-1.8a3.5 3.5 0 0 0 4.572-.328l1.414-1.415a.5.5 0 0 0 0-.707l-.707-.707 1.559-1.563a.5.5 0 1 0-.708-.706l-1.559 1.562-1.414-1.414 1.56-1.562a.5.5 0 1 0-.707-.706l-1.56 1.56-.707-.706a.5.5 0 0 0-.707 0L5.318 5.975a3.5 3.5 0 0 0-.328 4.571l-1.8 1.8c-.58.58-.62 1.6.121 2.137A8 8 0 1 0 0 8a.5.5 0 0 0 1 0Z"/>
+                              </svg>
+                        </div>
+                        <div style="margin-left:5%">
+                            <h4 style="line-height: 0.5;">View Supplier</h4>
+                            <a>View Supplier Details.</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7"></div>
+        <div class="col-md-1">
+            <a href="{% url 'supplier' %}"><i class="bi bi-arrow-return-left">Back</i></a>
+        </div>
+    </div>
+    <div class="line">
+
+    </div>
+    <div>
+        <h4 style="font-size: 15px;"><b>Supplier Information</b></h4>
+    </div>
+
+    <div class="line">
+
+    </div>
+    <div class="row">
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Company Name</h5>
+                    <p>{{s.companyname}}</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Alias Name</h5>
+                    <p>{{s.aliasname}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>GSTN Number</h5>
+                    <p>{{s.gst}}</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Billing Address</h5>
+                    <p>{{s.billingaddress}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>City</h5>
+                    <p>{{s.city}}</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>country</h5>
+                    <p>{{s.country}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Tags</h5>
+                    <p>{{s.tags}}</p>
+                </div> 
+            </div>
+            <div class="div" style="margin-bottom:1%">
+                <h4>Deals In</h4>
+            </div>
+            <div class="line"> 
+
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Visa</h5>
+                    <p>{{s.deals_in_visa}}</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Flights</h5>
+                    <p>{{s.deals_in_flights}}</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Hotel</h5>
+                    <p>{{s.deals_in_hotel}}</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Travel Insurance</h5>
+                    <p>{{s.deals_in_travel_insurance}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Forex</h5>
+                    <p>{{s.deals_in_forex}}</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Sightseeing</h5>
+                    <p>{{s.deals_in_sightseeing}}</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Transport</h5>
+                    <p>{{s.deals_in_transport}}</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Cruise</h5>
+                    <p>{{s.deals_in_cruise}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Other</h5>
+                    <p>{{s.deals_in_cruise}}</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Pacakge</h5>
+                    <p>{{s.deals_in_package}}</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Customize Package</h5>
+                    <p>{{s.deals_in_customize_package}}</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Bus</h5>
+                    <p>{{s.deals_in_bus}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Train</h5>
+                    <p>{{s.deals_in_train}}</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Passport</h5>
+                    <p>{{s.deals_in_passport}}</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Adventure</h5>
+                    <p>{{s.deals_in_adventure}}</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Group Pacakge</h5>
+                    <p>{{s.deals_in_group_package}}</p>
+                </div>
+            </div>
+
+            <div class="div" style="margin-bottom:1%">
+                <h4>Contact Information</h4>
+            </div>
+            <div class="line"> 
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Name</h5>
+                    <p>{{s.name}}</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Designation</h5>
+                    <p>{{s.designation}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Mobile Number</h5>
+                    <p>{{s.number}}</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Email</h5>
+                    <p>{{s.email}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Alternate Number</h5>
+                    <p>{{s.alternatenumber}}</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Alternate Email</h5>
+                    <p>{{s.alternateemail}}</p>
+                </div>
+            </div>
+            <h4>Bank Information</h4>
+            <div class="line">
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>Bank Details</h5>
+                    <p>{{s.bankdetails}}</p>
+                </div>
+                
+            </div>
+            <h4>Note Details</h4>
+            <div class="line">
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>Note</h5>
+                    <p>{{s.note}}</p>
+                </div>    
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock main-content %}

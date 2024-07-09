@@ -1,0 +1,102 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block main-content %}
+
+<div class="main-content">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="head d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+                        </svg>
+                        <div style="margin-left:5%">
+                            <h4 style="line-height: 0.5;"> View Hotels</h4>
+                            <a> Hotels information to make it useful</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7"></div>
+        <div class="col-md-1">
+            <a href={% url 'hotels' %}><i class="bi bi-arrow-return-left">Back</i></a>
+        </div>
+    </div>
+    <div class="line">
+
+    </div>
+    <div>
+        <h4 style="font-size: 15px;"><b>Hotels Information</b></h4>
+    </div>
+
+    <div class="line">
+
+    </div>
+
+    <form action="" method="GET">
+        {% csrf_token %}
+        
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Hotel Name</h5>
+                <p>{{h1.hotelname}}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Country Name</h5>
+                <p>{{h1.country}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>City Name</h5>
+                <p>{{h1.city}}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Address</h5>
+                <p>{{h1.address}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Contact</h5>
+                <p>{{h1.contact}}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Email Id</h5>
+                <p>{{h1.email}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Star Rating</h5>
+                <p>{{h1.rate}}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Hotel Type</h5>
+                <p>{{h1.htype}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Child Free Age - No charges till this age</h5>
+                <p>{{h1.childfreeage}}</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Child Without Free Age - Without Free charges till this age</h5>
+                <p>{{h1.childwithoutfreeage}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Images</h5>
+                <p>{{h1.image}}</p>
+            </div>
+        </div>
+    </form>
+
+</div>
+
+{% endblock main-content %}

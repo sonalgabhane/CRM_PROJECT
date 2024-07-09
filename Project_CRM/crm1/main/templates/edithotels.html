@@ -1,0 +1,135 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block main-content %}
+
+<div class="main-content">
+    <form method="POST" action="">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="head d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+                            </svg>
+                            <div style="margin-left:5%">
+                                <h4 style="line-height: 0.5;">Edit hotels</h4>
+                                <a>Edit hotels information to make it useful</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7"></div>
+            <div class="col-md-1">
+                <button type="submit"><a href="#"><i class="bi bi-arrow-return-left"></i></a>Back</button>
+            </div>
+        </div>
+        <div class="line">
+
+        </div>
+        <div>
+            <h4 style="font-size: 15px;"><b>Hotel Information</b></h4>
+        </div>
+
+        <div class="line">
+
+        </div>
+        <div class="row" style="color:black;">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="input">Hotel Name</label>
+                        <input type="text" class="form-control" id="hotelname" name="hotelname" 
+                           value="{{data.hotelname}}"  style="line-height: 1px;">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input">Country Name</label>
+                        <input type="text" class="form-control" id="country"  name="country" 
+                           value="{{data.country}}"  style="line-height: 1px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="input">City Name</label>
+                        <input type="text" class="form-control" id="city"  name="city" 
+                           value="{{data.city}}"  style="line-height: 1px;">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input">Address</label>
+                        <input type="text" class="form-control" id="address" name="address" 
+                           value="{{data.address}}"  style="line-height: 1px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="input">Contact</label>
+                        <input type="text" class="form-control" id="contact" name="contact" 
+                           value="{{data.contact}}"  style="line-height: 1px;">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input">Email Id</label>
+                        <input type="email" class="form-control" id="email" name="email"  
+                           value="{{data.email}}"  style="line-height: 1px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="input">Star Rating</label>
+                        <select id="rate" name="rate"  value="{{data.rate}}" style="height: 29px; width:100%">
+                            <option value="onestar">One Star</option>
+                            <option value="twostar">Two Star</option>
+                            <option value="threestar">Three Star</option>
+                            <option value="fourstar">Four Star</option>
+                            <option value="fivestar">Five Star</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input">Hotel Type</label>
+                        <select id="htype" name="htype"  value="{{data.htype}}" style="height: 29px; width:100%">
+                            <option value="standard">Standard</option>
+                            <option value="deluxe">Deluxe</option>
+                            <option value="any">Any</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="input">Child Free Age - No charges till this age</label>
+                        <input type="text" class="form-control" id="childfreeage" name="childfreeage" 
+                            value="{{data.childfreeage}}"  style="line-height: 1px;">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input">Child Without Free Age - Without Free charges till this age</label>
+                        <input type="text" class="form-control" id="childwithoutfreeage" name="childwithoutfreeage" 
+                            value="{{data.childwithoutfreeage}}"  style="line-height: 1px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="input">Amenities</label>
+                        <input type="text" class="form-control" id="amenities" name="amenities" 
+                            value="{{data.amenities}}"  style="line-height: 1px;">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input">Description</label>
+                        <input type="text" class="form-control" id="description" name="description" 
+                            value="{{data.description}}"  style="line-height: 1px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <label for="input">Images</label>
+                        <input type="file" class="form-control" id="image" name="image" 
+                           value="{{data.image}}"  style="line-height: 1px;">
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-4 mb-0">Update</button>
+    </form>
+</div>
+{%endblock main-content%}

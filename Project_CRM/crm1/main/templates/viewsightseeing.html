@@ -1,0 +1,118 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block main-content %}
+
+<div class="main-content">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="head d-flex">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-plugin" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 1 2.898 5.673c-.167-.121-.216-.406-.002-.62l1.8-1.8a3.5 3.5 0 0 0 4.572-.328l1.414-1.415a.5.5 0 0 0 0-.707l-.707-.707 1.559-1.563a.5.5 0 1 0-.708-.706l-1.559 1.562-1.414-1.414 1.56-1.562a.5.5 0 1 0-.707-.706l-1.56 1.56-.707-.706a.5.5 0 0 0-.707 0L5.318 5.975a3.5 3.5 0 0 0-.328 4.571l-1.8 1.8c-.58.58-.62 1.6.121 2.137A8 8 0 1 0 0 8a.5.5 0 0 0 1 0Z"/>
+                              </svg>
+                        </div>
+                        <div style="margin-left:5%">
+                            <h4 style="line-height: 0.5;">View Sightseens</h4>
+                            <a>View Sightseens Details.</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7"></div>
+        <div class="col-md-1">
+            <a href="{% url 'sightseeing' %}"><i class="bi bi-arrow-return-left">Back</i></a>
+        </div>
+    </div>
+    <div class="line">
+
+    </div>
+    <div>
+        <h4 style="font-size: 15px;"><b>Sightseens Information</b></h4>
+    </div>
+
+    <div class="line">
+
+    </div>
+    <div class="row">
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Country</h5>
+                    <p>{{s.country}}</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>City Name</h5>
+                    <p>{{s.city}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Sightseeing Activity</h5>
+                    <p>{{s.activity}}</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Description</h5>
+                    <p>{{s.description}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Inclusion</h5>
+                    <p>{{s.inclusion}}</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Exclusion</h5>
+                    <p>{{s.exclusion}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Duration</h5>
+                    <p>{{s.duration}}</p>
+                </div> 
+                <div class="col-md-6">
+                    <h5>Close Day</h5>
+                    <p>{{s.closeday}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Timings(Open-Close)</h5>
+                    <p>{{s.timings}}</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Transport</h5>
+                    <p>{{s.transport}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Start Time</h5>
+                    <p>{{s.time}}</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Remark</h5>
+                    <p>{{s.remark}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Internal Remark1</h5>
+                    <p>{{s.internalremark}}</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Internal Remark2</h5>
+                    <p>{{s.externalremark}}</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock main-content %}

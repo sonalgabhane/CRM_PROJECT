@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--
+<script type="text/javascript">
+window.GUMLET_CONFIG = {
+hosts: [{
+current: "www.travocrm.com",
+gumlet: "demotravo.gumlet.io"
+}],
+lazy_load: true
+};
+(function(){d=document;s=d.createElement("script");s.src="https://cdn.gumlet.com/gumlet.js/2.1/gumlet.min.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>
+-->
+
+
+<script type="text/javascript">
+    window.GUMLET_CONFIG = {
+        hosts: [{
+            current: "https://travocrm.com",
+            gumlet: "demotravo.gumlet.io"
+        }],
+        lazy_load: true
+    };
+    (function(){d=document;s=d.createElement("script");s.src="https://cdn.gumlet.com/gumlet.js/2.1/gumlet.min.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>  
+
+	<!-- Meta Data -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>TravoCRM - A SMART CRM for Travel companies </title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://www.travocrm.com/assets/img/fav/fav.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://www.travocrm.com/assets/img/fav/fav.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://www.travocrm.com/assets/img/fav/fav.png">
+	<link rel="mask-icon" href="https://www.travocrm.com/assets/img/fav/safari-pinned-tab.svg" color="#fa7070">
+
+	<meta name="msapplication-TileColor" content="#fa7070">
+	<meta name="theme-color" content="#fa7070">  
+
+	<!-- Dependency Styles -->
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/fontawesome/css/all.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/swiper/css/swiper.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/wow/css/animate.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/magnific-popup/css/magnific-popup.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/components-elegant-icons/css/elegant-icons.min.css" type="text/css">
+	<link rel="stylesheet" href="https://www.travocrm.com/dependencies/simple-line-icons/css/simple-line-icons.css" type="text/css">
+
+
+	<!-- Site Stylesheet -->
+	<link rel="stylesheet" href="https://www.travocrm.com/assets/css/app.css" type="text/css">
+
+	<!-- Google Web Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- jquery-->
+
+	<link rel="stylesheet" id="theme-style" href="https://www.travocrm.com/css/select2.min.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">   -->
+
+		
+<!--	<script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <style>
+  /*.ui-autocomplete-loading {*/
+  /*  background: white url("https://jqueryui.com/resources/demos/autocomplete/images/ui-anim_basic_16x16.gif") right center no-repeat;*/
+  /*}*/
+
+  .ui-autocomplete {
+      z-index: 100;
+      background: white url("https://jqueryui.com/resources/demos/autocomplete/images/ui-anim_basic_16x16.gif") right center no-repeat;
+      text-decoration: none;
+  }
+
+    </style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102273521-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-102273521-1');
+</script>
+
+
+</head>
+
+<body id="home-version-1" class="home-version-4" data-style="default">
+
+	<a href="#main_content" data-type="section-switch" class="return-to-top">
+		<i class="fa fa-chevron-up"></i>
+	</a>
+	<!--
+	<div class="page-loader">
+		<div class="loader">
+			
+			<div class="blobs">
+				<div class="blob-center"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+						<feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+						<feBlend in="SourceGraphic" in2="goo" />
+					</filter>
+				</defs>
+			</svg>
+
+		</div>
+	</div>-->
+	<!-- /.page-loader -->
+
+	<div id="main_content">
+
+
+		<!--=========================-->
+		<!--=        Navbar         =-->
+		<!--=========================-->
+		<header class="site-header header-six header_trans-fixed" data-top="992">
+			<div class="container">
+				<div class="header-inner">
+					<div class="toggle-menu">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+					<!-- /.toggle-menu -->
+
+					<div class="site-mobile-logo">
+						<a href="https://www.travocrm.com" class="logo">
+							<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="main-logo">
+							<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="sticky-logo">
+						</a>
+					</div>
+
+					<nav class="site-nav">
+						<div class="close-menu">
+							<span>Close</span>
+							<i class="ei ei-icon_close"></i>
+						</div>
+
+						<div class="site-logo">
+							<a href="https://www.travocrm.com" class="logo">
+								<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="main-logo">
+								<img src="https://www.travocrm.com/assets/img/logo.png" alt="Travocrm" class="sticky-logo">
+							</a>
+						</div>
+						<!-- /.site-logo -->
+
+						<div class="menu-wrapper" data-top="992">
+							<ul class="site-main-menu">
+								<!--<li class="menu-item-has-children">
+									<a href="index.html">Home</a>
+								</li>-->
+								<li><a href="https://www.travocrm.com/pricing">Pricing</a></li>
+								<li><a href="https://www.travocrm.com/solutions/travocrm">Features</a></li>
+								<!--<li class="menu-item-has-children">
+									<a href="blog.html">Solutions</a>
+									<ul class="sub-menu">
+										<li><a href="https://www.travocrm.com/solutions/travocrm">TravoCRM</a></li>
+										<li><a href="https://www.travocrm.com/solutions/travocrmwebsite">TravoCRM+Website</a></li>
+									</ul>
+								</li>-->
+								<li><a href="https://www.travocrm.com/clients">Clients</a></li>
+								<!--<li><a href="https://www.travocrm.com/">Support</a></li>
+								<li><a href="https://www.travocrm.com/">Resources</a></li>-->
+								<li><a href="https://www.travocrm.com/contactus">Contact</a></li>
+								
+							</ul>
+						</div>
+						<!-- /.menu-wrapper -->
+						<div class="nav-right">
+							<a href="https://app.travocrm.com/#/login" class="login-btn"><i class="ei ei-icon_lock_alt"></i>Login</a>
+							<a href="https://app.travocrm.com/#/signup" class="login-btn"><i class="ei ei-icon_lock_alt"></i>Signup</a>
+							<a href="https://www.travocrm.com/calendy" target="_blank" class="nav-btn">Schedule a Demo</a>
+						</div>
+
+					</nav><!-- /.site-nav -->
+				</div><!-- /.header-inner -->
+			</div><!-- /.container -->
+		</header><!-- /.site-header -->
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=919096373998&text=Hello,%20I%20have%20visited%20your%20website%20and%20would%20like%20to%20take%20a%20demo%20of%20the%20software" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a> 
+<style>
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:30px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index:999;
+}
+
+.my-float{
+	margin-top:16px;
+}
+</style>
+
+		
+		<!--==========================-->
+		<!--=         Banner         =-->
+		<!--==========================-->
+		<section class="banner banner-nine">
+			<div class="container">
+				<div class="banner-content-wrap-five">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="banner-content">
+								<h1 class="banner-title wow pixFadeUp" data-wow-delay="0.3s">
+						<span>A SMART CRM FOR </span><br>
+						TRAVEL COMPANIES
+					</h1>
+
+					<p class="description wow pixFadeUp" data-wow-delay="0.5s">
+						Curated specially for travel agencies, DMCs and tour operators. 
+					</p>
+
+								<a href="https://www.travocrm.com/calendy" class="pix-btn submit-btn wow fadeInUp" data-wow-delay="0.7s">Schedule a Demo</a>
+							</div><!-- /.banner-content -->
+						</div>
+						<!-- /.col-lg-6 -->
+
+						<div class="col-lg-6">
+							<div class="promo-mockup-five text-center">
+								<ul class="animate-element-five">
+									<li><img src="https://www.travocrm.com/media/banner/banner-five/travbanner.png" class="wow fadeInDown" alt="mockup"></li>
+								<!--	<li><img src="media/banner/banner-five/2.png" class="wow zoomIn" data-wow-delay="0.43s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/3.png" class="wow zoomIn" data-wow-delay="0.4s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/4.png" class="wow fadeInRight" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/5.png" class="wow fadeInLeft" data-wow-delay="0.6s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/6.png" class="wow fadeInUp" data-wow-delay="0.7s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/7.png" class="wow fadeInDown" data-wow-delay="0.8s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/8.png" class="wow fadeInDown" data-wow-delay="1s" alt="mockup"></li>
+									<li><img src="media/banner/banner-five/9.png" class="wow fadeInRight" alt="mockup"></li>-->
+								</ul>
+							</div><!-- /.promo-mockup -->
+						</div>
+						<!-- /.col-lg-7 -->
+					</div>
+					<!-- /.row -->
+				</div>
+
+				
+			</div><!-- /.container -->
+		</section><!-- /.banner banner-seven -->
+		
+		
+		<!--=================================-->
+		<!--=         Editor Design         =-->
+		<!--=================================-->
+		<section class="editor-design">
+			<div class="container">
+				<div class="row">
+
+					<div class="editure-feature-image wow pixFadeRight everyimg">
+						<div class="image-one" data-parallax='{"x" : 30}'>
+							<img src="https://www.travocrm.com/media/feature/4.png" class="wow pixFadeRight" data-wow-delay="0.3s" alt="feature-image">
+						</div>
+						<div class="image-two">
+							<div class="image-two-inner" data-parallax='{"x" : -30}'>
+								<img src="https://www.travocrm.com/media/feature/41.png" class="wow pixFadeLeft" data-wow-delay="0.5s" alt="feature-image">
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-lg-6 offset-lg-6">
+						<div class="editor-content">
+							<div class="section-title style-two">
+								<h2 class="title wow pixFadeUp" data-wow-delay="0.3s">
+									What’s good in TravoCRM?
+								</h2>
+
+								<p class="wow pixFadeUp" data-wow-delay="0.5s">
+									TravoCRM is an intuitive tool that helps you to track and manage all your customer information in one place. With TravoCRM, they will have a simple and easy way to close deals faster.
+								</p>
+							</div>
+
+							<div class="description wow pixFadeUp" data-wow-delay="0.7s">
+								<p>
+									Our user-friendly interface and fluid design ensure that the users have easy access to the elements on their dashboard. Navigating is a breeze and communicates to the user with their action being acknowledged with every click. 
+								</p>
+
+								<a href="https://www.travocrm.com/calendy" class="pix-btn wow pixFadeUp" data-wow-delay="0.9s">Schedule a Demo</a>
+							</div>
+						</div><!-- /.editor-content -->
+					</div><!-- /.col-lg-6 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+			<div class="shape-bg">
+				<img src="https://www.travocrm.com/media/background/shape_bg.png" class="wow fadeInLeft" alt="shape-bg">
+			</div>
+		</section><!-- /.editor-design -->
+		
+		<!--===================================-->
+		<!--=         Genera Informes         =-->
+		<!--===================================-->
+		<section class="genera-informes">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 pix-order-one">
+						<div class="section-title style-two">
+							<h2 class="title wow pixFadeUp">
+								What more can be done with TravoCRM?
+							</h2>
+
+							<p class="wow pixFadeUp" data-wow-delay="0.3s">
+								TravoCRM is a unique solution for managing your sales and marketing activities, which allows you to focus on the most important things and helps you build relationships with your customers.
+							</p>
+						</div><!-- /.section-title style-two -->
+
+						<ul class="list-items wow pixFadeUp" data-wow-delay="0.4s">
+							<li>Itineraries and quotations</li>
+							<li>Hotel, Transport, Flight Voucher creations</li>
+							<li>Invoices and receipts</li>
+							<li>Visa and traveller profile</li>
+							<li>Plenty of reports</li>
+						</ul>
+
+						<a href="https://www.travocrm.com/calendy" class="pix-btn btn-outline wow pixFadeUp" data-wow-delay="0.5s">Schedule a Demo</a>
+					</div><!-- /.col-lg-6 -->
+
+
+					<div class="informes-feature-image everyimg">
+						<div class="image-one" data-parallax='{"y" : 20}'>
+							<img src="https://www.travocrm.com/media/feature/5.png" class="wow pixFadeDown" alt="informes">
+						</div>
+
+						<div class="image-two" data-parallax='{"y" : -20}'>
+							<img src="https://www.travocrm.com/media/feature/51.png" class=" mw-none wow pixFadeDown" data-wow-delay="0.3s" alt="informes">
+						</div>
+
+					</div>
+
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+
+			<div class="shape-bg">
+				<img src="https://www.travocrm.com/media/background/shape.png" class="wow fadeInRight" alt="shape-bg">
+			</div>
+		</section><!-- /.genera-informes -->
+		
+		<!--==================================-->
+		<!--=         Call To Action         =-->
+		<!--==================================-->
+		<section class="call-to-action-four">
+
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-md-7">
+						<div class="action-content style-four wow pixFadeUp">
+							<h2 class="title">
+								Looks Interesting ?
+							</h2>
+
+							<p>
+								Schedule a demo with us to know more
+							</p>
+						</div>
+						<!-- /.action-content -->
+					</div>
+					<!-- /.col-md-7 -->
+
+					<div class="col-md-5 text-right">
+						<a href="https://www.travocrm.com/calendy" class="pix-btn submit-btn wow fadeInUp">Schedule a Demo</a>
+					</div>
+					<!-- /.col-md-5 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.call-to-action -->
+		
+		
+		<!--===========================-->
+		<!--=         Service         =-->
+		<!--===========================-->
+		<section class="featured-two">
+			<div class="container">
+				<div class="section-title text-center">
+					<h3 class="sub-title wow pixFadeUp">Features</h3>
+					<h2 class="title wow pixFadeUp" data-wow-delay="0.2s">TravoCRM builds a long-term, successful relationship with any client by delivering superior service and managing customer data. With TravoCRM, you can:</h2>
+				</div><!-- /.section-title -->
+
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<div class="saaspik-icon-box-wrapper style-two wow pixFadeRight" data-wow-delay="0.4s">
+							<ul class="list-items list-icon-arrow wow pixFadeUp" data-wow-delay="0.4s">
+								<li>Android and iOS mobile apps</li>
+								<li>Manage customer requirements effectively</li>
+								<li>Create unique day-wise itinerary & quotations within minutes in PDF Format</li>
+								<li>Generate GST invoices, receipts and credit notes</li>
+								<li>Create hotel, transport/service, flight vouchers</li>
+								<li>Create promotion flyers in seconds</li>
+								<li>Digital planner to know your team schedule</li>
+								<li>Send WhatsApp, SMS & Email to your customer directly from TravoCRM</li>
+								<li>Manage your customer contacts easily</li>
+								<li>Manage and mail your suppliers (supplier profile management)</li>
+								<li>Visa & traveller profile management</li>
+								<li>Inbuilt bulk SMS & Email sender to send wishes & offers</li>
+								<li>Auto lead create from paid digital marketing & your website (Enquiry forms linkup)</li>
+								<li>Dynamic pricing, store your pre-rates & create proposals instantly</li>
+								<li>Load your previous data easily with excel upload feature</li>
+								<li>WhatsApp & SMS templates for faster messaging & service</li>
+							</ul>
+						</div><!-- /.pixsass-box style-two -->
+					</div><!-- /.col-lg-4 col-md-6 -->
+
+					<div class="col-lg-6 col-md-6">
+						<div class="saaspik-icon-box-wrapper style-two wow pixFadeRight" data-wow-delay="0.5s">
+						<ul class="list-items list-icon-arrow wow pixFadeUp" data-wow-delay="0.4s">
+								<li>Leads management with travel industry-specific data</li>
+								<li>Manage the visa checklist and progress</li>
+								<li>50+ reports for better analysis</li>
+								<li>Hierarchy management (Admin, salesman and sales manager levels)</li>
+								<li>Add and assign task as a to-do list</li>
+								<li>Birthday/Anniversary auto-reminders</li>
+								<li>Assign or pass leads to your team members</li>
+								<li>Excellent followup management system</li>
+								<li>Clean & simple user interface, easy to use by everyone</li>
+								<li>Store clients records & files at one place</li>
+								<li>Customer profile management, complete track record</li>
+								<li>Manage your payment cycle with customer & supplier</li>
+								<li>In-depth lead management cycle with many supportive features</li>
+								<li>Add bookmarks & sticky notes</li>
+								<li>Send visa documents via email & WhatsApp in seconds</li>
+								<li>Centralized data management cloud based system</li>
+							</ul>
+							
+						</div><!-- /.pixsass-box style-two -->
+					</div><!-- /.col-lg-4 col-md-6 -->
+
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</section><!-- /.featured -->
+		
+		
+			<!--=================================-->
+		<!--=         Revolutionize         =-->
+		<!--=================================-->
+		<!--
+		<section class="revolutionize">
+			<div class="bg-angle"></div>
+			<div class="container">
+				<div class="section-title dark-title text-center">
+					<h3 class="sub-title wow pixFadeUp">Updated Screen</h3>
+					<h2 class="title wow pixFadeUp" data-wow-delay="0.3s">
+						Revolutionize your online<br>
+						business today
+					</h2>
+				</div>
+
+				<div id="pix-tabs" class="wow pixFadeUp" data-wow-delay="0.5s">
+					<ul id="pix-tabs-nav">
+						<li><a href="#tab1">Quick Access </a></li>
+						<li><a href="#tab2">Easily Manage </a></li>
+						<li><a href="#tab3">Data Transfer </a></li>
+						<li><a href="#tab4">7/24h Support</a></li>
+					</ul> 
+
+					<div id="pix-tabs-content">
+						<div id="tab1" class="content">
+							<img src="https://www.travocrm.com/media/revolutionize/2.jpg" alt="revolutionize">
+
+							<div class="shape-shadow"></div>
+						</div>
+						<div id="tab2" class="content">
+							<img src="https://www.travocrm.com/media/revolutionize/1.jpg" alt="revolutionize">
+							<div class="shape-shadow"></div>
+						</div>
+						<div id="tab3" class="content">
+							<img src="https://www.travocrm.com/media/revolutionize/3.jpg" alt="revolutionize">
+							<div class="shape-shadow"></div>
+						</div>
+
+						<div id="tab4" class="content">
+							<img src="https://www.travocrm.com/media/revolutionize/4.jpg" alt="revolutionize">
+							<div class="shape-shadow"></div>
+						</div>
+					</div> 
+				</div> 
+			</div>
+		</section>
+		-->
+		
+		
+		
+		<!--===========================-->
+		<!--=         Pricing         =-->
+		<!--===========================-->
+		<!--
+		<section class="pricing">
+			<div class="container">
+				<div class="section-title text-center">
+					<h3 class="sub-title wow pixFadeUp">Pricing Plan</h3>
+					<h2 class="title wow pixFadeUp" data-wow-delay="0.3s">
+						No Hidden Charges! Choose <br>
+						your Plan.
+					</h2>
+				</div>
+				
+				<nav class="pricing-tab wow pixFadeUp" data-wow-delay="0.4s">
+					<span class="tab-btn monthly_tab_title">
+						Monthly
+					</span>
+					<span class="pricing-tab-switcher"></span>
+					<span class="tab-btn annual_tab_title">
+						Annual
+					</span>
+				</nav>
+
+				<div class="row advanced-pricing-table no-gutters wow pixFadeUp" data-wow-delay="0.5s">
+
+					<div class="col-lg-4">
+						<div class="pricing-table br-left">
+							<div class="pricing-header pricing-amount">
+								<div class="annual_price">
+									<h2 class="price">$0.00</h2>
+								</div>
+								
+								<div class="monthly_price">
+									<h2 class="price">$0.00</h2>
+								</div>
+								
+
+								<h3 class="price-title">Basic Account</h3>
+								<p>Only for first month</p>
+							</div>
+							
+							<ul class="price-feture">
+								<li class="have">Limited Acess Library</li>
+								<li class="have">Single User</li>
+								<li class="have">eCommerce Store</li>
+								<li class="not">Hotline Support 24/7</li>
+								<li class="not">No Updates</li>
+							</ul>
+
+							<div class="action text-center">
+								<a href="#" class="pix-btn btn-outline">Get Started</a>
+							</div>
+						</div>
+						
+					</div>
+					
+
+					<div class="col-lg-4">
+						<div class="pricing-table color-two">
+							<div class="pricing-header pricing-amount">
+								<div class="annual_price">
+									<h2 class="price">$80.50</h2>
+								</div>
+								
+
+								<div class="monthly_price">
+									<h2 class="price">$16.97</h2>
+								</div>
+
+
+								<h3 class="price-title">Standard Account</h3>
+								<p>Only for first month</p>
+							</div>
+							
+
+							<ul class="price-feture">
+								<li class="have">Limited Acess Library</li>
+								<li class="have">Single User</li>
+								<li class="have">eCommerce Store</li>
+								<li class="have">Hotline Support 24/7</li>
+								<li class="not">No Updates</li>
+							</ul>
+
+							<div class="action text-center">
+								<a href="#" class="pix-btn btn-outline">Get Started</a>
+							</div>
+						</div>
+						
+					</div>
+					
+
+					<div class="col-lg-4">
+						<div class="pricing-table color-three">
+
+							<div class="pricing-header pricing-amount">
+								<div class="annual_price">
+									<h2 class="price">$180.70</h2>
+								</div>
+								
+
+								<div class="monthly_price">
+									<h2 class="price">$29.45</h2>
+								</div>
+								
+
+								<h3 class="price-title">Premium Account</h3>
+								<p>Only for first month</p>
+							</div>
+							
+							<ul class="price-feture">
+								<li class="have">Limited Acess Library</li>
+								<li class="have">Single User</li>
+								<li class="have">eCommerce Store</li>
+								<li class="have">Hotline Support 24/7</li>
+								<li class="have">No Updates</li>
+							</ul>
+
+							<div class="action text-center">
+								<a href="#" class="pix-btn btn-outline">Get Started</a>
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+
+			<div class="faq-section">
+				<div class="container">
+					<div class="section-title text-center">
+						<h3 class="sub-title wow pixFadeUp">Frequently ask Question</h3>
+						<h2 class="title wow pixFadeUp" data-wow-delay="0.3s">
+							Want to ask something from us?
+						</h2>
+					</div>
+					
+					<div class="tabs-wrapper wow pixFadeUp" data-wow-delay="0.4s">
+						<ul class="nav faq-tabs" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="design-tab" data-toggle="tab" href="#design" role="tab" aria-controls="design" aria-selected="true">UI/UX Design</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="service-tab" data-toggle="tab" href="#service" role="tab" aria-controls="service" aria-selected="false">Service</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="false">General</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="branding-tab" data-toggle="tab" href="#branding" role="tab" aria-controls="branding" aria-selected="false">Branding</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="design" role="tabpanel" aria-labelledby="design-tab">
+								<div id="accordion" class="faq faq-two pixFade">
+									<div class="card active">
+										<div class="card-header" id="heading100">
+											<h5>
+												<button class="btn btn-link" data-toggle="collapse" data-target="#collapse001" aria-expanded="false" aria-controls="collapse001">
+													How to contact with Customer Service?
+												</button>
+											</h5>
+										</div>
+										<div id="collapse001" class="collapse show" aria-labelledby="heading100" data-parent="#accordion" style="">
+											<div class="card-body">
+												<p>
+													Easy peasy owt to do with me cras I don't want no agro what a load of rubbish starkers absolutely bladdered, old tinkety tonk old fruit so I said the full monty.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="heading200">
+											<h5>
+												<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse100" aria-expanded="true" aria-controls="collapse100">
+													How delete my account?
+												</button>
+											</h5>
+										</div>
+										<div id="collapse100" class="collapse" aria-labelledby="heading200" data-parent="#accordion" style="">
+											<div class="card-body">
+												<p>
+													Easy peasy owt to do with me cras I don't want no agro what a load of rubbish starkers absolutely bladdered, old tinkety tonk old fruit so I said the full monty.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="heading300">
+											<h5>
+												<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse200" aria-expanded="false" aria-controls="collapse200">
+													Where is the edit optioon on dashboard?
+												</button>
+											</h5>
+										</div>
+										<div id="collapse200" class="collapse" aria-labelledby="heading300" data-parent="#accordion" style="">
+											<div class="card-body">
+												<p>
+													Easy peasy owt to do with me cras I don't want no agro what a load of rubbish starkers absolutely bladdered, old tinkety tonk old fruit so I said the full monty.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="heading400">
+											<h5>
+												<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse300" aria-expanded="false" aria-controls="collapse300">
+													Is there any custome pricing system?
+												</button>
+											</h5>
+										</div>
+										<div id="collapse300" class="collapse" aria-labelledby="heading400" data-parent="#accordion" style="">
+											<div class="card-body">
+												<p>
+													Easy peasy owt to do with me cras I don't want no agro what a load of rubbish starkers absolutely bladdered, old tinkety tonk old fruit so I said the full monty.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="service" role="tabpanel" aria-labelledby="service-tab">
+								<div id="accordion-2" class="faq faq-two pixFade">
+									<div class="card active">
+										<div class="card-header" id="heading101">
+											<h5>
+												<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse01" aria-expanded="false" aria-controls="collapse01">
+													How to contact with Customer Service?
+												</button>
+											</h5>
+										</div>
+										<div id="collapse01" class="collapse show" aria-labelledby="heading101" data-parent="#accordion-2" style="">
+											<div class="card-body">
+												<p>
+													Easy peasy owt to do with me cras I don't want no agro what a load of rubbish starkers absolutely bladdered, old tinkety tonk old fruit so I said the full monty.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="heading201">
+											<h5>
+												<button class="btn btn-link" data-toggle="collapse" data-target="#collapse101" aria-expanded="true" aria-controls="collapse101">
+													How delete my account?
+												</button>
+											</h5>
+										</div>
+										<div id="collapse101" class="collapse" aria-labelledby="heading201" data-parent="#accordion-2" style="">
+											<div class="card-body">
+												<p>
+													Easy peasy owt to do with me cras I don't want no agro what a load of rubbish starkers absolutely bladdered, old tinkety tonk old fruit so I said the full monty.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="heading301">
+											<h5>
+												<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse201" aria-expanded="false" aria-controls="collapse201">
+													Where is the edit optioon on dashboard?
+												</button>
+											</h5>
+										</div>
+										<div id="collapse201" class="collapse" aria-labelledby="heading301" data-parent="#accordion-2" style="">
+											<div class="card-body">
+												<p>
+													Easy peasy owt to do with me cras I don't want no agro what a load of rubbish starkers absolutely bladdered, old tinkety tonk old fruit so I said the full monty.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="heading401">
+											<h5>
+												<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse301" aria-expanded="false" aria-controls="collapse301">
+													Is there any custome pricing system?
+												</button>
+											</h5>
+										</div>
+										<div id="collapse301" class="collapse" aria-labelledby="heading401" data-parent="#accordion-2" style="">
+											<div class="card-body">
+												<p>
+													Easy peasy owt to do with me cras I don't want no agro what a load of rubbish starkers absolutely bladdered, old tinkety tonk old fruit so I said the full monty.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="general" role="tabpanel" aria-labelledby="general-tab">
+								<div id="accordion-3" class="faq faq-two pixFade">
+									<div class="card active">
+										<div class="card-header" id="heading102">
+											<h5>
+												<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse002" aria-expanded="false" aria-controls="collapse002">
+													How to contact with Customer Service?
+												</button>
+											</h5>
+										</div>
+										<div id="collapse002" class="collapse show" aria-labelledby="heading102" data-parent="#accordion-3" style="">
+											<div class="card-body">
+												<p>
+													Easy peasy owt to do with me cras I don't want no agro what a load of rubbish starkers absolutely bladdered, old tinkety tonk old fruit so I said the full monty.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="heading202">
+											<h5>
+												<button class="btn btn-link" data-toggle="collapse" data-target="#collapse102" aria-expanded="true" aria-controls="collapse102">
+													How delete my account?
+												</button>
+											</h5>
+										</div>
+										<div id="collapse102" class="collapse" aria-labelledby="heading202" data-parent="#accordion-3" style="">
+											<div class="card-body">
+												<p>
+													Easy peasy owt to do with me cras I don't want no agro what a load of rubbish starkers absolutely bladdered, old tinkety tonk old fruit so I said the full monty.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="heading303">
+											<h5>
+												<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse203" aria-expanded="false" aria-controls="collapse203">
+													Where is the edit optioon on dashboard?
+												</button>
+											</h5>
+										</div>
+										<div id="collapse203" class="collapse" aria-labelledby="heading303" data-parent="#accordion-3" style="">
+											<div class="card-body">
+												<p>
+													Easy peasy owt to do with me cras I don't want no agro what a load of rubbish starkers absolutely bladdered, old tinkety tonk old fruit so I said the full monty.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="heading403">
+											<h5>
+												<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse303" aria-expanded="false" aria-controls="collapse303">
+													Is there any custome pricing system?
+												</button>
+											</h5>
+										</div>
+										<div id="collapse303" class="collapse" aria-labelledby="heading403" data-parent="#accordion-3" style="">
+											<div class="card-body">
+												<p>
+													Easy peasy owt to do with me cras I don't want no agro what a load of rubbish starkers absolutely bladdered, old tinkety tonk old fruit so I said the full monty.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="branding" role="tabpanel" aria-labelledby="branding-tab">
+								<div id="accordion-4" class="faq faq-two pixFade">
+									<div class="card active">
+										<div class="card-header" id="heading10">
+											<h5>
+												<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse00" aria-expanded="false" aria-controls="collapse00">
+													How to contact with Customer Service?
+												</button>
+											</h5>
+										</div>
+										<div id="collapse00" class="collapse show" aria-labelledby="heading10" data-parent="#accordion-4" style="">
+											<div class="card-body">
+												<p>
+													Easy peasy owt to do with me cras I don't want no agro what a load of rubbish starkers absolutely bladdered, old tinkety tonk old fruit so I said the full monty.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="heading20">
+											<h5>
+												<button class="btn btn-link" data-toggle="collapse" data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
+													How delete my account?
+												</button>
+											</h5>
+										</div>
+										<div id="collapse10" class="collapse" aria-labelledby="heading20" data-parent="#accordion-4" style="">
+											<div class="card-body">
+												<p>
+													Easy peasy owt to do with me cras I don't want no agro what a load of rubbish starkers absolutely bladdered, old tinkety tonk old fruit so I said the full monty.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="heading30">
+											<h5>
+												<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+													Where is the edit optioon on dashboard?
+												</button>
+											</h5>
+										</div>
+										<div id="collapse20" class="collapse" aria-labelledby="heading30" data-parent="#accordion-4" style="">
+											<div class="card-body">
+												<p>
+													Easy peasy owt to do with me cras I don't want no agro what a load of rubbish starkers absolutely bladdered, old tinkety tonk old fruit so I said the full monty.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="heading40">
+											<h5>
+												<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse30" aria-expanded="false" aria-controls="collapse30">
+													Is there any custome pricing system?
+												</button>
+											</h5>
+										</div>
+										<div id="collapse30" class="collapse" aria-labelledby="heading40" data-parent="#accordion-4" style="">
+											<div class="card-body">
+												<p>
+													Easy peasy owt to do with me cras I don't want no agro what a load of rubbish starkers absolutely bladdered, old tinkety tonk old fruit so I said the full monty.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="btn-container text-center mt-40 wow pixFadeUp">
+						<a href="#" class="pix-btn btn-outline">Explore Forum</a>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div class="scroll-circle wow pixFadeLeft">
+				<img src="https://www.travocrm.com/media/background/circle8.png" data-parallax='{"y" : 130}' alt="circle">
+			</div>
+		</section>-->
+		<!-- /.pricing -->
+		
+		
+	
+		
+		
+		<!--==================================-->
+		<!--=         Call Back Form         =-->
+		<!--==================================-->
+		<section class="callback">
+			<ul class="particale-element">
+				<li><img src="https://www.travocrm.com/media/background/dot.png" alt="saaspik"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li><img src="https://www.travocrm.com/media/about/dot2.png" alt="saaspik"></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="call-back-content">
+							<div class="section-title">
+								<h2 class="title wow fadeInUp">Request A Callback</h2>
+
+								<p class="wow fadeInUp" data-wow-delay="0.3s">
+									TravoCRM is an affordable, easy-to-use tool that will be of great help to anyone who has to deal with travel-related tasks.
+								</p>
+
+								<a href="https://www.travocrm.com/calendy" class="pix-btn submit-btn wow fadeInUp" data-wow-delay="0.3s">Schedule a Demo</a>
+								
+							</div>
+						</div>
+						<!-- /.contact-c -->
+					</div>
+					<!-- /.col-md-5 -->
+					<div class="col-md-7">
+						<div class="call-back-forms wow fadeIn" data-wow-delay="0.3s">
+							<h2 class="title">We need a few details!</h2>
+							<form class="contact-form" id="formId" data-pixsaas="call-back-forms">
+								<div class="row">
+									<div class="col-lg-6">
+										<input type="text" name="first_name" placeholder="First Name" required>
+									</div>
+									<div class="col-lg-6">
+										<input type="text" name="last_name" placeholder="Last Name" required>
+									</div>
+									<div class="col-lg-6">
+										<input type="text" name="agency_name" placeholder="Agency Name" required>
+									</div>
+									<div class="col-lg-6">
+										<select name="reference" id="" class="pix-select" required>
+											<option value="" selected>Reference</option>
+											<option value="Google">Google</option>
+											<option value="Facebook">Facebook</option>
+											<option value="Referral">Referral</option>
+											<option value="Youtube">Youtube</option>
+											<option value="Trade Fair">Trade Fair</option>
+											<option value="LinkedIn">LinkedIn</option>
+											<option value="Email">Email</option>
+											<option value="Phone Call">Phone Call</option>
+											<option value="SMS">SMS</option>
+											<option value="Team TravoCRM">Team TravoCRM</option>
+										</select>
+									</div>
+									<div class="col-lg-6">
+										<input type="text" name="country" id="country" placeholder="Select country" autocomplete="off" required/>
+										<input type="hidden" name="country_id" id="country_id"/>
+									</div>
+									
+									<div class="col-lg-6">
+										<input type="text" name="city" id="city" placeholder="Select city" autocomplete="off" required>
+										<input type="hidden" name="city_id" id="city_id">
+									</div>
+									
+									<div class="col-lg-6">
+										 <input type="text" name="phonecode" id="phonecode" placeholder="Phonecode" required>
+									</div>
+									<div class="col-lg-6">
+										<input type="text" name="contact" placeholder="Mobile Number" required>
+									</div>
+									<div class="col-lg-6">
+										<input type="email" name="email" placeholder="Email Id" required>
+									</div>
+									<div class="col-lg-6">
+										<input type="url" name="website" placeholder="Website">
+									</div>
+									
+								</div>
+								<button type="submit" class="pix-btn submit-btn">Submit Now</button>
+								<div class="form-result alert">
+									<div class="content"></div>
+								</div>
+							</form>
+							<!-- /.call-back-forms -->
+						</div>
+						<!-- /.faq-froms -->
+					</div>
+					<!-- /.col-md-7 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.contactus -->
+        <script>
+            $(document).ready(function() {
+                // get city data from database with autocomplete event
+                $( "#city" ).autocomplete({
+                    source: function( request, response ) {
+                        $.ajax( {
+                            url: "https://demoweb.travocrm.com/index/getcities",
+                            dataType:"JSON",
+                            data: {
+                                term: request.term,
+                                countryid: $("#country_id").val()
+                            },
+                            success: function( data ) {
+                                response( data );
+                            }
+                        } );
+                    },
+                    minLength: 2,
+                    select: function( event, ui ) {
+                        $("#city_id").val(ui.item.id)
+                        $("#city_name").val(ui.item.label)
+                    }
+                });
+
+                // get country data from database with autocomplete	event
+                $( "#country" ).autocomplete({
+                    source: function( request, response ) {
+                        $.ajax( {
+                            url: "https://demoweb.travocrm.com/index/getcountries",
+                            dataType:"JSON",
+                            data: {
+                                term: request.term
+                            },
+                            success: function( data ) {
+                                // console.log(data);
+                                response(data);
+                            }
+                        } );
+                    },
+                    minLength: 2,
+                    select: function( event, ui ) {
+                        // log( "Selected: " + " aka " + ui.item.id );
+                        $("#country_id").val(ui.item.id)
+                        $("#country_name").val(ui.item.label)
+                        $("#phonecode").val(ui.item.phonecode);
+                        // $(this).next("value").val(ui.item.id);
+                    }
+                });
+                // to insert form data to database
+                $("#formId").on("submit",function(e){
+                    e.preventDefault();
+                    $.ajax({
+                        'url':'https://demoweb.travocrm.com/solutions/insertform',
+                        'type' : 'POST',
+                        'data' :  new FormData(this),
+                        'dataType' : 'json',
+                        'processData': false,
+                        'contentType': false,
+                        'success' : function(result){
+                            // console.log(result);
+                            // console.log(result.status);
+                            if(result.status == "success"){
+                                alert(result.message);
+                                $("#formId").trigger('reset');
+                            }else{
+                                alert(result.message);
+                            }
+
+                        }
+                    });
+
+                });
+            });
+        </script>
+		<!--=========================-->
+		<!--=        Footer         =-->
+
+		<!--=========================-->
+		<!--
+<script>
+  function initFreshChat() {
+    window.fcWidget.init({
+      token: "68222613-8ad8-485c-b1e4-02d389799ffe",
+      host: "https://wchat.in.freshchat.com"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.in.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>  -->
+		<footer id="footer" class="footer-hosting">
+			<div class="container">
+				<div class="footer-inner">
+					<div class="row wow fadeInUp">
+						<div class="col-lg-4 col-md-6 col-sm-6"> 
+							<div class="widget footer-widget widget-about">
+								<a href="#" class="footer-logo"><img src="https://www.travocrm.com/assets/img/logo.png" width="200" alt="Travocrm"></a>
+								<p class="copyright">
+									© 2017-2021 TravoCRM,<br> A product by Futurica Technologies Pvt Ltd<br>All rights reserved.
+								</p>
+
+								<h4 class="footer-title">Social</h4>
+								<ul class="social-share-link">
+									<li><a href=" https://www.facebook.com/travocrmbyfuturica" class="share_facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+									<!--<li><a href="#" class="share_twitter"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#" class="share_pinterest"><i class="fab fa-pinterest-p"></i></a></li>-->
+									<li><a href="https://www.linkedin.com/company/travocrm" class="share_linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+								</ul>
+
+
+							</div>
+							<!-- /.widget footer-widget -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 col-sm-6 -->
+
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class="widget footer-widget">
+								<!--<h3 class="widget-title">About Us</h3>-->
+
+								<ul class="footer-menu">
+									<li><a href="https://app.travocrm.com/#/login" target="_blank">Login</a></li>
+									<li><a href="https://app.travocrm.com/#/signup" target="_blank">Sign Up</a></li>
+									<li><a href="https://www.travocrm.com/termsandconditions" target="_blank">Terms and Conditions</a></li>
+									<li><a href="https://www.travocrm.com/privacypolicy" target="_blank">Privacy Policy</a></li>
+								</ul>
+							</div>
+							<!-- /.widget footer-widget -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 -->
+
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class="widget footer-widget">
+								<!--<h3 class="widget-title">My Account</h3>-->
+
+								<ul class="footer-menu">
+									<li><a href="https://www.travocrm.com/pricing">Pricing</a></li>
+									<li><a href="https://www.travocrm.com/solutions/travocrm">TravoCRM</a></li>
+									<li><a href="https://www.travocrm.com/">Support</a></li>
+									<li><a href="https://www.travocrm.com/">Resources</a></li>
+								</ul>
+							</div>
+							<!-- /.widget footer-widget -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 -->
+
+						<div class="col-lg-2 col-md-6 col-6">
+							<div class="widget footer-widget">
+								<!--<h3 class="widget-title">Solutions</h3>-->
+
+								<ul class="footer-menu">
+									<li><a href="https://www.travocrm.com/about">About Us</a></li>
+									<li><a href="https://www.travocrm.com/clients">Clients</a></li>
+									<li><a href="https://www.travocrm.com/contactus">Contact</a></li>
+								</ul>
+							</div>
+							<!-- /.widget footer-widget -->
+						</div>
+						<!-- /.col-lg-3 col-md-6 -->
+					</div>
+					<!-- /.row -->
+
+				</div><!-- /.footer-inner -->
+			</div><!-- /.container -->
+			<div class="footer-bottom-shape">
+				<img src="https://www.travocrm.com/media/footer/marketing_footer1.png" alt="saaspik">
+			</div>
+		</footer><!-- /#footer -->
+
+
+	</div><!-- /#site -->
+
+	<!-- Dependency Scripts -->
+
+	
+	<!--<script src="https://www.travocrm.com/dependencies/jquery/jquery.min.js"></script> -->
+	<script src="https://www.travocrm.com/dependencies/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/swiper/js/swiper.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/jquery.appear/jquery.appear.js"></script>
+	<script src="https://www.travocrm.com/dependencies/wow/js/wow.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/countUp.js/countUp.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/jquery.parallax-scroll/js/jquery.parallax-scroll.js"></script>
+	<script src="https://www.travocrm.com/dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+	<script src="https://www.travocrm.com/dependencies/gmap3/js/gmap3.min.js"></script>
+	<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&#038;ver=2.1.6'></script>
+	
+	
+		
+
+
+	<!-- Site Scripts -->
+	<script src="https://www.travocrm.com/assets/js/header.js"></script>
+	<script src="https://www.travocrm.com/assets/js/app.js"></script>
+
+
+<script src="https://www.travocrm.com/js/select2.min.js"></script>
+<!-- this file is commented to avoid error PR04012022--> 
+<!--<script src="//code.jquery.com/jquery-1.12.4.js"></script>-->
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+<!-- cookie code -->
+<!--
+<div class="cookie">
+  <p class="cookie__message">We use cookies, just to track visits to our website, we store no personal details.</p>
+  <button class="cookie__accept">Accept cookies</button>
+  <button class="cookie__decline">Decline cookies</button>
+</div>
+-->
+<style>
+
+
+.cookie {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 1rem 10%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  bottom:0;
+  z-index:300;
+}
+@media (max-width: 32rem) {
+  .cookie {
+    text-align: center;
+  }
+}
+.cookie .cookie__message {
+  padding: 0.2rem 0;
+  margin: 0;
+  display: inline-block;
+}
+@media (max-width: 64rem) {
+  .cookie .cookie__message {
+    width: 100%;
+  }
+}
+.cookie .cookie__accept,
+.cookie .cookie__decline,
+.cookie .cookie__link {
+  padding: 0.2rem 0.8rem;
+  border: 0;
+  background: white;
+  margin: 0 0.5rem;
+  transition: background 150ms ease;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.cookie .cookie__accept:focus,
+.cookie .cookie__decline:focus,
+.cookie .cookie__link:focus {
+  outline: none;
+}
+@media (max-width: 64rem) {
+  .cookie .cookie__accept,
+.cookie .cookie__decline,
+.cookie .cookie__link {
+    margin: 0.5rem 1rem 0.5rem 0;
+  }
+}
+@media (max-width: 32rem) {
+  .cookie .cookie__accept,
+.cookie .cookie__decline,
+.cookie .cookie__link {
+    width: 100%;
+  }
+}
+.cookie .cookie__accept {
+  background: #3498db;
+  color: #ecf0f1;
+}
+.cookie .cookie__accept:hover, .cookie .cookie__accept:focus {
+  background: #57aae1;
+}
+.cookie .cookie__accept:active {
+  background: #68b2e4;
+}
+.cookie .cookie__decline {
+  background: #1e2a36;
+  color: #ecf0f1;
+}
+.cookie .cookie__decline:hover, .cookie .cookie__decline:focus {
+  background: #233140;
+}
+.cookie .cookie__decline:active {
+  background: #1e2a36;
+}
+.cookie .cookie__link {
+  color: #3498db;
+  background: none;
+  padding: 0.2rem 0;
+  margin: 0;
+}
+@media (max-width: 64rem) {
+  .cookie .cookie__link {
+    margin: 0.5rem 0;
+  }
+}
+.cookie .cookie__link:hover, .cookie .cookie__link:focus {
+  text-decoration: underline;
+}
+@media (max-width: 32rem) {
+  .cookie .cookie__link {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
+<script>
+function cookie() {
+
+  var cookieAcceptButton = $('.cookie__accept'),
+      cookieDeclineButton = $('.cookie__decline'),
+      cookieAlert = $('.cookie');
+
+  cookieAcceptButton.on('click', function() {
+    cookieAlert.fadeOut('slow');
+  });
+  
+  cookieDeclineButton.on('click', function() {
+    cookieAlert.fadeOut('slow');
+  });
+  
+}
+
+$(function() {
+  cookie();  
+});
+</script>
+
+
+
+</body>
+  
+</html>

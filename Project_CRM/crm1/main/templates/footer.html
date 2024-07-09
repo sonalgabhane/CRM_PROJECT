@@ -1,0 +1,77 @@
+{% load static %}
+
+<footer id="footer" class="footer-hosting">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="row wow fadeInUp">
+                <div class="col-lg-4 col-md-6 col-sm-6"> 
+                    <div class="widget footer-widget widget-about">
+                        <a href="#" class="footer-logo"><img src="{% static 'assets/img/logo.png' %}" width="200" alt="Travocrm"></a>
+                        <p class="copyright">
+                            © 2017-2021 TravoCRM,<br> A product by Futurica Technologies Pvt Ltd<br>All rights reserved.
+                        </p>
+
+                        <h4 class="footer-title">Social</h4>
+                        <ul class="social-share-link">
+                            <li><a href="https://www.facebook.com/travocrmbyfuturica" class="share_facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <!--<li><a href="#" class="share_twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="share_pinterest"><i class="fab fa-pinterest-p"></i></a></li>-->
+                            <li><a href="https://www.linkedin.com/company/travocrm" class="share_linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+
+
+                    </div>
+                    <!-- /.widget footer-widget -->
+                </div>
+                <!-- /.col-lg-3 col-md-6 col-sm-6 -->
+
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="widget footer-widget">
+                        <!--<h3 class="widget-title">About Us</h3>-->
+
+                        <ul class="footer-menu">
+                            <li><a href={% url 'login' %} target="_blank">Login</a></li>
+                            <li><a href={% url 'signup' %} target="_blank">Sign Up</a></li>
+                            <li><a href={% url 'termsandconditions' %} target="_blank">Terms and Conditions</a></li>
+                            <li><a href={% url 'privacypolicy' %} target="_blank">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.widget footer-widget -->
+                </div>
+                <!-- /.col-lg-3 col-md-6 -->
+
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="widget footer-widget">
+                        <!--<h3 class="widget-title">My Account</h3>-->
+
+                        <ul class="footer-menu">
+                            <li><a href={% url 'pricing' %}>Pricing</a></li>
+                            <li><a href={% url 'features' %}>TravoCRM</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.widget footer-widget -->
+                </div>
+                <!-- /.col-lg-3 col-md-6 -->
+
+                <div class="col-lg-2 col-md-6 col-6">
+                    <div class="widget footer-widget">
+                        <!--<h3 class="widget-title">Solutions</h3>-->
+
+                        <ul class="footer-menu">
+                            <li><a href={% url 'about' %}>About Us</a></li>
+                            <li><a href={% url 'clients' %}>Clients</a></li>
+                            <li><a href={% url 'contactus' %}>Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.widget footer-widget -->
+                </div>
+                <!-- /.col-lg-3 col-md-6 -->
+            </div>
+            <!-- /.row -->
+
+        </div><!-- /.footer-inner -->
+    </div><!-- /.container -->
+    <div class="footer-bottom-shape">
+        <img src="{% static 'media/footer/marketing_footer1.png' %}" alt="saaspik">
+    </div>
+</footer><!-- /#footer -->

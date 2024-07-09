@@ -1,0 +1,195 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block main-content %}
+
+<div class="main-content">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="head d-flex">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                                <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z"/>
+                              </svg>
+                        </div>
+                        <div style="margin-left:5%">
+                            <h4 style="line-height: 0.5;">All Customers</h4>
+                            <a>Check your all customers basic details.</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6"></div>
+        <div class="col-md-2" style="color:black;">
+            <button type="submit"><a href="{% url 'addcustomer' %}"><i class="bi bi-person-plus"></i>Add Customer</a></button>
+        </div>
+    </div>
+    <div class="line"></div>
+    <form role="search" action="" method="POST" novalidate>
+        {% csrf_token %}
+    <div class="row">
+        <div class="col-md-3">
+            <label for="input">Salutation</label>
+            <select id="salutation" name="salutation" style="height: 29px; width:100%">
+                <option>Choose</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="miss">Miss</option>
+                <option value="Dr">Dr</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="input">First Name</label>
+            <input type="text" class="form-control" id="firstname" name="firstname" style="line-height: 1px;">
+        </div>
+        <div class="col-md-3">
+            <label for="input">Last Name</label>
+            <input type="text" class="form-control" id="lastname" name="lastname" style="line-height: 1px;">
+        </div>
+        <div class="col-md-3">
+            <label for="input">Mobile Number</label>
+            <input type="text" class="form-control" id="number" name="number" style="line-height: 1px;">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <label for="input">Email Id</label>
+            <input type="email" class="form-control" id="email" name="email" style="line-height: 1px;">
+        </div>
+        <div class="col-md-3">
+            <label for="input">Customer Type</label>
+            <select id="customertype" name="customertype" style="height: 29px; width:100%">
+                <option>Choose</option>
+                <option value="B2C">B2C</option>
+                <option value="B2B">B2B</option>
+                <option value="Corporate">Corporate</option>
+                <option value="VIP">VIP</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="input">Lead Source</label>
+            <select id="source" name="source" style="height: 29px; width:100%">
+                <option>Choose</option>
+                <option value="Advertisement">Advertisement</option>
+                <option value="Cold Call">Cold Call</option>
+                <option value="mployee Referral">Employee Referral</option>
+                <option value="External Referral">External Referral</option>
+                <option value="Website">Website</option>
+                <option value="Public Relation">Public Relation</option>
+                <option value="Email Campaign">Email Campaign</option>
+                <option value="SMS Campaign">SMS Campaign</option>
+                <option value="Trade Show">Trade Show</option>
+                <option value="None">None</option>
+                <option value="Old Customer">Old Customer</option>
+                <option value="New Customer">New Customer</option>
+                <option value="Walk In">Walk In</option>
+                <option value="SEO">SEO</option>
+                <option value="Excel">Excel</option>
+                <option value="Just Dial">Just Dial</option>
+                <option value="Phone Call">Phone Call</option>
+                <option value="Airbnb">Airbnb</option>
+                <option value="Live Chat">Live Chat</option>
+                <option value="Travvolt">Travvolt</option>
+                <option value="Hello Travel">Hello Travel</option>
+                <option value="TripShelf">TripShelf</option>
+                <option value="Newspaper">Newspaper</option>
+                <option value="Sulekha">Sulekha</option>
+                <option value="Travel Triangle">Travel Triangle</option>
+                <option value="TripCrafters">TripCrafters</option>
+                <option value="Other">Other</option>
+                <option value="Flyer">Flyer</option>
+                <option value="Travelsetu">Travelsetu</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Google Ads">Google Ads</option>
+                <option value="Instagram">Instagram</option>
+                <option value="10Times">10Times</option>
+                <option value="Rotary">Rotary</option>
+                <option value="BNI">BNI</option>
+                <option value="YES">YES</option>
+                <option value="Mail">Mail</option>
+                <option value="Agent">Agent</option>
+                <option value="Google">Google</option>
+                <option value="Whatsapp">Whatsapp</option>
+                <option value="Webmail">Webmail</option>
+                <option value="Direct Sales">Direct Sales</option>
+                <option value="Incoming Call">Incoming Call</option>
+                <option value="Chat">Chat</option>
+                <option value="Brouchers">Brouchers</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="input">Tags</label>
+            <select id="tags" name="tags" style="height: 29px; width:100%">
+                <option>Choose</option>
+                <option value="All">All</option>
+                <option value="Family">Family</option>
+                <option value="Honeymoon">Honeymoon</option>
+                <option value="Individual">Individual</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Group">Group</option>
+                <option value="Women Only">Women Only</option>
+                <option value="Domestic">Domestic</option>
+                <option value="International">International</option>
+                <option value="Beaches">Beaches</option>
+                <option value="Weekend">Weekend</option>
+                <option value="Heritage">Heritage</option>
+                <option value="Wildlife">Wildlife</option>
+                <option value="Jungle Safari">Jungle Safari</option>
+                <option value="Student">Student</option>
+                <option value="Pilgrimage">Pilgrimage</option>
+                <option value="Popular">Popular</option>
+                <option value="Trending">Trending</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2" style="height:30px; margin-block-start:auto;">
+            <button type="submit" style="margin-top:7px;">Search</button>
+        </div>
+    </div>
+</form>
+    <div class="line my-3">
+
+    </div>
+    <div class="table-responsive">
+        <form method="POST">
+            {% csrf_token %}
+            <table id="dt-opt" class="table table-hover table-xl">
+                <thead>
+                    <tr>
+                        <th>Contact Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>City</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in data %}
+                    <tr>
+                        <td>{{i.firstname}} {{i.lastname}}</td>
+                        <td>{{i.number}}</td>
+                        <td>{{i.email}}</td>
+                        <td>{{i.city}}</td>
+                        <td class="text-center font-size-18">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="/editcustomer/{{i.id}}" class="text-gray m-r-15"><i class="ti-pencil"></i></a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="/viewcustomer/{{i.id}}" class="text-gray m-r-15"><i class="ti-eye"></i></a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>
+
+{% endblock main-content %}

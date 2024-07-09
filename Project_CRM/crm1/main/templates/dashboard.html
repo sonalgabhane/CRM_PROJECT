@@ -1,0 +1,166 @@
+{% extends 'index.html' %}
+
+{% block main-content %}
+
+{% load static %}
+
+<body>
+    <!-- Content Wrapper START -->
+    <div class="main-content">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="container-fluid display-flex">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Dashboard</h5>
+                                <div class="col-lg-8 d-flex">
+                                    <div class="box-icon">
+                                        <div class="icon d-flex">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            <div class="number p-1">{{d4}}</div>
+                                        </div>
+    
+                                        <h4 class="title">Active Leads</h4>
+                                    </div>
+                                    <div class="box-icon">
+                                        <div class="icon d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <div class="number p-1">{{d3}}</div>
+                                        </div>
+                                        <h4 class="title">Hot Leads</h4>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 d-flex">
+                                    <div class="box-icon">
+                                        <div class="icon d-flex">
+                                            <i class="fa-solid fa-arrows-rotate"></i>
+                                            <div class="number p-1">{{d5}}</div>
+                                        </div>
+                                        <h4 class="title">Booked</h4>
+                                    </div>
+                                    <div class="box-icon">
+                                        <div class="icon d-flex">
+                                            <i class="fa-solid fa-arrows-rotate"></i>
+                                            <div class="number p-1">{{d6}}</div>
+                                        </div>
+    
+                                        <h4 class="title">Lost</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+    
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </form>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Reminder</h4>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="m-b-3">
+                                <canvas class="chart" id="goal-chart" style="height: 5px"></canvas>
+                            </div>
+                            <div class="row ">
+                                <div class="col-10 ">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="text-center">
+                                                
+                                                <h4 class="font-weight-light">No Reminder available</h2>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Hot Leads</h4>
+
+                        </div>
+                        <div class="table-overflow">
+                            <form action="" method="POST">
+                                {% csrf_token %}
+                                <table class="table table-lg">
+                                    <thead>
+                                        <tr>
+                                            <td class="text-dark text-semibold">lead No</td>
+                                            <td class="text-dark text-semibold">Name</td>
+                                            <td class="text-dark text-semibold">Status</td>
+                                            <td class="text-dark text-semibold">Assign To</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for i in d2 %}
+                                        <tr>
+                                            <td>{{i.leadno}}</td>
+                                            <td>{{i.firstname}} {{i.lastname}}</td>
+                                            <td>{{i.status}}</td>
+                                            <td>{{i.assigned}}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Upcoming Travel</h4>
+                        </div>
+                        <div class="card-body p-t-15">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Birthday and Anniversary</h4>
+                        </div>
+                        <div class="card-body p-t-15">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Upcoming Booking</h4>
+                        </div>
+                        <div class="card-body p-t-15">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="whatsapp_float" style="position:fixed;
+        bottom: 40px;
+        right:20px">
+            <a href="https://wa.me/{{ whatsappnumber.number}}" target="_blank">
+                <img src="{% static 'assets2/images/logo/whatsapp.jpg' %}" alt="whatapp" width="50px" class="whatsapp_float_btn"/></a>
+        </div>
+    </div>
+    <!-- Content Wrapper END -->
+</body>
+{% endblock main-content %}

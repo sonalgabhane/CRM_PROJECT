@@ -1,0 +1,71 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block main-content %}
+
+<div class="main-content">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="head d-flex">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                              </svg>
+                        </div>
+                        <div style="margin-left:5%">
+                            <h4 style="line-height: 0.5;">View Profile</h4>
+                           
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6"></div>
+        <div class="col-md-1">
+            <a href={% url 'dashboard' %}><i class="bi bi-arrow-return-left">Back</i></a>
+        </div>
+
+    </div>
+    <div class="line">
+
+    </div>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <p style="background-color: gray; color:black; margin:6px; padding:2px;"><i class="bi bi-chevron-down"></i>
+            Profile Details</p>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>First Name</h5>
+                    <p>{{d.first_name}}</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Last Name</h5>
+                    <p>{{d.last_name}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Email Address</h5>
+                    <p>{{d.email}}</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Mobile Number</h5>
+                    <p>{{d.contact_no}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Role</h5>
+                    <p>{{d.type}}</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Area</h5>
+                    <p>{{d.area}}</p>
+                </div>
+            </div>
+
+{% endblock main-content %}

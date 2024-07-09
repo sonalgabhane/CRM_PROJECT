@@ -1,0 +1,346 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block main-content %}
+
+<div class="main-content">
+    <form method="POST" action="">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="head d-flex">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                                    <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z"/>
+                                  </svg>
+                            </div>
+                            <div style="margin-left:5%">
+                                <h4 style="line-height: 0.5;">Edit leads</h4>
+                                <a>Edit leads information to make it useful</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7"></div>
+            <div class="col-md-1">
+                <button type="submit"><a href="#"><i class="bi bi-arrow-return-left"></i></a>Back</button>
+            </div>
+        </div>
+        <div class="line">
+
+        </div>
+        <div>
+            <h4 style="font-size: 15px;"><b>Lead Information</b></h4>
+        </div>
+
+        <div class="line">
+
+        </div>
+        <div class="row" style="color:black;">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="input">Customer Type</label>
+                        <select id="customertype" name="customertype" value="{{data.customertype}}" style="height: 29px; width:100%">
+                            <option value="B2C">B2C</option>
+                                    <option value="B2B">B2B</option>
+                                    <option value="Corporate">Corporate</option>
+                                    <option value="VIP">VIP</option>
+
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input">Mobile Number</label>
+                        <input type="text" class="form-control" id="number" name="number"
+                           value="{{data.number}}"  style="line-height: 1px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="input">Email Id</label>
+                        <input type="email" class="form-control" id="email" name="email" 
+                           value="{{data.email}}"  style="line-height: 1px;">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="input">Salutation</label>
+                        <select id="salutation" name="salutation" value="{{data.salutation}}" style="height: 29px; width:100%">
+                            <option value="Mr">Mr</option>
+                                    <option value="Mrs">Mrs</option>
+                                    <option value="Miss">Miss</option>
+                                    <option value="Dr">Dr</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="input">First Name</label>
+                        <input type="text" class="form-control" id="firstname" name="firstname"
+                           value="{{data.firstname}}"  style="line-height: 1px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="input">Last Name</label>
+                        <input type="text" class="form-control" id="lastname" name="lastname"
+                           value="{{data.lastname}}"  style="line-height: 1px;">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input">Address</label>
+                        <input type="text" class="form-control" id="address" name="address" 
+                           value="{{data.address}}"  style="line-height: 1px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="input">City</label>
+                        <input type="text" class="form-control" id="city" name="city"
+                           value="{{data.city}}"  style="line-height: 1px;">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input">Alternate Mobile Number</label>
+                        <input type="text" class="form-control" id="alternate number" name="alternatenumber"
+                            value="{{data.alternatenumber}}"  style="line-height: 1px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="input">Alternate Email Id</label>
+                        <input type="email" class="form-control" id="alternate email" name="alternateemail"
+                            value="{{data.alternateemail}}"  style="line-height: 1px;">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="input">Lead Source</label>
+                        <select id="leadsource" name="leadsource" value="{{data.leadsource}}" style="height: 29px; width:100%">
+                            <option value="Advertisement">Advertisement</option>
+                            <option value="Cold Call">Cold Call</option>
+                            <option value="Employee Referral">Employee Referral</option>
+                            <option value="External Referral">External Referral</option>
+                            <option value="Website">Website</option>
+                            <option value="Public Relation">Public Relation</option>
+                            <option value="Email Campaign">Email Campaign</option>
+                            <option value="SMS Campaign">SMS Campaign</option>
+                            <option value="Trade Show">Trade Show</option>
+                            <option value="None">None</option>
+                            <option value="Old Customer">Old Customer</option>
+                            <option value="New Customer">New Customer</option>
+                            <option value="Walk In">Walk In</option>
+                            <option value="SEO">SEO</option>
+                            <option value="Excel">Excel</option>
+                            <option value="Just Dial">Just Dial</option>
+                            <option value="Phone Call">Phone Call</option>
+                            <option value="Airbnb">Airbnb</option>
+                            <option value="Live Chat">Live Chat</option>
+                            <option value="Travvolt">Travvolt</option>
+                            <option value="Hello Travel">Hello Travel</option>
+                            <option value="TripShelf">TripShelf</option>
+                            <option value="Newspaper">Newspaper</option>
+                            <option value="Sulekha">Sulekha</option>
+                            <option value="Travel Triangle">Travel Triangle</option>
+                            <option value="TripCrafters">TripCrafters</option>
+                            <option value="Other">Other</option>
+                            <option value="Flyer">Flyer</option>
+                            <option value="Travelsetu">Travelsetu</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Google Ads">Google Ads</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="10Times">10Times</option>
+                            <option value="Rotary">Rotary</option>
+                            <option value="BNI">BNI</option>
+                            <option value="YES">YES</option>
+                            <option value="Mail">Mail</option>
+                            <option value="Agent">Agent</option>
+                            <option value="Google">Google</option>
+                            <option value="Whatsapp">Whatsapp</option>
+                            <option value="Webmail">Webmail</option>
+                            <option value="Direct Sales">Direct Sales</option>
+                            <option value="Incoming Call">Incoming Call</option>
+                            <option value="Chat">Chat</option>
+                            <option value="Brouchers">Brouchers</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="input">Lead Priority</label>
+                        <select id="priority" name="priority" value="{{data.priority}}" style="height: 29px; width:100%">
+                            <option value="All">All</option>
+                                    <option value="Cold">Cold</option>
+                                    <option value="Warm">Warm</option>
+                                    <option value="Hot">Hot</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input">Lead Status</label>
+                        <select id="status" name="status" value="{{data.status}}" style="height: 29px; width:100%">
+                            <option value="All">All</option>
+                                    <option value="Unquilified">Unquilified</option>
+                                    <option value="New">New</option>
+                                    <option value="Working">Working</option>
+                                    <option value="Proposal Sent">Proposal Sent</option>
+                                    <option value="Negotiating">Negotiating</option>
+                                    <option value="Booked">Booked</option>
+                                    <option value="Lost">Lost</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2" style="margin-top:20px;">
+                        <label for="input">No of Adults</label>
+                        <input type="text" class="form-control" id="adults" name="adults"
+                           value="{{data.adults}}"  style="line-height: 1px;">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="input">No of Children</label>
+                        <input type="text" class="form-control" id="child" name="child"
+                           value="{{data.child}}"  style="line-height: 1px;">
+                    </div>
+                    <div class="col-md-2" style="margin-top:20px;">
+                        <label for="input">No of Infants</label>
+                        <input type="text" class="form-control" id="infants" name="infants"
+                           value="{{data.infants}}"  style="line-height: 1px;">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input">Tags</label>
+                        <select id="tags" name="tags" value="{{data.tags}}" style="height: 29px; width:100%">
+                            <option value="All">All</option>
+                                    <option value="Family">Family</option>
+                                    <option value="Honeymoon">Honeymoon</option>
+                                    <option value="Individual">Individual</option>
+                                    <option value="Adventure">Adventure</option>
+                                    <option value="Group">Group</option>
+                                    <option value="Women Only">Women Only</option>
+                                    <option value="Domestic">Domestic</option>
+                                    <option value="International">International</option>
+                                    <option value="Beaches">Beaches</option>
+                                    <option value="Weekend">Weekend</option>
+                                    <option value="Heritage">Heritage</option>
+                                    <option value="Wildlife">Wildlife</option>
+                                    <option value="Jungle Safari">Jungle Safari</option>
+                                    <option value="Student">Student</option>
+                                    <option value="Pilgrimage">Pilgrimage</option>
+                                    <option value="Popular">Popular</option>
+                                    <option value="Trending">Trending</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="from">Trip Type</label>
+                        <select id="triptype" name="triptype" value="{{data.triptype}}" style="height: 29px; width:100%">
+                            <option value="Other">Other</option>
+                            <option value="Family">Family</option>
+                            <option value="Honeymoon">Honeymoon</option>
+                            <option value="Friends">Friends</option>
+                            <option value="Official">Official</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Corporate">Corporate</option>
+                            <option value="Educational">Educational</option>
+                            <option value="Group">Group</option>
+                            <option value="Individual">Individual</option>
+                            <option value="Religious">Religious</option>
+                            <option value="Couple">Couple</option>
+                            <option value="Student Group">Student Group</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input">Destination</label>
+                        <input type="text" class="form-control" id="destination" name="destination"
+                           value=""  style="line-height: 1px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        {% comment %} <label for="from">Assigned To</label>
+                    <select name="assigned" style="height: 29px; width:100%" required>
+                        <option selected disabled ,"true">{{d1.first_name}}</option>
+                </select> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <p style="color:gray;font-size:150%"><i class="bi bi-pencil-square"></i> Notes</p>
+                <textarea name="notes" id="notes" style="height:30%; width:90%;"></textarea>
+            </div>
+            <div class="line" style="margin-top: 15px;">
+
+            </div>
+            <p>Enquiry Type</p>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="wrap">
+                            <input type="checkbox" id="add" value="add">  Flight Booking
+                        </div>
+                        <div class="inp-group">
+                            
+                        </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="checkbox" id="add" value="add">  Hotel Booking
+                        </div>
+                        <div class="col-md-4">
+                            <input type="checkbox" id="add" value="add">  Visa
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="checkbox" id="add" value="add">  Travel Insurance
+                        </div>
+                        <div class="col-md-4">
+                            <input type="checkbox" id="add" value="add">  Forex
+                        </div>
+                        <div class="col-md-4">
+                            <input type="checkbox" id="add" value="add">  Sightseeing
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="checkbox" id="add" value="add">  Transport
+                        </div>
+                        <div class="col-md-4">
+                            <input type="checkbox" id="add" value="add">  Other
+                        </div>
+                        <div class="col-md-4">
+                            <input type="checkbox" id="add" value="add">  Package
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="checkbox" id="add" value="add">  Customize Package
+                        </div>
+                        <div class="col-md-4">
+                            <input type="checkbox" id="add" value="add">  Bus
+                        </div>
+                        <div class="col-md-4">
+                            <input type="checkbox" id="add" value="add">  Train
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="checkbox" id="add" value="add">  Passport
+                        </div>
+                        <div class="col-md-4">
+                            <input type="checkbox" id="add" value="add">  Cruise
+                        </div>
+                        <div class="col-md-4">
+                            <input type="checkbox" id="add" value="add">  Adventure
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="checkbox" id="add" value="add">  Group
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-4 mb-0">Update</button>
+    </form>
+</div>
+{%endblock main-content%}
+

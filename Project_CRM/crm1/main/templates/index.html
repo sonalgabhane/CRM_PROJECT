@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="{% static 'assets2/images/logo/apple-touch-icon.png' %}">
+    <link rel="shortcut icon" href="{% static 'assets2/images/logo/favicon.png' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <!-- core dependcies css -->
+    <link rel="stylesheet" href="{% static 'assets2/vendor/bootstrap/dist/css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets2/vendor/PACE/themes/blue/pace-theme-minimal.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets2/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css' %}" />
+
+    <!-- page css -->
+    <link rel="stylesheet" href="{% static 'assets2/vendor/datatables/media/css/dataTables.bootstrap4.min.css' %}" />
+
+    <!-- core css -->
+    <link href="{% static 'assets2/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets2/css/themify-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets2/css/materialdesignicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets2/css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets2/css/app.css' %}" rel="stylesheet">
+</head>
+
+<div class="app header-default side-nav-dark">
+    <div class="layout">
+        <!-- Header START -->
+        {% include 'header.html' %}
+        <!-- Header END -->
+        <!-- Side Nav START -->
+        {% include 'sidenav.html' %}
+        <!-- Side Nav END -->
+            <!-- Page Container START -->
+            <div class="page-container ">
+                {% block main-content %}{% endblock main-content %}
+            </div>
+            
+            <!-- Page Container END -->
+            
+            <!-- Footer START -->
+            {% include 'footer1.html' %}
+            <!-- Footer END -->
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- build:js assets2/js/vendor.js -->
+    <!-- core dependcies js -->
+    <script src="{% static 'assets2/vendor/jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'assets2/vendor/popper.js/dist/umd/popper.min.js' %}"></script>
+    <script src="{% static 'assets2/vendor/bootstrap/dist/js/bootstrap.js' %}"></script>
+    <script src="{% static 'assets2/vendor/PACE/pace.min.js' %}"></script>
+    <script src="{% static 'assets2/vendor/perfect-scrollbar/js/perfect-scrollbar.jquery.js' %}"></script>     
+    <script src="{% static 'assets2/vendor/d3/d3.min.js' %}"></script>
+    <!-- endbuild -->
+
+    <!-- build:js assets2/js/app.min.js -->
+    <!-- core js -->
+    <script src="{% static 'assets2/js/app.js' %}"></script>
+    <!-- configurator js -->
+    <script src="{% static 'assets2/js/configurator.js' %}"></script>
+    <!-- endbuild -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- page js -->
+    <script src="{% static 'assets2/vendor/chart.js/dist/Chart.min.js' %}"></script>
+    <script src="{% static 'assets2/vendor/jquery.sparkline/jquery.sparkline.min.js' %}"></script>
+    <script src="{% static 'assets2/js/dashboard/default.js' %}"></script>
+    
+    <!-- page js -->
+    <script src="{% static 'assets2/vendor/datatables/media/js/jquery.dataTables.js' %}"></script>
+    <script src="{% static 'assets2/vendor/datatables/media/js/dataTables.bootstrap4.min.js' %}"></script>
+    <script src="{% static 'assets2/js/tables/data-table.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+
+</html>
